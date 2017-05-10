@@ -3,6 +3,7 @@ var mongoose = require("mongoose");
 var MixSchema = new mongoose.Schema({
     name: String,
     image: String,
+    otherImages: Array,
     breed1: String,
     breed2: String,
     description: String,
@@ -18,7 +19,12 @@ var MixSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "Comment"
         }
-    ]
+    ],
+    breeds: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Breed"
+        }]
     
 })
 

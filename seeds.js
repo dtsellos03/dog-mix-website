@@ -1,5 +1,6 @@
 var mongoose = require("mongoose");
 var Mix = require("./models/mixes");
+var Breed = require("./models/breeds")
 var Comment = require("./models/comment");
 
 var data = [
@@ -82,6 +83,18 @@ var data = [
   }
 ]
 
+var breedlist = [
+    
+    {name: "Pug",
+    image: "https://vetstreet-brightspot.s3.amazonaws.com/1d/e0aab0a8a811e0a0d50050568d634f/file/pug-1-645mk070411.jpg",
+    description: "A cute pug"
+    },
+    {name: "Husky",
+    image: "https://www.dogbreedinfo.com/images2/SiberianHuskyNorm2.jpg",
+    description: "A cute husky"
+    }
+    
+    ]
 
 function seedDB(){
     // Removes all Mixes
@@ -113,7 +126,17 @@ function seedDB(){
                         });
                 }
             });         
-    });
+       });
+       breedlist.forEach(function(seed){
+            Breed.create(seed, function(err, Breed){
+                if(err){
+                    console.log(err)
+                } else {
+                    console.log("Breed added");
+                    //
+                }
+            });         
+       });
     //add a few Mixes
     });
 }

@@ -3,6 +3,7 @@ var router = express.Router();
 var passport = require("passport");
 var User = require("../models/user");
 var Mix = require("../models/mixes");
+var Breed = require("../models/breeds");
 
 router.get("/", function(req, res){
     res.render("landing");
@@ -48,10 +49,9 @@ router.get("/logout", function(req, res){
 router.get("/breeds", function(req, res){
     var requestedBreed = req.params.breed;
     var uncleanlist = [];
-    Mix.find({}, 'breed1 breed2', function (err, Mixes) {
-        Mixes.forEach(function(element){
-            uncleanlist.push(element.breed1)
-            uncleanlist.push(element.breed2)
+    Breed.find({}, function (err, Breeds) {
+        Breeds.forEach(function(element){
+            uncleanlist.push(element.name)
         })
     uncleanlist = uncleanlist.filter( function( item, index, inputArray ) {
            return inputArray.indexOf(item) == index;
