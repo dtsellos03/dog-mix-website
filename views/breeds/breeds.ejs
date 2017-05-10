@@ -17,8 +17,9 @@
     <% uncleanlist.forEach(function(breed){ %>
         <div class="col-md-3 col-sm-6">
             <div class="thumbnail">
+                <img src="<%=breed.image%>">
                 <p>
-                    <a class="btn btn-primary" href="/breeds/<%=breed%>"><%=breed%></a>
+                    <a class="btn btn-primary" href="/breeds/<%=breed.name%>"><%=breed.name%></a>
                 </p>
             </div>
         </div>

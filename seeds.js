@@ -9,78 +9,101 @@ var data = [
         image: "https://s-media-cache-ak0.pinimg.com/736x/8b/1a/36/8b1a36a3ed0265dd86b24a3701895dd9.jpg",
         breed1: "Pug",
         breed2: "Chihuahua",
-        description: "Pughuahua, Chipugua"
+        description: "Pughuahua, Chipugua",
+        miracleCount: 7,
+        abominationCount: 14
     },
         {
         name: "Corpug",
         breed1: "Corgi",
         breed2: "Pug",
         image: "http://www.thatcutesite.com/uploads/2011/06/corgi_pug_mix_hybrid_breed.jpg",
-        description: "Purgi"
+        description: "Purgi",
+        miracleCount: 3,
+        abominationCount: 19
     },
         {
         name: "Husgi",
         breed1: "Husky",
         breed2: "Corgi",
         image: "http://img.photobucket.com/albums/v704/xVelvet_FuzzButtx/3%20Dog%20Night/ShortLegsHalo.jpg",
-        description: "Corsky"
+        description: "Corsky",
+        miracleCount: 79,
+        abominationCount: 22
     },
-    {
-    name: "Pitsky",
-    breed1: "Pitbull",
-    breed2: "Husky",
-    image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-27.jpg",
-    description: "A mix"
-  },
-  {
-    name: "Corgmation",
-    breed1: "Corgi",
-    breed2: "Dalmation",
-    image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-21.jpg",
-    description: "A mix"
-  },
-  {
-    name: "Chusky",
-    breed1: "Chow Chow",
-    breed2: "Husky",
-    image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-7.jpg",
-    description: "Huschow"
-  },
-  {
-    name: "Dalmachshund",
-    breed1: "Dachshund",
-    breed2: "Dalmation",
-    image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-17.jpg",
-    description: "Daschundation"
-  },
-  {
-    name: "Labsky",
-    breed1: "Labrador",
-    breed2: "Husky",
-    image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-9.jpg",
-    description: "Huskador"
-  },
-  {
-    name: "German Corgi",
-    breed1: "Corgi",
-    breed2: "German Shepard",
-    image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-6.jpg",
-    description: "Corgerman"
-  },
-  {
-    name: "Pomsky",
-    breed1: "Husky",
-    breed2: "Pomeranian",
-    image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-4.jpg",
-    description: "Huskeranian"
-  },
-  {
-    name: "Bullpug",
-    breed1: "Pug",
-    breed2: "English Bulldog",
-    image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-25.jpg",
-    description: "English Pug"
-  }
+        {
+        name: "Pitsky",
+        breed1: "Pitbull",
+        breed2: "Husky",
+        image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-27.jpg",
+        description: "A mix",
+        miracleCount: 3,
+        abominationCount: 2
+        },
+        {
+        name: "Corgmation",
+        breed1: "Corgi",
+        breed2: "Dalmation",
+        image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-21.jpg",
+        description: "A mix",
+        miracleCount: 8,
+        abominationCount: 4
+        },
+        {
+        name: "Chusky",
+        breed1: "Chow Chow",
+        breed2: "Husky",
+        image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-7.jpg",
+        description: "Huschow",
+        miracleCount: 9,
+        abominationCount: 13
+        },
+        {
+        name: "Dalmachshund",
+        breed1: "Dachshund",
+        breed2: "Dalmation",
+        image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-17.jpg",
+        description: "Daschundation",
+        miracleCount: 9,
+        abominationCount: 45
+        },
+        {
+        name: "Labsky",
+        breed1: "Labrador",
+        breed2: "Husky",
+        image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-9.jpg",
+        description: "Huskador",
+        miracleCount: 77,
+        abominationCount: 8
+        },
+        {
+        name: "German Corgi",
+        breed1: "Corgi",
+        breed2: "German Shepard",
+        image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-6.jpg",
+        description: "Corgerman",
+        miracleCount: 99,
+        abominationCount: 5
+        },
+        {
+        name: "Pomsky",
+        breed1: "Husky",
+        breed2: "Pomeranian",
+        image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-4.jpg",
+        description: "Huskeranian",
+        miracleCount: 98,
+        abominationCount: 4
+        },
+        {
+        name: "Bullpug",
+        breed1: "Pug",
+        breed2: "English Bulldog",
+        image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-25.jpg",
+        description: "English Pug",
+        miracleCount: 7,
+        abominationCount: 35
+        
+      }
 ]
 
 var breedlist = [
@@ -98,6 +121,13 @@ var breedlist = [
 
 function seedDB(){
     // Removes all Mixes
+    Breed.remove({}, function(err){
+        if(err){
+        console.log(err);
+        } else {
+        console.log("Removed breeds");
+        }
+    });
     Mix.remove({}, function(err){
         if(err){
         console.log(err);

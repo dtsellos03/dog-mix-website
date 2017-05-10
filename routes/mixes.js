@@ -46,13 +46,13 @@ router.get("/:id", function(req, res){
        if(err){
            console.log(err);
        } else {
-           //console.log(foundMix);
+           console.log(foundMix.miracleCount);
            res.render("Mixes/show", {Mix: foundMix});
        }
     });
 });
 
-// EDIT CAMP
+// EDIT MIX
 
 router.get("/:id/edit", middleware.checkMixOwn, function(req, res){
     Mix.findById(req.params.id, function(err, foundMix){
@@ -60,7 +60,7 @@ router.get("/:id/edit", middleware.checkMixOwn, function(req, res){
     });
 });
 
-// UPDATE CAMP
+// UPDATE MIX
 
 router.put("/:id", middleware.checkMixOwn, function(req, res){
     Mix.findByIdAndUpdate(req.params.id, req.body.Mix, function(err, updatedMix){
@@ -84,6 +84,31 @@ router.delete("/:id", middleware.checkMixOwn, function(req, res){
     })
     
 });
+
+// LIKE ROUTE
+
+
+
+
+
+
+router.post('/:id/like', function (req, res) {
+    console.log("POST ROUTE")
+    var id = req.params.id;
+    //console.log(id)
+    //Mix.findOneAndUpdate(post, {miracleCount: miracleCount+1})
+    Mix.findByIdAndUpdate(id, {"miracleCount": Mix.miracleCount+9999},function(err, doc){
+    if(err){
+        console.log("Something wrong when updating data!");
+    }
+    //console.log()
+    //console.log(doc);
+});
+    res.redirect("/")
+});
+
+// DISLIKE ROUTE
+
 
 
 

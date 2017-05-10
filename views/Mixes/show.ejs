@@ -10,6 +10,10 @@
                 <div class = "caption-full">
                     <!--<h4 class="pull-right"></h4>-->
                     <h4><%=Mix.name%></h4> <%=Mix.breed1%>
+                    
+                    <h5>Miracle:<%=Mix.miracleCount%> - Abomination:<%=Mix.abominationCount%></h5>
+                    
+                    
                     <h5>Submitted by <%=Mix.author.username%></h5>
                     <p> <%=Mix.description%> </p>
                     <% if(currentUser && Mix.author.id && Mix.author.id.equals(currentUser._id)){ %>
@@ -42,6 +46,10 @@
                                <% } %>
                         </div>
                     </div>
+                    
+            <form action="/Mixes/<%=Mix._id%>/like" method="POST">
+            <button class="btn btn-lg btn-default btn-block btn-primary">Submit!</button>
+        </form>
 
     
                 <% }) %>

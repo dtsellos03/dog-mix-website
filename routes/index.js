@@ -51,7 +51,7 @@ router.get("/breeds", function(req, res){
     var uncleanlist = [];
     Breed.find({}, function (err, Breeds) {
         Breeds.forEach(function(element){
-            uncleanlist.push(element.name)
+            uncleanlist.push(element)
         })
     uncleanlist = uncleanlist.filter( function( item, index, inputArray ) {
            return inputArray.indexOf(item) == index;
