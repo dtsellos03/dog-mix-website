@@ -19,7 +19,7 @@ var data = [
         breed2: "Pug",
         image: "http://www.thatcutesite.com/uploads/2011/06/corgi_pug_mix_hybrid_breed.jpg",
         description: "Purgi",
-        miracleCount: 3,
+        miracleCount: 50,
         abominationCount: 19
     },
         {
@@ -28,7 +28,7 @@ var data = [
         breed2: "Corgi",
         image: "http://img.photobucket.com/albums/v704/xVelvet_FuzzButtx/3%20Dog%20Night/ShortLegsHalo.jpg",
         description: "Corsky",
-        miracleCount: 79,
+        miracleCount: 100,
         abominationCount: 22
     },
         {
@@ -37,7 +37,7 @@ var data = [
         breed2: "Husky",
         image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-27.jpg",
         description: "A mix",
-        miracleCount: 3,
+        miracleCount: 150,
         abominationCount: 2
         },
         {
@@ -46,7 +46,7 @@ var data = [
         breed2: "Dalmation",
         image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-21.jpg",
         description: "A mix",
-        miracleCount: 8,
+        miracleCount: 200,
         abominationCount: 4
         },
         {
@@ -55,7 +55,7 @@ var data = [
         breed2: "Husky",
         image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-7.jpg",
         description: "Huschow",
-        miracleCount: 9,
+        miracleCount: 250,
         abominationCount: 13
         },
         {
@@ -64,7 +64,7 @@ var data = [
         breed2: "Dalmation",
         image: "http://static.boredpanda.com/blog/wp-content/uploads/2014/03/mixed-breed-dogs-17.jpg",
         description: "Daschundation",
-        miracleCount: 9,
+        miracleCount: 175,
         abominationCount: 45
         },
         {

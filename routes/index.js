@@ -63,6 +63,20 @@ router.get("/breeds", function(req, res){
     });
 });
 
+
+// router.get("/breeds/bbb", function(req, res){
+//     var requestedBreed = req.params.breed;
+//     console.log(requestedBreed)
+//     var q = Mix.find({}).sort({"miracleCount": -1}).limit(5);
+//     q.exec(function(err, miracles) {
+//         console.log(miracles)
+//      // `posts` will be of length 20
+// });
+    
+// });
+
+
+
 router.get("/breeds/:breed", function(req, res){
     var requestedBreed = req.params.breed;
     console.log(requestedBreed)

@@ -88,8 +88,20 @@ router.delete("/:id", middleware.checkMixOwn, function(req, res){
 // LIKE ROUTE
 
 
-
-
+router.post('/:id/dislike', function (req, res) {
+    console.log("POST ROUTE")
+    var id = req.params.id;
+    //console.log(id)
+    //Mix.findOneAndUpdate(post, {miracleCount: miracleCount+1})
+    Mix.findOneAndUpdate({_id: id}, { $inc: { abominationCount: 1}}, function(err, doc){
+    if(err){
+        console.log("Something wrong when updating data!");
+    }
+    res.redirect("/Mixes/"+id)
+    //console.log()
+    //console.log(doc);
+    });
+});
 
 
 router.post('/:id/like', function (req, res) {
@@ -97,14 +109,15 @@ router.post('/:id/like', function (req, res) {
     var id = req.params.id;
     //console.log(id)
     //Mix.findOneAndUpdate(post, {miracleCount: miracleCount+1})
-    Mix.findByIdAndUpdate(id, {"miracleCount": Mix.miracleCount+9999},function(err, doc){
+    Mix.findOneAndUpdate({_id: id}, { $inc: { miracleCount: 1}}, function(err, doc){
     if(err){
         console.log("Something wrong when updating data!");
     }
+    res.redirect("/Mixes/"+id)
     //console.log()
     //console.log(doc);
-});
-    res.redirect("/")
+    });
+
 });
 
 // DISLIKE ROUTE
