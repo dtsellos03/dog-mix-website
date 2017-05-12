@@ -10,25 +10,49 @@
 </header>
 
 
-<div class="row text-center" style="display:flex; flex-wrap; wrap;">
+<div class="ui four column grid">
     
     <% Mixes.forEach(function(campsite){ %>
-        <div class="col-md-3 col-sm-6">
-            <div class="thumbnail">
+    <div class="column">
+        <div class="ui fluid link card">
+            <div class="image">
                 <img src="<%=campsite.image%>">
-                <div class="caption">
-                     <%= campsite.name %> </h4>
-                </div>
-                <p>
-                    <a class="btn btn-primary" href="/Mixes/<%=campsite._id%>">More info</a>
-                </p>
             </div>
+            <div class="content">
+                <a class="header" href="/Mixes/<%=campsite._id%>"><%= campsite.name   %> </a>
+                
+                <span class="right floated">
+                    <div class="ui label">
+              <i class="diamond icon"></i>
+                  <%=campsite.miracleCount%>  |  
+             <i class="bomb icon"></i>
+                 <%=campsite.abominationCount%>
+
+</div>
+            </span>
+            
+                          <div  class="meta" id="specialbreed">
+                       <%= campsite.breed1 %>    |    <%=campsite.breed2 %>
+                </div>
+            
+            
+            </div>
+            
+        
+
+
+                     
         </div>
+    </div>
+            
+
+
+    
     <% }); %>
+            </div>
 
 </div>
 
 
-</div>
 
 <% include ../partials/footer %>

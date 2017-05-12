@@ -1,10 +1,17 @@
 <% include ../partials/header %>
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
-            <p class="lead">My Dog's Mixtape</p>
+        <div class="col-md-1">
+            <p class="lead">My Dog's Mixtape  
+            
+            <div class="ui label">
+  Dogs
+  <div class="detail">214</div>
+</div>
+            
+            </p>
         </div>
-        <div class="col-md-9">
+        <div class="ui card">
             <div class="thumbnail">
                 <img class = "img-responsive" src="<%=Mix.image%>">
                 <div class = "caption-full">
@@ -47,9 +54,13 @@
                         </div>
                     </div>
                     
-            <form action="/Mixes/<%=Mix._id%>/like" method="POST">
-            <button class="btn btn-primary">Miracle</button>
+       <div class="ui label">  Dogs
+   <form action="/Mixes/<%=Mix._id%>/like" method="POST">
+            <button>Miracles</button>
         </form>
+          <div class="detail"><%=Mix.miracleCount%></div>
+        
+        </div>  
             <form action="/Mixes/<%=Mix._id%>/dislike" method="POST">
             <button class="btn btn-primary">Abomination</button>
         </form>

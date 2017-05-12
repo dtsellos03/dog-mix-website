@@ -13,3 +13,11 @@
 #form_delete {
     display: inline;
 }
+
+#specialbreed {
+
+}
+a {
+  color: #303030;
+  text-decoration: none; /* no underline */
+}
