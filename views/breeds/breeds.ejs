@@ -11,21 +11,37 @@
 </header>
 
 
-
-<div class="row text-center" style="display:flex; flex-wrap; wrap;">
+<div class="ui four column grid">
     
-    <% uncleanlist.forEach(function(breed){ %>
-        <div class="col-md-3 col-sm-6">
-            <div class="thumbnail">
-                <img src="<%=breed.image%>">
-                <p>
-                    <a class="btn btn-primary" href="/breeds/<%=breed.name%>"><%=breed.name%></a>
-                </p>
+    <% uncleanlist.forEach(function(campsite){ %>
+    <div class="column">
+        <div class="ui fluid link card">
+            <div class="image">
+                <img src="<%=campsite.image%>">
             </div>
-        </div>
-    <% }); %>
+            <div class="content">
+                <a class="header" href="/breeds/<%=campsite.name%>"><%=campsite.name%> </a>
 
 </div>
+            </span>
+            
+            
+            </div>
+            
+            </div>
+    
+    <% }); %>
+    
+        
+
+
+                     
+        </div>
+    </div>
+            
+
+
+
 
 
 </div>

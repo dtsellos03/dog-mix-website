@@ -21,3 +21,10 @@ a {
   color: #303030;
   text-decoration: none; /* no underline */
 }
+
+input, button, submit
+{
+  border:none;
+  color:white;
+  padding: white;
+}

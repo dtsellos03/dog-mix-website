@@ -15,9 +15,10 @@
     <% Mixes.forEach(function(campsite){ %>
     <div class="column">
         <div class="ui fluid link card">
-            <div class="image">
-                <img src="<%=campsite.image%>">
-            </div>
+
+            <a href="/Mixes/<%=campsite._id%>" class="ui medium image">
+  <img src="<%=campsite.image%>">
+</a>
             <div class="content">
                 <a class="header" href="/Mixes/<%=campsite._id%>"><%= campsite.name   %> </a>
                 
@@ -54,5 +55,9 @@
 </div>
 
 
+
+            <div class="image">
+                <img src="campsite.image">
+            </div>
 
 <% include ../partials/footer %>
