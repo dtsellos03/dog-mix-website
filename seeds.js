@@ -119,55 +119,59 @@ var breedlist = [
     
     ]
 
-function seedDB(){
+function seedDB() {
     // Removes all Mixes
-    Breed.remove({}, function(err){
-        if(err){
-        console.log(err);
-        } else {
-        console.log("Removed breeds");
+    Breed.remove({}, function(err) {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            console.log("Removed breeds");
         }
     });
-    Mix.remove({}, function(err){
-        if(err){
-        console.log(err);
-        } else {
-        console.log("Removed Mixes");
+    Mix.remove({}, function(err) {
+        if (err) {
+            console.log(err);
         }
-        data.forEach(function(seed){
-            Mix.create(seed, function(err, Mix){
-                if(err){
+        else {
+            console.log("Removed Mixes");
+        }
+        data.forEach(function(seed) {
+            Mix.create(seed, function(err, Mix) {
+                if (err) {
                     console.log(err)
-                } else {
+                }
+                else {
                     console.log("Mix added");
                     //
-                    Comment.create(
-                        {
-                            text: "I love these little cuties",
-                            author: "Dog Love 3001"
-                        }, function(err, comment){
-                            if(err){
-                                console.log(err);
-                            } else {
-                                Mix.comments.push(comment);
-                                Mix.save();
-                                console.log("Created new comment");
-                            }
-                        });
+                    Comment.create({
+                        text: "I love these little cuties",
+                        author: "Dog Love 3001"
+                    }, function(err, comment) {
+                        if (err) {
+                            console.log(err);
+                        }
+                        else {
+                            Mix.comments.push(comment);
+                            Mix.save();
+                            console.log("Created new comment");
+                        }
+                    });
                 }
-            });         
-       });
-       breedlist.forEach(function(seed){
-            Breed.create(seed, function(err, Breed){
-                if(err){
+            });
+        });
+        breedlist.forEach(function(seed) {
+            Breed.create(seed, function(err, Breed) {
+                if (err) {
                     console.log(err)
-                } else {
+                }
+                else {
                     console.log("Breed added");
                     //
                 }
-            });         
-       });
-    //add a few Mixes
+            });
+        });
+        //add a few Mixes
     });
 }
 
