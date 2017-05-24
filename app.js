@@ -15,7 +15,7 @@ var commentRoutes    = require("./routes/comments"),
     MixRoutes = require("./routes/mixes"),
     indexRoutes      = require("./routes/index")
     
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect("mongodb://localhost/yelp_camp_v10");
 
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -44,6 +44,10 @@ app.use(function(req, res, next){
 app.use("/", indexRoutes);
 app.use("/Mixes", MixRoutes);
 app.use("/Mixes/:id/comments", commentRoutes);
+
+app.use(function(req, res, next){
+    res.render('landing.ejs')
+})
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
