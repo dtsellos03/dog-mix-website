@@ -1,3 +1,0 @@
-$('div')
-  .transition('fade up')
-;

@@ -1,0 +1,10 @@
+<p>
+  show-mixes works!
+</p>
+
+
+      <a *ngFor="let mix of mixes" [routerLink]="['/mixes', mix.id]">
+        <span class="badge">{{mix.breed1}}</span>
+                <span class="badge">{{mix.Name}}</span>
+      </a>
+   
