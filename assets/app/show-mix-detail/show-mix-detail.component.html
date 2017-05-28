@@ -1,8 +1,86 @@
-STUFF
 
-<div *ngIf="mix">
-    <img src="{{mix.image}}">
-  <h2>{{mix.Name}} details!</h2>
 
-  <button (click)="goBack()">Back</button>
+<div *ngIf="mix" class="ui container">
+   
+   <div class="ui two column grid stackable">
+   <div class="column">
+      <h1 class="ui header center aligned huge">{{mix.name}}</h1>
+      <hr>
+      <div class="ui three column centered grid stackable">
+         <div class=" centered row">
+            <div class="four wide center aligned column">
+               <div class="huge ui label center aligned">
+                  {{mix.breed1}}
+               </div>
+            </div>
+            <div class="two wide center aligned column">
+               <h1 class="header icon">
+                  +
+               </h1>
+            </div>
+            <div class="four wide center aligned column">
+               <div class="huge ui label center aligned">
+                  {{mix.breed2}}
+               </div>
+            </div>
+         </div>
+      </div>
+      <hr>
+      <p>LOEFASFSDKJFAKSDF ASDKFJAKSDJFKASD FJADD JA SDKFJASD KFJ ASDKFJ DD KASDJF DKASKDAJF ASDKJF DA</p>
+      <div class="ui items">
+         <div class="item">
+            <div class="content">
+               <a class="header">Known Aliases</a>
+               <div class="description">
+                  <p>LOEFASFSDKJFAKSDF ASDKFJAKSDJFKASD FJADD JA SDKFJASD KFJ ASDKFJ DD KASDJF DKASKDAJF ASDKJF DA</p>
+                  <p>LOEFASFSDKJFAKSDF ASDKFJAKSDJFKASD FJADD JA SDKFJASD KFJ ASDKFJ DD KASDJF DKASKDAJF ASDKJF DA</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="ui two column centered grid stackable">
+         <div class=" centered row">
+            <div class="eight wide center aligned column">
+               <form onsubmit="this.submit()" action="/mixes/{{mix.id}}/dislike" method="POST">
+                  <div class="ui labeled button" tabindex="0">
+                     <button class="ui button">
+                     <i class="bomb icon"></i> Abomination
+                     </button>
+                     <a class="ui basic label">
+                     {{mix.downvote}}
+                     </a>
+                  </div>
+               </form>
+            </div>
+            <button class ="ui massive button" (click)="upVote()">UPVOTE BUTTON</button>
+            <div class="eight wide center aligned column">
+               <form (ngSubmit)="upVote()" action="/mixes/{{mix.id}}/like" method="POST">
+                  <div class="ui labeled button" tabindex="0">
+                     <button class="ui button">
+                     <i class="diamond icon"></i> Miracle {{mix.id}}
+                     </button>
+                     <a class="ui basic label">
+                     {{mix.upvote}}
+                     </a>
+                  </div>
+               </form>
+      
+         </div>
+      </div>
+   </div>
+ </div>
+   <div class="column">
+      <img class = "ui image large rounded" src="{{mix.image}}">
+   </div>
 </div>
+  <button class="ui massive button" (click)="goBack()">Back</button>
+</div>
+   
+   
+   
+
+
+
+
+
+

@@ -29,5 +29,7 @@ export class ShowMixesComponent implements OnInit {
             }
         );
     }
+    
+
 }
 

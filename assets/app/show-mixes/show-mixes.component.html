@@ -1,10 +1,24 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+
+
 <p>
   show-mixes works!
 </p>
 
-
-      <a *ngFor="let mix of mixes" [routerLink]="['/mixes', mix.id]">
-        <span class="badge">{{mix.breed1}}</span>
-                <span class="badge">{{mix.Name}}</span>
-      </a>
    
+<div class="ui four column grid">
+    
+    <a *ngFor="let mix of mixes" [routerLink]="['/mixes', mix.id]">
+    <div class="column">
+        <div class="ui fluid link card">
+    
+          <img src="{{mix.image}}" class="ui medium image">
+
+          <div class="content">
+              <a class="header" href="/Mixes/"> {{mix.Name}} </a>
+                          <div  class="meta">
+                       {{mix.breed1}}    |    {{mix.breed2}}
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,14 +1,14 @@
-<% include ../partials/header %>
+
 <div class="ui container">
 <div class="ui two column grid stackable">
    <div class="column">
-      <h1 class="ui header center aligned huge"><%=Mix.name%></h1>
+      <h1 class="ui header center aligned huge">{{mix.name}}</h1>
       <hr>
       <div class="ui three column centered grid stackable">
          <div class=" centered row">
             <div class="four wide center aligned column">
                <div class="huge ui label center aligned">
-                  <%=Mix.breed1%>
+                  {{mix.breed1}}
                </div>
             </div>
             <div class="two wide center aligned column">
@@ -18,7 +18,7 @@
             </div>
             <div class="four wide center aligned column">
                <div class="huge ui label center aligned">
-                  <%=Mix.breed2%>
+                  {{mix.breed2}}
                </div>
             </div>
          </div>
@@ -39,85 +39,35 @@
       <div class="ui two column centered grid stackable">
          <div class=" centered row">
             <div class="eight wide center aligned column">
-               <form action="/Mixes/<%=Mix._id%>/dislike" method="POST">
+               <form action="/Mixes/{{mix.id}}/dislike" method="POST">
                   <div class="ui labeled button" tabindex="0">
                      <button class="ui button">
                      <i class="bomb icon"></i> Abomination
                      </button>
                      <a class="ui basic label">
-                     <%=Mix.abominationCount%>
+                     {{mix.downvote}}
                      </a>
                   </div>
                </form>
             </div>
             <div class="eight wide center aligned column">
-               <form action="/Mixes/<%=Mix._id%>/like" method="POST">
+               <form action="/Mixes/{{mix.id}}/like" method="POST">
                   <div class="ui labeled button" tabindex="0">
                      <button class="ui button">
                      <i class="diamond icon"></i> Miracle
                      </button>
                      <a class="ui basic label">
-                     <%=Mix.miracleCount%>
+                     {{mix.upvote}}
                      </a>
                   </div>
                </form>
-            </div>
-              <h5>Submitted by <%=Mix.author.username%>Joo</h5>
-              <% if(currentUser && Mix.author.id && Mix.author.id.equals(currentUser._id)){ %>
-              <a class = "btn btn-warning" href="/Mixes/<%=Mix._id %>/edit">Edit</a>
-              <form id="form_delete" action="/Mixes/<%= Mix._id %>?_method=DELETE" method="POST">
-                 <button class="btn btn-danger">Delete</button>
-              </form>
-              <% } %>
+      
          </div>
-      </div>
-      <div class="ui comments">
-         <h3 class="ui dividing header">Comments</h3>
-         <% Mix.comments.forEach(function(comment){ %> 
-         <div class="comment">
-            <a class="avatar">
-            <img src="https://cdn.dribbble.com/users/722835/screenshots/2713044/corgi400.gif">
-            </a>
-            <div class="content">
-               <a class="author"><%= comment.author.username %></a>
-               <div class="metadata">
-                  <span class="date">Today at 5:42PM</span>
-               </div>
-               <div class="text">
-                  <%= comment.text %> 
-               </div>
-               <% if(currentUser && comment.author.id && comment.author.id.equals(currentUser._id)){ %>
-               <a class="btn btn-xs btn-warning" 
-                  href="/Mixes/<%=Mix._id%>/comments/<%=comment._id%>/edit">Edit</a>
-               <form id="form_delete" action="/Mixes/<%=Mix._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST">
-                  <input type="submit" class="btn btn-xs btn-danger" value="Delete">
-               </form>
-               <% } %>
-               <div class="actions">
-                  <a class="reply">Reply</a>
-               </div>
-            </div>
-         </div>
-         <% }) %>
-         <form class="ui reply form">
-            <div class="field">
-               <textarea></textarea>
-               <grammarly-btn>
-                  <div data-reactroot="" class="_e725ae-textarea_btn _e725ae-anonymous _e725ae-not_focused" style="z-index: 2; transform: translate(619px, 137px);">
-                     <div class="_e725ae-transform_wrap">
-                        <div title="Protected by Grammarly" class="_e725ae-status">&nbsp;</div>
-                     </div>
-                  </div>
-               </grammarly-btn>
-            </div>
-            <div class="ui blue labeled submit icon button">
-               <i class="icon edit"></i> <a href="/Mixes/<%=Mix._id%>/comments/new">Add Comment</a>
-            </div>
-         </form>
       </div>
    </div>
    <div class="column">
-      <img class = "ui image large rounded" src="<%=Mix.image%>">
+      <img class = "ui image large rounded" src="{{mix.image}}">
    </div>
 </div>
-<% include ../partials/footer %>
+</div>
+</div>

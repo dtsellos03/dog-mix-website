@@ -40,42 +40,46 @@ router.get("/:id", function(req, res){
 })
 
 
-// // LIKE ROUTE
+// LIKE ROUTE
 
 
-// router.post('/:id/dislike', function (req, res) {
-//     console.log("POST ROUTE")
-//     var id = req.params.id;
-//     //console.log(id)
-//     //Mix.findOneAndUpdate(post, {miracleCount: miracleCount+1})
-//     Mix.findOneAndUpdate({_id: id}, { $inc: { abominationCount: 1}}, function(err, doc){
-//     if(err){
-//         console.log("Something wrong when updating data!");
-//     }
-//     res.redirect("/Mixes/"+id)
-//     //console.log()
-//     //console.log(doc);
-//     });
-// });
+router.post('/:id/dislike', function (req, res) {
+    console.log("POST ROUTE")
+    var id = req.params.id;
+    //console.log(id)
+    //Mix.findOneAndUpdate(post, {miracleCount: miracleCount+1})
+    Mix.findOneAndUpdate({_id: id}, { $inc: { abominationCount: 1}}, function(err, doc){
+    if(err){
+        console.log("Something wrong when updating data!");
+    }
+    console.log("SUCEESSS")
+    console.log("SUCESS")
+    res.status(200).json({
+                message: 'Sucess'
+            })
+    });
+});
 
 
-// router.post('/:id/like', function (req, res) {
-//     console.log("POST ROUTE")
-//     var id = req.params.id;
-//     //console.log(id)
-//     //Mix.findOneAndUpdate(post, {miracleCount: miracleCount+1})
-//     Mix.findOneAndUpdate({_id: id}, { $inc: { miracleCount: 1}}, function(err, doc){
-//     if(err){
-//         console.log("Something wrong when updating data!");
-//     }
-//     res.redirect("/Mixes/"+id)
-//     //console.log()
-//     //console.log(doc);
-//     });
+router.post('/:id/like', function (req, res) {
+    console.log("POST ROUTE")
+    var id = req.params.id;
+    //console.log(id)
+    //Mix.findOneAndUpdate(post, {miracleCount: miracleCount+1})
+    Mix.findOneAndUpdate({_id: id}, { $inc: { upvote: 1}}, function(err, doc){
+    if(err){
+        console.log("Something wrong when updating data!");
+    }
+    console.log(doc)
+    res.status(200).json({
+                message: 'Sucess',
+                doc: doc
+            })
+    });
 
-// });
+});
 
-// // DISLIKE ROUTE
+// DISLIKE ROUTE
 
 
 
