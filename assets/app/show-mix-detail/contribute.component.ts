@@ -10,6 +10,7 @@ export class ContributeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

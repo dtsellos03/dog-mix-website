@@ -9,7 +9,7 @@ import { HeaderComponentComponent } from './header-component/header-component.co
 import { ShowMixesComponent } from './show-mixes/show-mixes.component';
 import { ShowMixDetailComponent } from './show-mix-detail/show-mix-detail.component';
 import { AboutComponent} from './about/about.component';
-import { ContributeComponent } from './show-mix-detail/contribute/contribute.component';
+import { ContributeComponent } from './show-mix-detail/contribute.component';
 import { AppRoutingModule } from './app-routing.module';
 
 

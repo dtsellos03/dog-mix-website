@@ -12,7 +12,9 @@ export class ShowMixesComponent implements OnInit {
 
 
      mixes: Mix[]
-
+    activeBreed = "";
+    
+    breeds=["Doggie", "German Shepard", "Samoyed", "Pug"]
     
     constructor(private mixesService: MixesService) {}
 
@@ -28,6 +30,14 @@ export class ShowMixesComponent implements OnInit {
                 console.log(this.mixes)
             }
         );
+    }
+    
+    
+    
+    onClickMe(breed: string) {
+        console.log(breed)
+        this.activeBreed=breed
+        
     }
     
 

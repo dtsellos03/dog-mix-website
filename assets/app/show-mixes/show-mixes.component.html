@@ -1,24 +1,68 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
 
 
-<p>
-  show-mixes works!
+<div class="ui grid">
+
+
+
+  <div class="two wide column" >
+    <div class="ui secondary vertical menu">
+      
+     <a class="item" (click)="onClickMe('')">
+    Default
+  </a>   
+      
+  <a class="item" (click)="onClickMe('Husky')">
+    Husky
+  </a>
+   <a class="item" (click)="onClickMe('Corgi')">
+    Corgi
+  </a>
+   <a class="item" (click)="onClickMe('Pug')">
+    Pug
+  </a>
+     <a class="item" (click)="onClickMe('Pitbull')">
+    Pitbull
+  </a>
+
+<p *ngFor="let breed of breeds">
+  <a class="item" (click)="onClickMe(breed)">{{breed}}</a>
 </p>
 
-   
-<div class="ui four column grid">
-    
-    <a *ngFor="let mix of mixes" [routerLink]="['/mixes', mix.id]">
-    <div class="column">
-        <div class="ui fluid link card">
-    
-          <img src="{{mix.image}}" class="ui medium image">
 
-          <div class="content">
+</div>
+  </div>
+  <div class="fourteen wide column" >
+    <div class="ui four column grid">
+   
+      
+  <ng-template ngFor let-mix [ngForOf]="mixes" >
+       <ng-template [ngIf]="mix.breed1 == activeBreed || mix.breed2 == activeBreed">
+          <a [routerLink]="['/mixes', mix.id]">
+        <div class="column">
+          <div class="ui fluid link card">
+
+            <img src="{{mix.image}}" class="ui medium image">
+
+            <div class="content">
               <a class="header" href="/Mixes/"> {{mix.Name}} </a>
-                          <div  class="meta">
-                       {{mix.breed1}}    |    {{mix.breed2}}
-                </div>
+              
+              <div class="meta">
+                {{mix.breed1}} | {{mix.breed2}}
+              </div>
+              
             </div>
+            
+            
+          </div>
+          
         </div>
-    </div>
+           </a>
+    
+        </ng-template>
+  </ng-template>
+  </div>
+</div>
+   
+</div>
+
