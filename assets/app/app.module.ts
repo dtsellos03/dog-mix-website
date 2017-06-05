@@ -11,6 +11,7 @@ import { ShowMixDetailComponent } from './show-mix-detail/show-mix-detail.compon
 import { AboutComponent} from './about/about.component';
 import { ContributeComponent } from './show-mix-detail/contribute.component';
 import { AppRoutingModule } from './app-routing.module';
+import {FilterPipe} from './show-mixes/pipes';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     ShowMixesComponent,
     ShowMixDetailComponent,
     ContributeComponent,
-    AboutComponent
+    AboutComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

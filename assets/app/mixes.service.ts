@@ -17,7 +17,8 @@ export class MixesService {
                 let transformedMixes: Mix[] = [];
                 for (let mix of mixes) {
                     console.log mix.Name
-                    transformedMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.upvote, mix.downvote));
+                    console.log mix.checkAll
+                    transformedMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote));
                 }
                 this.mixes = transformedMixes;
                 
@@ -36,7 +37,7 @@ export class MixesService {
                 const mix = response.json().obj;
                 console.log(mix)
          
-                let foundmix = new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.upvote, mix.downvote);
+                let foundmix = new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote);
             
                 this.mix = foundmix;
          

@@ -5,6 +5,7 @@ var MixSchema = new mongoose.Schema({
     image: String,
     breed1: String,
     breed2: String,
+    checkAll: String,
     upvote: Number,
     downvote: Number,
 })

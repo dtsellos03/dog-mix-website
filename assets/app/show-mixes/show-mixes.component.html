@@ -5,27 +5,14 @@
 
 
 
-  <div class="two wide column" >
+  <div class="two wide column" id="scroll" >
     <div class="ui secondary vertical menu">
-      
-     <a class="item" (click)="onClickMe('')">
-    Default
-  </a>   
-      
-  <a class="item" (click)="onClickMe('Husky')">
-    Husky
-  </a>
-   <a class="item" (click)="onClickMe('Corgi')">
-    Corgi
-  </a>
-   <a class="item" (click)="onClickMe('Pug')">
-    Pug
-  </a>
-     <a class="item" (click)="onClickMe('Pitbull')">
-    Pitbull
-  </a>
+     <div class="ui search">
+   <input class="prompt" type="text" [(ngModel)]="queryString" id="search" placeholder="Search breed" autocomplete="off">
 
-<p *ngFor="let breed of breeds">
+</div>
+<a class="item" (click)="onClickMe('all')">All mixes</a>
+<p *ngFor="let breed of breeds| FilterPipe: queryString">
   <a class="item" (click)="onClickMe(breed)">{{breed}}</a>
 </p>
 
@@ -37,11 +24,11 @@
    
       
   <ng-template ngFor let-mix [ngForOf]="mixes" >
-       <ng-template [ngIf]="mix.breed1 == activeBreed || mix.breed2 == activeBreed">
+       <ng-template [ngIf]="mix.breed1 == activeBreed || mix.breed2 == activeBreed || mix.checkAll == activeBreed">
           <a [routerLink]="['/mixes', mix.id]">
         <div class="column">
           <div class="ui fluid link card">
-
+    
             <img src="{{mix.image}}" class="ui medium image">
 
             <div class="content">

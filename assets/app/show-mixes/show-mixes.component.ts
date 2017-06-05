@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MixesService } from '../mixes.service';
 import { Mix} from '../mix';
+import {FilterPipe} from './pipes'
 
 @Component({
   selector: 'app-show-mixes',
@@ -12,9 +13,9 @@ export class ShowMixesComponent implements OnInit {
 
 
      mixes: Mix[]
-    activeBreed = "";
+    activeBreed = "all";
     
-    breeds=["Doggie", "German Shepard", "Samoyed", "Pug"]
+    breeds=["Doggie", "German Shepard", "Samoyed", "Pug", "Corgi"]
     
     constructor(private mixesService: MixesService) {}
 
@@ -27,7 +28,7 @@ export class ShowMixesComponent implements OnInit {
         .subscribe(
             (mixes: Mix[]) => {
                 this.mixes = mixes;
-                console.log(this.mixes)
+               // console.log(this.mixes)
             }
         );
     }
@@ -35,8 +36,8 @@ export class ShowMixesComponent implements OnInit {
     
     
     onClickMe(breed: string) {
-        console.log(breed)
         this.activeBreed=breed
+        console.log(this.activeBreed)
         
     }
     
