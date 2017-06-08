@@ -15,7 +15,7 @@ export class ShowMixesComponent implements OnInit {
      mixes: Mix[]
     activeBreed = "all";
     
-    breeds=["Doggie", "German Shepard", "Samoyed", "Pug", "Corgi"]
+    breeds=["Husky", "German Shepard", "Pitbull", "Pug", "Corgi", "Dalmation"]
     
     constructor(private mixesService: MixesService) {}
 

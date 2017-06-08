@@ -26,14 +26,14 @@
          </div>
       </div>
       <hr>
-      <p>LOEFASFSDKJFAKSDF ASDKFJAKSDJFKASD FJADD JA SDKFJASD KFJ ASDKFJ DD KASDJF DKASKDAJF ASDKJF DA</p>
+     
       <div class="ui items">
          <div class="item">
             <div class="content">
                <a class="header">Known Aliases</a>
                <div class="description">
-                  <p>LOEFASFSDKJFAKSDF ASDKFJAKSDJFKASD FJADD JA SDKFJASD KFJ ASDKFJ DD KASDJF DKASKDAJF ASDKJF DA</p>
-                  <p>LOEFASFSDKJFAKSDF ASDKFJAKSDJFKASD FJADD JA SDKFJASD KFJ ASDKFJ DD KASDJF DKASKDAJF ASDKJF DA</p>
+                 
+                  
                </div>
             </div>
          </div>
@@ -41,29 +41,31 @@
       <div class="ui two column centered grid stackable">
          <div class=" centered row">
             <div class="eight wide center aligned column">
-               <form onsubmit="this.submit()" action="/mixes/{{mix.id}}/dislike" method="POST">
-                  <div class="ui labeled button" tabindex="0">
-                     <button class="ui button">
+               
+                  <div class="ui labeled button" (click)="upVote()" tabindex="0" >
+                     <button class="ui button" [ngClass]="{positive: upsel == 1}">
+                     <i class="bomb icon"></i> Miracle
+                     </button>
+                     <a class="ui basic label">
+                     {{mix.upvote}}
+                     </a>
+                  </div>
+       
+            </div>
+            <div class="eight wide center aligned column">
+               
+                  <div class="ui labeled button" (click)="downVote()"  tabindex="0" >
+                     <button class="ui button" [ngClass]="{positive: downsel == 1}">
                      <i class="bomb icon"></i> Abomination
                      </button>
                      <a class="ui basic label">
                      {{mix.downvote}}
                      </a>
                   </div>
-               </form>
+       
             </div>
-            <button class ="ui massive button" (click)="upVote()">UPVOTE BUTTON</button>
+            
             <div class="eight wide center aligned column">
-               <form (ngSubmit)="upVote()" action="/mixes/{{mix.id}}/like" method="POST">
-                  <div class="ui labeled button" tabindex="0">
-                     <button class="ui button">
-                     <i class="diamond icon"></i> Miracle {{mix.id}}
-                     </button>
-                     <a class="ui basic label">
-                     {{mix.upvote}}
-                     </a>
-                  </div>
-               </form>
       
          </div>
       </div>

@@ -48,7 +48,7 @@ router.post('/:id/dislike', function (req, res) {
     var id = req.params.id;
     //console.log(id)
     //Mix.findOneAndUpdate(post, {miracleCount: miracleCount+1})
-    Mix.findOneAndUpdate({_id: id}, { $inc: { abominationCount: 1}}, function(err, doc){
+    Mix.findOneAndUpdate({_id: id}, { $inc: { downvote: 1}}, function(err, doc){
     if(err){
         console.log("Something wrong when updating data!");
     }
@@ -78,6 +78,8 @@ router.post('/:id/like', function (req, res) {
     });
 
 });
+
+
 
 // DISLIKE ROUTE
 

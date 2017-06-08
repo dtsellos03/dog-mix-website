@@ -5,22 +5,27 @@
 
 
 
-  <div class="two wide column" id="scroll" >
-    <div class="ui secondary vertical menu">
+  <div class="two wide column">
+    <div class="ui secondary vertical menu" style="position: sticky;
+    top: 20px;">
      <div class="ui search">
    <input class="prompt" type="text" [(ngModel)]="queryString" id="search" placeholder="Search breed" autocomplete="off">
 
 </div>
-<a class="item" (click)="onClickMe('all')">All mixes</a>
+<br>
+<button class="ui primary button" (click)="onClickMe('all')">All mixes</button>
+<hr>
 <p *ngFor="let breed of breeds| FilterPipe: queryString">
-  <a class="item" (click)="onClickMe(breed)">{{breed}}</a>
+  <a class="item" (click)="onClickMe(breed)" ng-class="activeBreed == breed ? 'active' : 'item'">{{breed}}</a>
 </p>
 
 
 </div>
   </div>
   <div class="fourteen wide column" >
+    <div id="main-padder" style="padding: 50px;">
     <div class="ui four column grid">
+      
    
       
   <ng-template ngFor let-mix [ngForOf]="mixes" >
@@ -52,4 +57,4 @@
 </div>
    
 </div>
-
+</div>
