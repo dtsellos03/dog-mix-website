@@ -13,12 +13,15 @@
 
 </div>
 <br>
-<button class="ui primary button" (click)="onClickMe('all')">All mixes</button>
+<button class="ui primary button center align" (click)="onClickMe('all')">All mixes</button>
+<br>
 <hr>
+<div  style="overflow: scroll; position: absolute;
+     height: 600px;">
 <p *ngFor="let breed of breeds| FilterPipe: queryString">
   <a class="item" (click)="onClickMe(breed)" ng-class="activeBreed == breed ? 'active' : 'item'">{{breed}}</a>
 </p>
-
+</div>
 
 </div>
   </div>
@@ -28,7 +31,7 @@
       
    
       
-  <ng-template ngFor let-mix [ngForOf]="mixes" >
+  <ng-template ngFor let-mix [ngForOf]="mixes"  >
        <ng-template [ngIf]="mix.breed1 == activeBreed || mix.breed2 == activeBreed || mix.checkAll == activeBreed">
           <a [routerLink]="['/mixes', mix.id]">
         <div class="column">

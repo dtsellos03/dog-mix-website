@@ -10,6 +10,7 @@ import { ShowMixesComponent } from './show-mixes/show-mixes.component';
 import { ShowMixDetailComponent } from './show-mix-detail/show-mix-detail.component';
 import { AboutComponent} from './about/about.component';
 import { ContributeComponent } from './show-mix-detail/contribute.component';
+import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component.ts'
 import { AppRoutingModule } from './app-routing.module';
 import {FilterPipe} from './show-mixes/pipes';
 
@@ -22,6 +23,7 @@ import {FilterPipe} from './show-mixes/pipes';
     ShowMixDetailComponent,
     ContributeComponent,
     AboutComponent,
+    HallOfFameComponent
     FilterPipe
   ],
   imports: [

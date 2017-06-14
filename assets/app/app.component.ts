@@ -7,6 +7,7 @@ import { Mix} from './mix';
 @Component({
     selector: 'my-app',
     templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
     providers: [MixesService]
 })
 export class AppComponent implements OnInit {

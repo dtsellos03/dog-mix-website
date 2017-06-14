@@ -2,13 +2,32 @@
 
 <div *ngIf="mix" class="ui container">
    
+
+  
    <div class="ui two column grid stackable">
    <div class="column">
-      <h1 class="ui header center aligned huge">{{mix.name}}</h1>
+      
+      
+         <div class="ui buttons">
+  <button class="ui labeled icon button">
+    <i class="left chevron icon"></i>
+    Back
+  </button>
+  </div>
+      
+      <h1 class="ui header huge">{{mix.Name}}</h1>
       <hr>
+      <a class="ui huge image label">
+  <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/pug-puppies/pug-puppy-10.jpg">
+  Joe
+</a><a class="ui circular image label">
+  <img src="/images/avatar/small/joe.jpg">
+  Joe
+</a>
       <div class="ui three column centered grid stackable">
          <div class=" centered row">
             <div class="four wide center aligned column">
+
                <div class="huge ui label center aligned">
                   {{mix.breed1}}
                </div>
@@ -30,19 +49,20 @@
       <div class="ui items">
          <div class="item">
             <div class="content">
-               <a class="header">Known Aliases</a>
+               <h2 class="header">Known Aliases</h2>
                <div class="description">
-                 
+                 Pugua, Dogue, Meowie
                   
                </div>
             </div>
          </div>
       </div>
       <div class="ui two column centered grid stackable">
+                     <h2 class="header">Rate this mix!</h2>    
          <div class=" centered row">
             <div class="eight wide center aligned column">
-               
-                  <div class="ui labeled button" (click)="upVote()" tabindex="0" >
+
+                  <div class="ui huge labeled button" (click)="upVote()" tabindex="0" >
                      <button class="ui button" [ngClass]="{positive: upsel == 1}">
                      <i class="bomb icon"></i> Miracle
                      </button>
@@ -50,11 +70,14 @@
                      {{mix.upvote}}
                      </a>
                   </div>
+                  <br>
+                   <br>
+                 <a class="ui green label">(Miracle DOGE)</a>
        
             </div>
             <div class="eight wide center aligned column">
                
-                  <div class="ui labeled button" (click)="downVote()"  tabindex="0" >
+                  <div class="ui huge labeled button" (click)="downVote()"  tabindex="0" >
                      <button class="ui button" [ngClass]="{positive: downsel == 1}">
                      <i class="bomb icon"></i> Abomination
                      </button>
@@ -62,6 +85,9 @@
                      {{mix.downvote}}
                      </a>
                   </div>
+                  <br>
+                  <br>
+                  <a class="ui orange label">(Abomination DOGE)</a>
        
             </div>
             

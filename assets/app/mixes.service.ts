@@ -29,6 +29,34 @@ export class MixesService {
             .catch((error: Response) => Observable.throw(error.json()));
     }
     
+    getTopMixes() {
+        return this.http.get('/topmixes')
+            .map((response: Response) => {
+                //console.log(response)
+                const topmixes = response.json().topMixes;
+                const botmixes = response.json().botMixes
+                let topMixes: Mix[] = [];
+                let botMixes: Mix[] = [];
+                for (let mix of topmixes) {
+                    topMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote));
+                }
+                for (let mix of botmixes) {
+                    botMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote));
+                }
+                this.topMixes = topMixes;
+                this.topMixes = botMixes;
+                
+                let returnobj = {
+                    topmixes: topMixes,
+                    botmixes: botMixes
+                }
+                
+                return returnobj
+               
+            })
+            /** .catch((error: Response) => Observable.throw(error.json())); */
+    }
+    
     getMix(id: number) {
         //console.log(id)
         return this.http.get('/mixes/'+id)

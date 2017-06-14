@@ -36,14 +36,29 @@ goBack(): void {
 }
 
 upVote(): void {
+        if (this.upsel == 1 && this.downsel == 0) {
+             this.mix.upvote --;
+             this.upsel = 0;
+             this.upObservableDown()
+                .subscribe(
+                    data => console.log(data),
+                    error => console.error(error)
+                );
+             return null
+        }
         if (this.upsel == 0 || this.downsel == 1) {
             if (this.downsel == 1) {
                 this.mix.downvote --;
+                this.downObservableDown()
+                .subscribe(
+                    data => console.log(data),
+                    error => console.error(error)
+                );
             }
              this.upsel = 1;
              this.downsel = 0;
              this.mix.upvote ++;
-             this.upObservable()
+             this.upObservableUp()
                 .subscribe(
                     data => console.log(data),
                     error => console.error(error)
@@ -52,34 +67,33 @@ upVote(): void {
        
                 
 }
-        
-upObservable(): void {
-        const body="blank";
-        return this.http.post('/mixes/'+this.mix.id+'/like', body)
-            .map((response: Response) => {
-                const result = response.json();
-                return result;
-            })
-            .catch((error: Response) => Observable.throw(error.json()));
-}
 
 downVote(): void {
     if (this.downsel == 1 && this.upsel == 0) {
              this.mix.downvote --;
              this.downsel = 0;
-             console.log("REACHED NULL ROUTE")
+             this.downObservableDown()
+                .subscribe(
+                    data => console.log(data),
+                    error => console.error(error)
+                );
              return null
         }
       if (this.downsel == 0 || this.upsel == 1) {
         if (this.upsel == 1) {
             this.mix.upvote --;
+            this.upObservableDown()
+                .subscribe(
+                    data => console.log(data),
+                    error => console.error(error)
+                );
         }
         
         console.log("REACHED THIS ROUTE")
         this.downsel = 1;
         this.upsel = 0;
         this.mix.downvote ++;
-        this.downObservable()
+        this.downObservableUp()
                 .subscribe(
                     data => console.log(data),
                     error => console.error(error)
@@ -87,9 +101,43 @@ downVote(): void {
       }     
 }
         
-downObservable(): void {
+upObservableUp(): void {
         const body="blank";
-        return this.http.post('/mixes/'+this.mix.id+'/dislike', body)
+        return this.http.post('/mixes/'+this.mix.id+'/like/1', body)
+            .map((response: Response) => {
+                const result = response.json();
+                return result;
+            })
+            .catch((error: Response) => Observable.throw(error.json()));
+}
+
+
+        
+downObservableUp(): void {
+        const body="blank";
+        return this.http.post('/mixes/'+this.mix.id+'/dislike/1', body)
+            .map((response: Response) => {
+                const result = response.json();
+                return result;
+            })
+            .catch((error: Response) => Observable.throw(error.json()));
+}
+
+upObservableDown(): void {
+        const body="blank";
+        return this.http.post('/mixes/'+this.mix.id+'/like/-1', body)
+            .map((response: Response) => {
+                const result = response.json();
+                return result;
+            })
+            .catch((error: Response) => Observable.throw(error.json()));
+}
+
+
+        
+downObservableDown(): void {
+        const body="blank";
+        return this.http.post('/mixes/'+this.mix.id+'/dislike/-1', body)
             .map((response: Response) => {
                 const result = response.json();
                 return result;
