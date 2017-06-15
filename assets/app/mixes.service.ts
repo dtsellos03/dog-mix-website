@@ -7,7 +7,29 @@ import { MIXES } from './mockmixes';
 @Injectable()
 export class MixesService {
     
+      serviceMixes = [];
+      isLoaded = false;
+    
+    
     constructor(private http: Http) {}
+    
+ 
+    
+    doStuff() {
+        this.isLoaded = true;
+        this.getMixes()
+        .subscribe(
+            (mixes: Mix[]) => {
+                this.serviceMixes = mixes;
+                //this.isLoaded = true;
+                console.log("/this is loaded is" + this.isLoaded)
+                
+
+            }
+        );
+    }
+    
+ 
     
     getMixes() {
         return this.http.get('/mixes')
@@ -16,8 +38,8 @@ export class MixesService {
                 const mixes = response.json().obj;
                 let transformedMixes: Mix[] = [];
                 for (let mix of mixes) {
-                    console.log mix.Name
-                    console.log mix.checkAll
+                    //console.log mix.Name
+                    //console.log mix.checkAll
                     transformedMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote));
                 }
                 this.mixes = transformedMixes;
@@ -30,6 +52,7 @@ export class MixesService {
     }
     
     getTopMixes() {
+        this.doStuff()
         return this.http.get('/topmixes')
             .map((response: Response) => {
                 //console.log(response)

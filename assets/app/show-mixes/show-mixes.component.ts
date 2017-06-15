@@ -7,7 +7,9 @@ import {FilterPipe} from './pipes'
   selector: 'app-show-mixes',
   templateUrl: './show-mixes.component.html',
   styleUrls: ['./show-mixes.component.css'],
-  providers: [MixesService]
+  providers: []
+    // make fade in animation available to this component
+
 })
 export class ShowMixesComponent implements OnInit {
 
@@ -26,13 +28,21 @@ export class ShowMixesComponent implements OnInit {
     //   }
     
     ngOnInit() {
-        this.mixesService.getMixes()
-        .subscribe(
-            (mixes: Mix[]) => {
+        console.log("From mixessercie" + this.mixesService.isLoaded)
+        if (this.mixesService.isLoaded == true) {
+            this.mixes = this.mixesService.serviceMixes;
+        }
+        else {
+            this.mixesService.getMixes()
+            .subscribe(
+                (mixes: Mix[]) => {
                 this.mixes = mixes;
-               // console.log(this.mixes)
+              // console.log(this.mixes)
             }
-        );
+            );
+            this.mixesService.doStuff();
+        }
+
     }
     
     

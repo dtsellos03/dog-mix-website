@@ -31,10 +31,20 @@ breeds = {
 
 
 ngOnInit(): void {
-  this.route.params
-    .switchMap((params: Params) => this.mixesService.getMix(params['id']))
-    .subscribe(mix => this.mix = mix);
-}
+       
+        this.route.data
+      .subscribe((data: { mix: Mix }) => {
+         console.log(data)
+        this.mix = data.mix;
+      });
+  }
+    
+    
+    
+//   this.route.params
+//     .switchMap((params: Params) => this.mixesService.getMix(params['id']))
+//     .subscribe(mix => this.mix = mix);
+// }
 
 goBack(): void {
   this.location.back();

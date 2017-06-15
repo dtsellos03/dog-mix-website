@@ -10,9 +10,11 @@ import { ShowMixesComponent } from './show-mixes/show-mixes.component';
 import { ShowMixDetailComponent } from './show-mix-detail/show-mix-detail.component';
 import { AboutComponent} from './about/about.component';
 import { ContributeComponent } from './show-mix-detail/contribute.component';
-import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component.ts'
+import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component'
 import { AppRoutingModule } from './app-routing.module';
+import { ShowMixResolve} from './show-mix-detail/show-mix-resolve.service';
 import {FilterPipe} from './show-mixes/pipes';
+import {MixesService} from './mixes.service';
 
 
 @NgModule({
@@ -23,7 +25,7 @@ import {FilterPipe} from './show-mixes/pipes';
     ShowMixDetailComponent,
     ContributeComponent,
     AboutComponent,
-    HallOfFameComponent
+    HallOfFameComponent,
     FilterPipe
   ],
   imports: [
@@ -32,7 +34,7 @@ import {FilterPipe} from './show-mixes/pipes';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MixesService, ShowMixResolve],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
