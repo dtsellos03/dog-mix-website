@@ -1,62 +1,33 @@
 
 
 <div *ngIf="mix" class="ui container">
-   
 
   
    <div class="ui two column grid stackable">
    <div class="column">
       
       
-         <div class="ui buttons">
-  <button class="ui labeled icon button">
-    <i class="left chevron icon"></i>
-    Back
-  </button>
-  </div>
-      
-      <h1 class="ui header huge">{{mix.Name}}</h1>
+       <span>     <button class="ui icon button" (click)="goBack()">
+  <i class="left arrow icon"></i>
+</button>
+       <h1 class="ui header huge">{{mix.Name}}</h1></span>  
+
       <hr>
+      <br>
       <a class="ui huge image label">
   <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/pug-puppies/pug-puppy-10.jpg">
-  Joe
-</a><a class="ui circular image label">
-  <img src="/images/avatar/small/joe.jpg">
-  Joe
+  {{mix.breed1}}
 </a>
-      <div class="ui three column centered grid stackable">
-         <div class=" centered row">
-            <div class="four wide center aligned column">
+ +
+      <a class="ui huge image label">
+  <img src="{{breeds[mix.breed1]}}">
+  {{mix.breed2}}
+</a>
 
-               <div class="huge ui label center aligned">
-                  {{mix.breed1}}
-               </div>
-            </div>
-            <div class="two wide center aligned column">
-               <h1 class="header icon">
-                  +
-               </h1>
-            </div>
-            <div class="four wide center aligned column">
-               <div class="huge ui label center aligned">
-                  {{mix.breed2}}
-               </div>
-            </div>
-         </div>
-      </div>
-      <hr>
+<br>
      
-      <div class="ui items">
-         <div class="item">
-            <div class="content">
-               <h2 class="header">Known Aliases</h2>
-               <div class="description">
-                 Pugua, Dogue, Meowie
-                  
-               </div>
-            </div>
-         </div>
-      </div>
+      <hr>
+    <br><br>
       <div class="ui two column centered grid stackable">
                      <h2 class="header">Rate this mix!</h2>    
          <div class=" centered row">
@@ -98,10 +69,9 @@
    </div>
  </div>
    <div class="column">
-      <img class = "ui image large rounded" src="{{mix.image}}">
+      <img class = "ui  large image bordered rounded" src="{{mix.image}}">
    </div>
 </div>
-  <button class="ui massive button" (click)="goBack()">Back</button>
 </div>
    
    

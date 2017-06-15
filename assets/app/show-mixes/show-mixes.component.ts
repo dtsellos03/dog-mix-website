@@ -38,7 +38,7 @@ export class ShowMixesComponent implements OnInit {
     
     
     onClickMe(breed: string) {
-        this.activeBreed=breed
+        this.queryString=breed
         console.log(this.activeBreed)
         
     }

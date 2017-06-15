@@ -25,6 +25,11 @@ export class ShowMixDetailComponent implements OnInit {
 upsel = 0;
 downsel = 0;
 
+breeds = {
+    "Pug": "https://s-media-cache-ak0.pinimg.com/736x/0f/81/37/0f813753c90ec0cdf634b39fccfae1b6.jpg"
+}
+
+
 ngOnInit(): void {
   this.route.params
     .switchMap((params: Params) => this.mixesService.getMix(params['id']))
