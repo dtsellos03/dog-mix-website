@@ -29,6 +29,16 @@ export class MixesService {
         );
     }
     
+    
+    addMix(mix: Mix) {
+        const body = JSON.stringify(mix);
+        const headers = new Headers({'Content-Type': 'application/json'});
+        return this.http.post('/mixes', body, {headers: headers})
+            .map((response: Response) => {
+                const result = response.json();
+            })
+            .catch((error: Response) => Observable.throw(error.json()));
+    }
  
     
     getMixes() {

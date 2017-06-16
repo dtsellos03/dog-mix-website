@@ -29,7 +29,10 @@ export class ShowMixesComponent implements OnInit {
     
     ngOnInit() {
         console.log("From mixessercie" + this.mixesService.isLoaded)
-        if (this.mixesService.isLoaded == true) {
+        // if (this.mixesService.isLoaded == true) {
+        //     this.mixes = this.mixesService.serviceMixes;
+        // }
+        if (false) {
             this.mixes = this.mixesService.serviceMixes;
         }
         else {

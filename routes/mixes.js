@@ -4,6 +4,31 @@ var router = express.Router();
 var Mix = require("../models/mixes");
 
 
+router.post('/', function (req, res, next) {
+        console.log("IT WORKEDDDDDDDDDDDDDDDD")
+        console.log(req.body)
+        var mix = new Mix ({
+            Name: req.body.Name,
+            image: req.body.image,
+            breed1: req.body.breed1,
+            breed2: req.body.breed2,
+            checkAll: "all",
+            upvote: 0,
+            downvote: 0
+        });
+        mix.save(function(err, result) {
+            if (err) {
+                return res.status(500).json({
+                    title: 'An error occurred',
+                    error: err
+                });
+            }
+         res.status(201).json({
+             message: 'Saved message',
+             obj: result
+         })
+        });
+});
 
 
 router.get("/", function(req, res){
@@ -37,25 +62,6 @@ router.get("/:id", function(req, res){
                 obj: foundMix
             })
         });
-})
-
-
-router.get("/WWW/WWW/WWW", function(req, res){
-   Mix.find({}).exec( 
-    function(err, Mixes) {
-        if (err) {
-                return res.status(500).json({
-                    title: 'An error occurred',
-                    error: err
-                });
-            }
-            res.status(200).json({
-                message: 'Sucess',
-                obj: Mixes
-            })
-        
-    }
-);
 })
 
 
@@ -96,7 +102,7 @@ router.post('/:id/:action/:direction', function(req, res) {
 
 
 
-// DISLIKE ROUTE
+
 
 
 

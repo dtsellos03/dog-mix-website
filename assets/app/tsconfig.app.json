@@ -13,7 +13,7 @@
     "target": "es5",
     "module": "es2015",
     "baseUrl": "",
-    "types": ["underscore"]
+    "types": ["underscore", "jquery"]
   },
   "exclude": [
     "test.ts",

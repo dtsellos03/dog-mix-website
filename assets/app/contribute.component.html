@@ -1,0 +1,35 @@
+<div class="ui containerr" style="width: 50%">
+    <form class="ui form" [formGroup]="submitMix" (ngSubmit)="onSubmit()">
+  <div class="field">
+    <label>Mix name</label>
+    <input type="text" name="mixName" placeholder="e.g. Puguaua" formControlName="mixName">
+  </div>
+  
+  <div class="field">
+    <label>Image URL</label>
+    <input type="text" name="mixURL" placeholder="e.g. http://i.imgur.com/qtnuAiI.jpg" formControlName="mixURL">
+  </div>
+
+  
+  <div class="two fields">
+    <div class="field">
+      <label>Breed</label>
+      <select class="ui fluid dropdown" name="breed1" formControlName="breed1">
+    <option value="AL">Pug</option>
+    <option value="AK">Corgi</option>
+
+      </select>
+    </div>
+    <div class="field">
+      <label>Breed</label>
+      <select class="ui fluid dropdown"  name="breed2" formControlName="breed2">
+        <option value="">State</option>
+    <option value="AL">Pug</option>
+    <option value="AK">Corgi</option>
+      </select>
+    </div>
+  </div>
+  
+  <button class="ui button" type="submit" >Submit</button>
+</form>
+</div>
