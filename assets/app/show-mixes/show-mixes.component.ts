@@ -3,6 +3,17 @@ import { MixesService } from '../mixes.service';
 import { Mix} from '../mix';
 import {FilterPipe} from './pipes'
 
+
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '').replace('.jpg','')] = r(item); });
+  return images;
+}
+
+
+
+
+
 @Component({
   selector: 'app-show-mixes',
   templateUrl: './show-mixes.component.html',
@@ -16,10 +27,34 @@ export class ShowMixesComponent implements OnInit {
 
      mixes: Mix[]
     activeBreed = "all";
-    
-    breeds=["Husky", "German Shepard", "Pitbull", "Pug", "Corgi", "Dalmation",
-  "Maltese","Labrador Retriever","Corgi","Labrador","German Shepherd","Greyhound","Pit Bull","Alaskan Malamute","Perkingese","Pug","Papillon","Jack Russell Terrier","Shiba Inu","French Bulldog","Dachshund","Yorkshire Terrier","Australian Shepherd","Basset Hound","Boxer","Shih Tzu","Boston Terrier","Pitbull","Chihuahua","Pomeranian","Chow Chow","Beagle","Akita","Golden Retriever","Siberian Husky"
-]
+    images = importAll(require.context('../../../assets/images', false, /\.(png|jpe?g|svg)$/));
+    breeds=[{"name":"Dachshund","image":"dachshund"},
+{"name":"Corgi","image":"corgi"},
+{"name":"Maltese","image":"maltese"},
+{"name":"Pug","image":"pug"},
+{"name":"French Bulldog","image":"frenchbulldog"},
+{"name":"Boxer","image":"boxer"},
+{"name":"Boston Terrier","image":"bostonterrier"},
+{"name":"Chihuahua","image":"chihuahua"},
+{"name":"Pomeranian","image":"pomeranian"},
+{"name":"Yorkshire Terrier","image":"yorkshireterrier"},
+{"name":"Labrador Retriever","image":"labradorretriever"},
+{"name":"Golden Retriever","image":"goldenretriever"},
+{"name":"Papillon","image":"papillon"},
+{"name":"Shiba Inu","image":"shibainu"},
+{"name":"Beagle","image":"beagle"},
+{"name":"Australian Shepherd","image":"australianshepherd"},
+{"name":"German Shepherd","image":"germanshepherd"},
+{"name":"Greyhound","image":"greyhound"},
+{"name":"Pit Bull","image":"pitbull"},
+{"name":"Chow Chow","image":"chowchow"},
+{"name":"Alaskan Malamute","image":"malamute"},
+{"name":"Pekingese","image":"pekingese"},
+{"name":"Jack Russell Terrier","image":"jackrussellterrier"},
+{"name":"Basset Hound","image":"bassethound"},
+{"name":"Shih Tzu","image":"shihtzu"},
+{"name":"Akita","image":"akita"},
+{"name":"Siberian Husky","image":"husky"}]
     
     constructor(private mixesService: MixesService) {}
 
@@ -28,14 +63,14 @@ export class ShowMixesComponent implements OnInit {
     //   }
     
     ngOnInit() {
-        console.log("From mixessercie" + this.mixesService.isLoaded)
-        // if (this.mixesService.isLoaded == true) {
-        //     this.mixes = this.mixesService.serviceMixes;
-        // }
-        if (false) {
+       
+        console.log(this.images)
+        if (this.mixesService.isLoaded == true) {
             this.mixes = this.mixesService.serviceMixes;
         }
+   
         else {
+            console.log("Should be after")
             this.mixesService.getMixes()
             .subscribe(
                 (mixes: Mix[]) => {
@@ -51,6 +86,7 @@ export class ShowMixesComponent implements OnInit {
     
     
     onClickMe(breed: string) {
+        console.log(breed)
         this.queryString=breed
         console.log(this.activeBreed)
         
