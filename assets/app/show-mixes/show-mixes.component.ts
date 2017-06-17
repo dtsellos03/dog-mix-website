@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { MixesService } from '../mixes.service';
 import { Mix} from '../mix';
-import {FilterPipe} from './pipes'
+import {FilterPipe} from './pipes';
 
 
-function importAll(r) {
+    function importAll(r) {
   let images = {};
   r.keys().map((item, index) => { images[item.replace('./', '').replace('.jpg','')] = r(item); });
   return images;
 }
-
-
-
+ 
+ 
+ 
 
 
 @Component({
@@ -25,9 +25,8 @@ function importAll(r) {
 export class ShowMixesComponent implements OnInit {
 
 
-     mixes: Mix[]
-    activeBreed = "all";
-    images = importAll(require.context('../../../assets/images', false, /\.(png|jpe?g|svg)$/));
+ images = importAll(require.context('../../../assets/images', false, /\.(png|jpe?g|svg)$/));
+       
     breeds=[{"name":"Dachshund","image":"dachshund"},
 {"name":"Corgi","image":"corgi"},
 {"name":"Maltese","image":"maltese"},
@@ -50,21 +49,33 @@ export class ShowMixesComponent implements OnInit {
 {"name":"Chow Chow","image":"chowchow"},
 {"name":"Alaskan Malamute","image":"malamute"},
 {"name":"Pekingese","image":"pekingese"},
-{"name":"Jack Russell Terrier","image":"jackrussellterrier"},
-{"name":"Basset Hound","image":"bassethound"},
-{"name":"Shih Tzu","image":"shihtzu"},
-{"name":"Akita","image":"akita"},
 {"name":"Siberian Husky","image":"husky"}]
+
+
+
+     mixes: Mix[]
+    activeBreed = "all";
+    
+  
+
     
     constructor(private mixesService: MixesService) {}
 
-    // getMixes(): void {
-    //     this.mixesService.getMixes().then(mixes => this.mixes = mixes);
-    //   }
+    onClickMe(breed: string) {
+        console.log(breed)
+        this.queryString=breed
+        console.log(this.activeBreed)
+        
+    }
     
-    ngOnInit() {
-       
-        console.log(this.images)
+
+    
+  ngOnInit() {
+               
+ 
+
+        
+        
         if (this.mixesService.isLoaded == true) {
             this.mixes = this.mixesService.serviceMixes;
         }
@@ -81,16 +92,11 @@ export class ShowMixesComponent implements OnInit {
             this.mixesService.doStuff();
         }
 
-    }
     
     
     
-    onClickMe(breed: string) {
-        console.log(breed)
-        this.queryString=breed
-        console.log(this.activeBreed)
-        
-    }
+    
+
     
 
 }

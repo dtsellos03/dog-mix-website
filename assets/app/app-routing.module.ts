@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about',  component: AboutComponent },
   { path: 'contribute', component: ContributeComponent },
-  { path: 'mixes/:id', component: ShowMixDetailComponent, resolve: { mix: ShowMixResolve} },
+  { path: 'mixes/:id', component: ShowMixDetailComponent },
   { path: 'mixes',     component: ShowMixesComponent },
   { path: 'halloffame', component: HallOfFameComponent }
 ];

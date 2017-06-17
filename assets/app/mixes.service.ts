@@ -9,11 +9,12 @@ export class MixesService {
     
       serviceMixes = [];
       isLoaded = false;
+      
+
     
-    
+
+
     constructor(private http: Http) {}
-    
- 
     
     doStuff() {
         this.isLoaded = true;
@@ -90,21 +91,28 @@ export class MixesService {
             /** .catch((error: Response) => Observable.throw(error.json())); */
     }
     
-    getMix(id: number) {
-        //console.log(id)
-        return this.http.get('/mixes/'+id)
-            .map((response: Response) => {
-                console.log(response)
-                const mix = response.json().obj;
-                console.log(mix)
+    getMix(desiredID: string) {
+        console.log(desiredID)
+      return this.serviceMixes.find(function(mix){ 
+    return mix.id == desiredID ;
+}); 
+
+       
+    }   
+        
+        // return this.http.get('/mixes/'+id)
+        //     .map((response: Response) => {
+        //         console.log(response)
+        //         const mix = response.json().obj;
+        //         console.log(mix)
          
-                let foundmix = new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote);
+        //         let foundmix = new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote);
             
-                this.mix = foundmix;
+        //         this.mix = foundmix;
          
-                console.log("NOW PASSED INTO")
-                return foundmix;
-            })
+        //         console.log("NOW PASSED INTO")
+        //         return foundmix;
+        //     })
          //   .catch((error: Response) => Observable.throw(error.json()));
-}
+
 }

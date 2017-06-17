@@ -69,12 +69,12 @@ overflow: scroll;" >
        <!--<ng-template [ngIf]="mix.breed1 == activeBreed || mix.breed2 == activeBreed || mix.checkAll == activeBreed">-->
           <a [routerLink]="['/mixes', mix.id]">
         <div class="column">
-          <div class="ui fluid link card">
+          <div class="ui fluid link raised card">
     
             <img src="{{mix.image}}" class="ui medium image">
 
-            <div class="content">
-              <a class="header" href="/Mixes/"> {{mix.Name}} </a>
+            <div class="content">  <a class="ui circular label right floated">{{mix.upvote}}</a> <a class="ui circular label right floated">{{mix.downvote}}</a>
+              <a class="header" href="/Mixes/"> {{mix.Name}}</a>
               
               <div class="meta">
                 {{mix.breed1}} | {{mix.breed2}}

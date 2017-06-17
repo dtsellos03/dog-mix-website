@@ -31,12 +31,9 @@ breeds = {
 
 
 ngOnInit(): void {
-       
-        this.route.data
-      .subscribe((data: { mix: Mix }) => {
-         console.log(data)
-        this.mix = data.mix;
-      });
+    console.log(this.route.params.value.id);
+      const id = this.route.params.value.id
+       this.mix = this.mixesService.getMix(id)
   }
     
     
