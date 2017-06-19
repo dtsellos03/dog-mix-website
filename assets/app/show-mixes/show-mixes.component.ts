@@ -25,7 +25,7 @@ import {FilterPipe} from './pipes';
 export class ShowMixesComponent implements OnInit {
 
 
- images = importAll(require.context('../../../assets/images', false, /\.(png|jpe?g|svg)$/));
+ 
        
     breeds=[{"name":"Dachshund","image":"dachshund"},
 {"name":"Corgi","image":"corgi"},
@@ -71,9 +71,14 @@ export class ShowMixesComponent implements OnInit {
 
     
   ngOnInit() {
-               
- 
-
+        const images = importAll(require.context('../../../assets/images', false, /\.(png|jpe?g|svg)$/));  
+        let breedsToService = {}
+        this.breeds.forEach(function(element){
+            
+            element.image = images[element.image]
+            breedsToService[element.name]=element.image
+        })
+        this.mixesService.serviceBreeds = breedsToService;
         
         
         if (this.mixesService.isLoaded == true) {

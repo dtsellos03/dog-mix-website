@@ -1,11 +1,10 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
 
 
-<div class="ui grid">
+<div class="ui stackable grid">
 
+<div class="row">
 
-
-  <div class="two wide column">
+  <div class="column" style="width: 220px;">
     <div style="position: sticky; top: 20px;">
     
     <div class="ui vertical menu" >
@@ -24,7 +23,7 @@ overflow: scroll;" >
  
 
       <ng-template ngFor let-breed [ngForOf]="breeds">
-  <a class="item" (click)="onClickMe(breed.name)" ng-class="activeBreed == breed.name ? 'active' : 'item'"><img class="ui avatar image" src="{{images[breed.image]}}"> {{breed.name}}</a>
+  <a class="item" (click)="onClickMe(breed.name)" ng-class="queryString == breed.name ? 'active' : 'item'"><img class="ui avatar image" src="{{breed.image}}"> {{breed.name}}</a>
   </ng-template>
 
 </div>

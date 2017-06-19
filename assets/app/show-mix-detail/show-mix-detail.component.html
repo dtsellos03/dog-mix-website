@@ -10,17 +10,17 @@
        <span>     <button class="ui icon button" (click)="goBack()">
   <i class="left arrow icon"></i>
 </button>
-       <h1 class="ui header huge">{{mix.Name}}</h1></span>  
+       <h1 class="ui header huge" style="font-size: 3em; padding-left: 20px">{{mix.Name}}</h1></span>  
 
       <hr>
       <br>
       <a class="ui huge image label">
-  <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/pug-puppies/pug-puppy-10.jpg">
+  <img src="{{mixesService.serviceBreeds[mix.breed1]}}">
   {{mix.breed1}}
 </a>
  +
       <a class="ui huge image label">
-  <img src="{{breeds[mix.breed1]}}">
+  <img src="{{mixesService.serviceBreeds[mix.breed2]}}">
   {{mix.breed2}}
 </a>
 
@@ -34,31 +34,31 @@
             <div class="eight wide center aligned column">
 
                   <div class="ui huge labeled button" (click)="upVote()" tabindex="0" >
-                     <button class="ui teal button" [ngClass]="{positive: upsel == 1}">
-                     <i class="bomb icon"></i> Miracle
+                     <button class="ui button" [ngClass]="{positive: upsel == 1}">
+                     <i class="arrow up icon"></i> Miracle
                      </button>
-                     <a class="ui basic label">
+                     <a class="ui basic label" [ngClass]="{larger: downsel == 1}">
                      {{mix.upvote}}
                      </a>
                   </div>
                   <br>
                    <br>
-                 <a class="ui green label">(Miracle DOGE)</a>
+              
        
             </div>
             <div class="eight wide center aligned column">
                
                   <div class="ui huge labeled button" (click)="downVote()"  tabindex="0" >
-                     <button class="ui olive button" [ngClass]="{positive: downsel == 1}">
-                     <i class="bomb icon"></i> Abomination
+                     <button class="ui button" [ngClass]="{positive: downsel == 1}">
+                     <i class="arrow down icon"></i> Abomination
                      </button>
-                     <a class="ui basic label">
+                     <a class="ui basic label" [ngClass]="{larger: downsel == 1}">
                      {{mix.downvote}}
                      </a>
                   </div>
                   <br>
                   <br>
-                  <a class="ui orange label">(Abomination DOGE)</a>
+                
        
             </div>
             

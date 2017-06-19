@@ -10,7 +10,7 @@ export class MixesService {
       serviceMixes = [];
       isLoaded = false;
       
-
+     serviceBreeds = {}
     
 
 

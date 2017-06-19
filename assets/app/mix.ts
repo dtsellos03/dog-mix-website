@@ -6,5 +6,6 @@ export class Mix {
  public    breed2: string,
  public    checkAll: string,
  public   upvote: number,
- public   downvote: number) {}
+ public   downvote: number,
+  public imagesource: string) {}
 }

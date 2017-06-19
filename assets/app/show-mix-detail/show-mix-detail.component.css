@@ -3,3 +3,8 @@ h1 {
     padding-left: 90px;
 
 }
+
+.larger {
+    font-size: 1.2em;
+    color: red;
+}
