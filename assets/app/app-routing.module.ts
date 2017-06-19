@@ -11,7 +11,7 @@ import { ContributeComponent } from './contribute.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/about', pathMatch: 'full' },
+  { path: '', redirectTo: '/mixes', pathMatch: 'full' },
   { path: 'about',  component: AboutComponent },
   { path: 'contribute', component: ContributeComponent },
   { path: 'mixes/:id', component: ShowMixDetailComponent },
