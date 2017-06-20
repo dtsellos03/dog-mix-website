@@ -6,8 +6,7 @@ import { ShowMixesComponent } from './show-mixes/show-mixes.component';
 import { ShowMixDetailComponent } from './show-mix-detail/show-mix-detail.component';
 import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component';
 import { AboutComponent} from './about/about.component';
-import { ShowMixResolve } from './show-mix-detail/show-mix-resolve.service.ts';
-import { ContributeComponent } from './contribute.component';
+import { ContributeComponent } from './contribute/contribute.component';
 
 
 const routes: Routes = [
@@ -22,6 +21,6 @@ const routes: Routes = [
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ],
-  providers: [ShowMixResolve]
+  providers: []
 })
 export class AppRoutingModule {}

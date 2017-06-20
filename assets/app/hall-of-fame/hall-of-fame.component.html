@@ -1,71 +1,93 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
 
 
-<div class="ui grid">
+<div class="ui stackable grid">
 
 
 
 
-    <div class="ui two column centered grid">
-      
- <div class="ui row">     
-   <div class="ui column">
-        <div class="ui items">
-  <ng-template ngFor let-mix [ngForOf]="topMixes" >
-      
-   
-      
-  <div class="item">
-    <div class="ui small image">
-      <img src="{{mix.image}}">
-    </div>
-    <div class="content">
-      <div class="header"><a [routerLink]="['/mixes', mix.id]">  {{mix.Name}}</a></div>
-      <div class="meta">
-        <span class="price">{{mix.upvote}}</span>
-        <span class="stay">{{mix.downvote}}</span>
+
+
+  <div class="row">
+    <div class="ui six wide column">
+
+      <h1>Miracles</h1>
+
+      <div class="ui items">
+        <ng-template ngFor let-mix [ngForOf]="topMixes">
+
+
+
+          <div class="item">
+            <div class="ui small image">
+              <img src="{{mix.image}}">
+            </div>
+            <div class="content">
+              <a class="header" [routerLink]="['/mixes', mix.id]">  {{mix.Name}}</a>
+              <div class="meta">
+                <a class="ui image label">
+                  <img src="{{mixesService.serviceBreeds[mix.breed1]}}"> {{mix.breed1}}
+                </a>
+
+                <a class="ui image label">
+                  <img src="{{mixesService.serviceBreeds[mix.breed2]}}"> {{mix.breed2}}
+                </a>
+              </div>
+              <div class="meta">
+                <a class="ui green label">{{mix.upvote}}</a>
+                <a class="ui yellow label">{{mix.downvote}}</a>
+              </div>
+              <div class="description">
+                <p></p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </ng-template>
       </div>
-      <div class="description">
-        <p></p>
+    </div>
+
+    <div class="ui six wide column">
+
+      <h1>Abominations</h1>
+
+      <div class="ui divided items">
+        <ng-template ngFor let-mix [ngForOf]="botMixes">
+
+
+
+          <div class="item">
+            <div class="ui small image">
+              <img src="{{mix.image}}">
+            </div>
+            <div class="content">
+              <a class="header" [routerLink]="['/mixes', mix.id]">  {{mix.Name}}</a>
+              <div class="meta">
+                <a class="ui image label">
+                  <img src="{{mixesService.serviceBreeds[mix.breed1]}}"> {{mix.breed1}}
+                </a>
+
+                <a class="ui image label">
+                  <img src="{{mixesService.serviceBreeds[mix.breed2]}}"> {{mix.breed2}}
+                </a>
+              </div>
+              <div class="meta">
+                <a class="ui green label">{{mix.upvote}}</a>
+                <a class="ui yellow label">{{mix.downvote}}</a>
+              </div>
+              <div class="description">
+                <p></p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </ng-template>
       </div>
     </div>
- 
+
   </div>
-      
-
-  </ng-template>
-   </div>
-   </div>
-   
-      <div class="ui column">
-        <div class="ui items">
-  <ng-template ngFor let-mix [ngForOf]="botMixes" >
-      
-   
-      
-  <div class="item">
-    <div class="ui small image">
-      <img src="{{mix.image}}">
-    </div>
-    <div class="content">
-      <div class="header"><a [routerLink]="['/mixes', mix.id]">{{mix.Name}}</a></div>
-      <div class="meta">
-        <span class="price">{{mix.upvote}}</span>
-        <span class="stay">{{mix.downvote}}</span>
-      </div>
-      <div class="description">
-        <p></p>
-      </div>
-    </div>
- 
-  </div>
-      
-
-  </ng-template>
-   </div>
-   </div>
-   
-  </div>
-   </div>
-
 </div>

@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { ShowMixesComponent } from './show-mixes/show-mixes.component';
 import { ShowMixDetailComponent } from './show-mix-detail/show-mix-detail.component';
 import { AboutComponent} from './about/about.component';
-import { ContributeComponent } from './contribute.component';
+import { ContributeComponent } from './contribute/contribute.component';
 import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component'
 import { AppRoutingModule } from './app-routing.module';
 import {FilterPipe} from './show-mixes/pipes';
