@@ -15,18 +15,19 @@
     <div class="field">
       <label>Breed</label>
       <select class="ui fluid dropdown" name="breed1" formControlName="breed1">
-  
-    <option value="AL">Pug</option>
-    <option value="AK">Corgi</option>
-
+  <option *ngFor="let breed of breedchoices" value="{{breed}}">
+    
+    {{breed}}
+  </option>
       </select>
     </div>
     <div class="field">
       <label>Breed</label>
-      <select class="ui fluid dropdown"  name="breed2" formControlName="breed2">
-        <option value="">State</option>
-    <option value="AL">Pug</option>
-    <option value="AK">Corgi</option>
+        <select class="ui fluid dropdown" name="breed2" formControlName="breed1">
+  <option *ngFor="let breed of breedchoices" value="{{breed}}">
+    
+    {{breed}}
+  </option>
       </select>
     </div>
   </div>

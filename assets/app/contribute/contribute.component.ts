@@ -13,6 +13,8 @@ import { MixesService } from '../mixes.service';
 export class ContributeComponent implements OnInit {
   
   submitMix: FormGroup;
+  
+  breedchoices = [];
 
   constructor(private mixesService: MixesService) {}
   
@@ -31,6 +33,12 @@ export class ContributeComponent implements OnInit {
   }
 
   ngOnInit() {
+    
+    for (var name in this.mixesService.serviceBreeds) {
+      this.breedchoices.push(name)
+    }
+    
+    console.log(this.breedchoices)
     
     this.submitMix = new FormGroup({
       'mixName' : new FormControl(null, Validators.required),
