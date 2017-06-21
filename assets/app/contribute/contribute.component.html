@@ -41,7 +41,8 @@
     </div>
   </div>
   
-  <div *ngIf="breederror == 1" class="ui container"><h1>DUPLICATE</h1></div>
+  <div *ngIf="breederror == 1" class="ui container"><br><br><h4>Uh oh. It seems like this mix already exists. Please submit another one.</h4><br><br></div>
+  <div *ngIf="successmessage == 1" class="ui container"><br><br><h2>Success!</h2><br><br></div>
   
   
   <button class="ui button" type="submit" [disabled]="!submitMix.valid">Submit</button>

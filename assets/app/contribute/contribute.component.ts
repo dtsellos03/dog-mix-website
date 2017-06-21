@@ -17,11 +17,13 @@ export class ContributeComponent implements OnInit {
   
   breedchoices = [];
   breederror = 0;
+  successmessage = 0;
 
   constructor(private mixesService: MixesService, private router : Router) {}
   
   onSubmit() {
-    var nullcheck = 0
+    this.breederror = 0;
+    var nullcheck = 0;
     var submittedMix = this.submitMix.value;
     
         this.mixesService.serviceMixes.forEach(function(mix) {
@@ -39,6 +41,8 @@ export class ContributeComponent implements OnInit {
       this.breederror = 1
       return null
     }
+    
+    this.successmessage = 1;
     
    // console.log(submittedMix)
     var newMix = new Mix(" ", submittedMix.mixName, submittedMix.mixURL, submittedMix.breed1, submittedMix.breed2,"all", 0, 0, submittedMix.imageURL)
