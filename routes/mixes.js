@@ -14,7 +14,8 @@ router.post('/', function (req, res, next) {
             breed2: req.body.breed2,
             checkAll: "all",
             upvote: 0,
-            downvote: 0
+            downvote: 0,
+            imageURL: req.body.imageURL
         });
         mix.save(function(err, result) {
             if (err) {

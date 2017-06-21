@@ -17,6 +17,7 @@ export class MixesService {
     constructor(private http: Http) {}
     
     doStuff() {
+        console.log("Doing stuff!")
         this.isLoaded = true;
         this.getMixes()
         .subscribe(
@@ -24,6 +25,7 @@ export class MixesService {
                 this.serviceMixes = mixes;
                 //this.isLoaded = true;
                 console.log("/this is loaded is" + this.isLoaded)
+                console.log(mixes)
                 
 
             }
@@ -36,7 +38,8 @@ export class MixesService {
         const headers = new Headers({'Content-Type': 'application/json'});
         return this.http.post('/mixes', body, {headers: headers})
             .map((response: Response) => {
-                const result = response.json();
+                const result = response.json().obj;
+                return result
             })
             .catch((error: Response) => Observable.throw(error.json()));
     }
@@ -51,7 +54,7 @@ export class MixesService {
                 for (let mix of mixes) {
                     //console.log mix.Name
                     //console.log mix.checkAll
-                    transformedMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote));
+                    transformedMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imageURL));
                 }
                 this.mixes = transformedMixes;
                 
@@ -72,10 +75,10 @@ export class MixesService {
                 let topMixes: Mix[] = [];
                 let botMixes: Mix[] = [];
                 for (let mix of topmixes) {
-                    topMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote));
+                    topMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imageURL));
                 }
                 for (let mix of botmixes) {
-                    botMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote));
+                    botMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imageURL));
                 }
                 this.topMixes = topMixes;
                 this.topMixes = botMixes;

@@ -31,10 +31,9 @@ breeds = {
 
 
 ngOnInit(): void {
-console.log("DEATIL")
- console.log(this.mixesService.serviceBreeds)
       const id = this.route.params.value.id
        this.mix = this.mixesService.getMix(id)
+       console.log(this.mix)
   }
     
     

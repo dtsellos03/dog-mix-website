@@ -9,6 +9,7 @@ var MixSchema = new mongoose.Schema({
     checkAll: String,
     upvote: Number,
     downvote: Number,
+    imageURL: String
 })
 
 var Mix = mongoose.model("Mix", MixSchema);
