@@ -1,12 +1,5 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
-
 
 <div class="ui stackable grid">
-
-
-
-
-
 
   <div class="row">
     <div class="ui six wide column">
@@ -19,9 +12,12 @@
 
 
           <div class="item">
-            <div class="ui small image">
+
+            <a [routerLink]="['/mixes', mix.id]" class="ui small image">
               <img src="{{mix.image}}">
-            </div>
+            </a>
+
+
             <div class="content">
               <a class="header" [routerLink]="['/mixes', mix.id]">  {{mix.Name}}</a>
               <div class="meta">
@@ -57,11 +53,13 @@
         <ng-template ngFor let-mix [ngForOf]="botMixes">
 
 
-
           <div class="item">
-            <div class="ui small image">
+
+            <a [routerLink]="['/mixes', mix.id]" class="ui small image">
               <img src="{{mix.image}}">
-            </div>
+            </a>
+
+
             <div class="content">
               <a class="header" [routerLink]="['/mixes', mix.id]">  {{mix.Name}}</a>
               <div class="meta">

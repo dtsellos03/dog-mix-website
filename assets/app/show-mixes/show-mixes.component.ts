@@ -11,7 +11,12 @@ import {FilterPipe} from './pipes';
 }
  
  
- 
+function shuffle(a) {
+    for (let i = a.length; i; i--) {
+        let j = Math.floor(Math.random() * i);
+        [a[i - 1], a[j]] = [a[j], a[i - 1]];
+    }
+}
 
 
 @Component({
@@ -83,6 +88,7 @@ export class ShowMixesComponent implements OnInit {
         
         if (this.mixesService.isLoaded == true) {
             this.mixes = this.mixesService.serviceMixes;
+            
         }
    
         else {
@@ -91,6 +97,7 @@ export class ShowMixesComponent implements OnInit {
             .subscribe(
                 (mixes: Mix[]) => {
                 this.mixes = mixes;
+                
               // console.log(this.mixes)
             }
             );

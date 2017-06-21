@@ -1,0 +1,246 @@
+<body>
+    
+    
+
+   
+<div id="main-padder" style="padding: 50px;">
+
+  
+ 
+     <my-app _nghost-c0="" ng-version="4.1.3"><link _ngcontent-c0="" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
+<div _ngcontent-c0="" id="main-padder" style="padding: 50px;">
+<div _ngcontent-c0="" class="container">
+  <h1 _ngcontent-c0="" class="ui header">My Dog's Mixtape</h1>
+
+<div _ngcontent-c0="" class="ui pointing menu">
+  <a _ngcontent-c0="" class="item" routerlink="/about" ng-reflect-router-link="/about" ng-reflect-router-link-active="active" href="/about">
+    About
+  </a>
+  <a _ngcontent-c0="" class="item active" routerlink="/mixes" ng-reflect-router-link="/mixes" ng-reflect-router-link-active="active" href="/mixes">
+    Mixes
+  </a>
+  <a _ngcontent-c0="" class="item" routerlink="/halloffame" ng-reflect-router-link="/halloffame" ng-reflect-router-link-active="active" href="/halloffame">
+    Hall of Fame
+  </a>
+    <a _ngcontent-c0="" class="item" routerlink="/contribute" ng-reflect-router-link="/contribute" ng-reflect-router-link-active="active" href="/contribute">
+    Contribute
+  </a>
+
+
+   
+</div>
+<br _ngcontent-c0=""><br _ngcontent-c0="">
+</div>
+<router-outlet _ngcontent-c0=""></router-outlet><app-show-mixes _nghost-c1="">
+
+<div class="flex-container" style="display: flex;">
+
+
+
+  <div _ngcontent-c1="" class="fixed column" style=" width: 200px;">
+    
+    <div _ngcontent-c1="" style="position: sticky; top: 20px;">
+    
+    <div _ngcontent-c1="" class="ui vertical menu">
+  <div _ngcontent-c1="" class="item">
+    <div _ngcontent-c1="" class="ui input"><input _ngcontent-c1="" autocomplete="off" class="prompt ng-untouched ng-pristine ng-valid" id="search" placeholder="Search breed" type="text"></div>
+  </div>
+    <a _ngcontent-c1="" class="item">
+    All mixes
+  </a>
+  <div _ngcontent-c1="" class="item">
+    Breeds
+  </div>
+  <div _ngcontent-c1="" style="height: 700px;">
+  <div _ngcontent-c1="" class="menu" style="height: 100%;
+overflow: scroll;">
+ 
+
+      <!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}-->
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/dachshund.a8c9a16491bb51f15e5f7a316d38fb69.jpg"> Dachshund</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/corgi.688325595338da31d52be35a7027c845.jpg"> Corgi</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/maltese.2ab0048c58ee228634a629fbf6641829.jpg"> Maltese</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/pug.aca8a3f65137dc6c6adc4a52cc77bcfd.jpg"> Pug</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/frenchbulldog.be02e452af43b0f0191a4f58f5e2f47c.jpg"> French Bulldog</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/boxer.3288e3069cae373886dac3ba07353e33.jpg"> Boxer</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/bostonterrier.7ad46367effc8607e7c858b66174051e.jpg"> Boston Terrier</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/chihuahua.44609c6566759c7b827dd0a576107a3c.jpg"> Chihuahua</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/pomeranian.c06f96d4e387184261973a99cd80525e.jpg"> Pomeranian</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/yorkshireterrier.53b1d91a41243719e4f970016577f646.jpg"> Yorkshire Terrier</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/labradorretriever.01a880ecb3cf7b4e95911fcb7cfd497b.jpg"> Labrador Retriever</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src=""> Golden Retriever</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/papillon.ad028f1667f4410e40dcb15453e1d68f.jpg"> Papillon</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/shibainu.7c5bf6854d9c61f57694e8fa137e4b65.jpg"> Shiba Inu</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/beagle.3fa9d8ed7238cfa9cc57d600f4129875.jpg"> Beagle</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/australianshepherd.9a5e5fc5b136f5edc42714873332b274.jpg"> Australian Shepherd</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/germanshepherd.9c265b4be5b939402c57b08a4685c080.jpg"> German Shepherd</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/greyhound.7a67e7dd0b58ee738574c767a42986dd.jpg"> Greyhound</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src=""> Pit Bull</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/chowchow.82c0b826308318512e870bd05d4eeac4.jpg"> Chow Chow</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/malamute.8218971e0d8a48b26dcc8140a72a0661.jpg"> Alaskan Malamute</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/pekingese.a2dd1032954bb6db033b29856348dda5.jpg"> Pekingese</a>
+  
+  <a _ngcontent-c1="" class="item" ng-class="queryString == breed.name ? 'active' : 'item'"><img _ngcontent-c1="" class="ui avatar image" src="/js/app/assets/husky.bf043cd3b6dfedc00a4f8bc7a9bcbe1a.jpg"> Siberian Husky</a>
+  
+
+</div>
+      
+   
+    </div>
+  </div>
+    
+    
+    
+    
+  
+
+ 
+</div>
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div _ngcontent-c1="" class="flex column" style="flex: 1;">
+    <div _ngcontent-c1="" id="main-padder" style="padding: 50px; float:right;">
+    <div _ngcontent-c1="" class="ui link cards">
+      
+   
+      
+  <!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--><p _ngcontent-c1="">
+       
+          <a _ngcontent-c1="" ng-reflect-router-link="/mixes,5949710be26d2e0c352dda3" href="/mixes/5949710be26d2e0c352dda39">
+
+          <div _ngcontent-c1="" class="fluid raised card">
+    
+            <img _ngcontent-c1="" class="ui medium image" src="https://s-media-cache-ak0.pinimg.com/736x/8b/1a/36/8b1a36a3ed0265dd86b24a3701895dd9.jpg">
+
+            <div _ngcontent-c1="" class="content">  <a _ngcontent-c1="" class="ui circular label right floated">7</a> <a _ngcontent-c1="" class="ui circular label right floated">14</a>
+              <a _ngcontent-c1="" class="header" href="/Mixes/"> Puguaua</a>
+              
+              <div _ngcontent-c1="" class="meta">
+                Pug | Chihuahua
+              </div>
+              
+            </div>
+            
+            
+        
+          
+        </div>
+           </a>
+    
+        
+  </p><p _ngcontent-c1="">
+       
+          <a _ngcontent-c1="" ng-reflect-router-link="/mixes,5949710be26d2e0c352dda3" href="/mixes/5949710be26d2e0c352dda3a">
+        <div _ngcontent-c1="" class="column">
+          <div _ngcontent-c1="" class=" fluid raised card">
+    
+            <img _ngcontent-c1="" class="ui medium image" src="http://www.thatcutesite.com/uploads/2011/06/corgi_pug_mix_hybrid_breed.jpg">
+
+            <div _ngcontent-c1="" class="content">  <a _ngcontent-c1="" class="ui circular label right floated">50</a> <a _ngcontent-c1="" class="ui circular label right floated">19</a>
+              <a _ngcontent-c1="" class="header" href="/Mixes/"> Corpug</a>
+              
+              <div _ngcontent-c1="" class="meta">
+                Corgi | Pug
+              </div>
+              
+            </div>
+            
+            
+          </div>
+          
+        </div>
+           </a>
+    
+        
+  </p><p _ngcontent-c1="">
+       
+          <a _ngcontent-c1="" ng-reflect-router-link="/mixes,5949710be26d2e0c352dda3" href="/mixes/5949710be26d2e0c352dda3b">
+        <div _ngcontent-c1="" class="column">
+          <div _ngcontent-c1="" class=" fluid link raised card">
+    
+            <img _ngcontent-c1="" class="ui medium image" src="http://img.photobucket.com/albums/v704/xVelvet_FuzzButtx/3%20Dog%20Night/ShortLegsHalo.jpg">
+
+            <div _ngcontent-c1="" class="content">  <a _ngcontent-c1="" class="ui circular label right floated">100</a> <a _ngcontent-c1="" class="ui circular label right floated">23</a>
+              <a _ngcontent-c1="" class="header" href="/Mixes/"> Husgi</a>
+              
+              <div _ngcontent-c1="" class="meta">
+                Husky | Corgi
+              </div>
+              
+            </div>
+            
+            
+          </div>
+          
+        </div>
+           </a>
+    
+       
+          
+        </div>
+           </a>
+    
+        
+  </p>
+  </div>
+</div>
+   
+
+
+
+
+    
+
+    
+    
+    
+   
+
+    
+
+  
+
+</body>

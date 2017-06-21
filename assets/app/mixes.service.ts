@@ -4,6 +4,14 @@ import 'rxjs/Rx';
 import { Mix } from './mix';
 import { MIXES } from './mockmixes';
 
+
+function shuffle(a) {
+    for (let i = a.length; i; i--) {
+        let j = Math.floor(Math.random() * i);
+        [a[i - 1], a[j]] = [a[j], a[i - 1]];
+    }
+}
+
 @Injectable()
 export class MixesService {
     
@@ -24,6 +32,7 @@ export class MixesService {
             (mixes: Mix[]) => {
                 this.serviceMixes = mixes;
                 //this.isLoaded = true;
+                shuffle(this.serviceMixes)
                 console.log("/this is loaded is" + this.isLoaded)
                 console.log(mixes)
                 
@@ -54,7 +63,7 @@ export class MixesService {
                 for (let mix of mixes) {
                     //console.log mix.Name
                     //console.log mix.checkAll
-                    transformedMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imageURL));
+                    transformedMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imagesource));
                 }
                 this.mixes = transformedMixes;
                 
@@ -75,10 +84,10 @@ export class MixesService {
                 let topMixes: Mix[] = [];
                 let botMixes: Mix[] = [];
                 for (let mix of topmixes) {
-                    topMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imageURL));
+                    topMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imagesource));
                 }
                 for (let mix of botmixes) {
-                    botMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imageURL));
+                    botMixes.push(new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imagesource));
                 }
                 this.topMixes = topMixes;
                 this.topMixes = botMixes;
