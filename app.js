@@ -14,8 +14,8 @@ var mixesRoutes = require ('./routes/mixes');
 
 
 var app = express();
-mongoose.connect('mongodb://localhost/dogalchemy');
-seedDB()
+mongoose.connect(process.env.DATABASEURL);
+//seedDB()
 
 
 
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/mixes', mixesRoutes)
 
-// catch 404 and forward to error handler
+
 app.use(function(req, res, next) {
   return res.render('index')
 });
