@@ -8,3 +8,22 @@ h1 {
     font-size: 1.2em;
     color: red;
 }
+
+
+@media (max-width: 1200px) {
+
+  
+.huge.image.label {
+    font-size: 1rem !important;
+}
+
+}
+
+@media (max-width: 765px) {
+
+  
+.huge.image.label {
+      font-size: 1.42857143rem !important;
+}
+
+}

@@ -1,0 +1,12 @@
+  .contribute-form {
+      width: 50% !important;
+      padding: 5px;
+  }
+
+@media (max-width: 900px) {
+
+  
+  .contribute-form {
+      width: 100% !important;
+  }
+}

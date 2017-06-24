@@ -3,3 +3,31 @@
     height: 900px;
     overflow: scroll;
 }
+
+
+  
+    #sidemenu {
+    width: 190px;
+  }
+  
+    .fixed.column {
+    width: 190px;
+  }
+  
+@media (max-width: 600px) {
+  
+  .fixed.column {
+    width: 125px;
+  }
+  #sidemenu {
+    width: 125px;
+  }
+
+  .hide-if{
+    display: none !important;
+  }
+  
+  .smaller-font {
+    font-size:0.8em !important;
+  }
+}

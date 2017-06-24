@@ -23,13 +23,15 @@ module.exports = webpackMerge.smart(commonConfig, {
                 use: [
                     'awesome-typescript-loader',
                     'angular2-template-loader',
-                    'angular-router-loader?aot=true'
+                    'angular-router-loader?aot=true&genDir=public/js/app/assets/app'
                 ]
             }
         ]
     },
 
     plugins: [
+           new webpack.NoEmitOnErrorsPlugin(),
+           
         new webpack.optimize.UglifyJsPlugin({
             sourceMap: false
         })

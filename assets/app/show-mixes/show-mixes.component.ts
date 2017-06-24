@@ -54,7 +54,13 @@ export class ShowMixesComponent implements OnInit {
 {"name":"Chow Chow","image":"chowchow"},
 {"name":"Alaskan Malamute","image":"malamute"},
 {"name":"Pekingese","image":"pekingese"},
-{"name":"Siberian Husky","image":"husky"}]
+{"name":"Jack Russell Terrier","image":"jackrussellterrier"},
+{"name":"Basset Hound","image":"bassethound"},
+{"name":"Shih Tzu","image":"shihtzu"},
+{"name":"Akita","image":"akita"},
+{"name":"Husky","image":"husky"},
+{"name":"Dalmation","image":"dalmation"},
+{"name":"English Bulldog","image":"englishbulldog"}]
 
 
 
@@ -67,16 +73,16 @@ export class ShowMixesComponent implements OnInit {
     constructor(private mixesService: MixesService) {}
 
     onClickMe(breed: string) {
-        console.log(breed)
-        this.queryString=breed
-        console.log(this.activeBreed)
+
+        this['queryString']=breed
+
         
     }
     
 
     
   ngOnInit() {
-        const images = importAll(require.context('../../../assets/images', false, /\.(png|jpe?g|svg)$/));  
+        const images = importAll(require['context']('../../../assets/images', false, /\.(png|jpe?g|svg)$/));  
         let breedsToService = {}
         this.breeds.forEach(function(element){
             
@@ -92,16 +98,15 @@ export class ShowMixesComponent implements OnInit {
         }
    
         else {
-            console.log("Should be after")
+   
             this.mixesService.getMixes()
             .subscribe(
                 (mixes: Mix[]) => {
                 this.mixes = mixes;
                 
-              // console.log(this.mixes)
             }
             );
-            this.mixesService.doStuff();
+            this.mixesService.refreshMixes();
         }
 
     
@@ -113,3 +118,4 @@ export class ShowMixesComponent implements OnInit {
 
 }
 
+}

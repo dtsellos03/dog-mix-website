@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MixesService } from './mixes.service';
-import { Mix} from './mix';
+
 
 
 
@@ -12,6 +12,5 @@ import { Mix} from './mix';
 })
 export class AppComponent implements OnInit {
     
-
     
 }

@@ -6,6 +6,7 @@ import 'rxjs/add/operator/switchMap';
 import { Mix } from '../mix';
 import { Http, Response, Headers } from "@angular/http";
 
+import {Observable} from 'rxjs/Rx';
 
 
 @Component({
@@ -25,23 +26,14 @@ export class ShowMixDetailComponent implements OnInit {
 upsel = 0;
 downsel = 0;
 
-breeds = {
-    "Pug": "https://s-media-cache-ak0.pinimg.com/736x/0f/81/37/0f813753c90ec0cdf634b39fccfae1b6.jpg"
-}
-
 
 ngOnInit(): void {
       const id = this.route.params.value.id
        this.mix = this.mixesService.getMix(id)
-       console.log(this.mix)
+    
   }
     
-    
-    
-//   this.route.params
-//     .switchMap((params: Params) => this.mixesService.getMix(params['id']))
-//     .subscribe(mix => this.mix = mix);
-// }
+
 
 goBack(): void {
   this.location.back();
@@ -53,7 +45,7 @@ upVote(): void {
              this.upsel = 0;
              this.upObservableDown()
                 .subscribe(
-                    data => console.log(data),
+                    data => ,
                     error => console.error(error)
                 );
              return null
@@ -63,7 +55,7 @@ upVote(): void {
                 this.mix.downvote --;
                 this.downObservableDown()
                 .subscribe(
-                    data => console.log(data),
+                    data => ,
                     error => console.error(error)
                 );
             }
@@ -72,7 +64,7 @@ upVote(): void {
              this.mix.upvote ++;
              this.upObservableUp()
                 .subscribe(
-                    data => console.log(data),
+                    data => ,
                     error => console.error(error)
                 );
         }
@@ -86,7 +78,7 @@ downVote(): void {
              this.downsel = 0;
              this.downObservableDown()
                 .subscribe(
-                    data => console.log(data),
+                    data => ,
                     error => console.error(error)
                 );
              return null
@@ -96,18 +88,18 @@ downVote(): void {
             this.mix.upvote --;
             this.upObservableDown()
                 .subscribe(
-                    data => console.log(data),
+                    data => ,
                     error => console.error(error)
                 );
         }
         
-        console.log("REACHED THIS ROUTE")
+
         this.downsel = 1;
         this.upsel = 0;
         this.mix.downvote ++;
         this.downObservableUp()
                 .subscribe(
-                    data => console.log(data),
+                    data => ,
                     error => console.error(error)
                 );
       }     

@@ -12,8 +12,8 @@ import { Mix} from '../mix';
 export class HallOfFameComponent implements OnInit {
 
 
-     topMixes: Mix[],
-     botMixes: Mix[]
+     topMixes: Mix[];
+     botMixes: Mix[];
 
     
     constructor(private mixesService: MixesService) {}
@@ -26,7 +26,6 @@ export class HallOfFameComponent implements OnInit {
         this.mixesService.getTopMixes()
         .subscribe(
             (returnobj) => {
-                console.log(returnobj)
                 this.topMixes = returnobj.topmixes;
                 this.botMixes = returnobj.botmixes;
             }

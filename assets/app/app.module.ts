@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -14,7 +14,7 @@ import { HallOfFameComponent } from './hall-of-fame/hall-of-fame.component'
 import { AppRoutingModule } from './app-routing.module';
 import {FilterPipe} from './show-mixes/pipes';
 import {MixesService} from './mixes.service';
-import { NgSemanticModule } from 'ng-semantic/ng-semantic';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +32,6 @@ import { NgSemanticModule } from 'ng-semantic/ng-semantic';
     FormsModule,
     HttpModule,
     AppRoutingModule, 
-    NgSemanticModule
   ],
   providers: [MixesService],
   bootstrap: [AppComponent]
