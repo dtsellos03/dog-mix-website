@@ -12,5 +12,9 @@ import { MixesService } from './mixes.service';
 })
 export class AppComponent implements OnInit {
     
+      ngOnInit() {
+
+        }
+    
     
 }

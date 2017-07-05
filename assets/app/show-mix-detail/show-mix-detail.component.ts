@@ -25,46 +25,47 @@ export class ShowMixDetailComponent implements OnInit {
 
 upsel = 0;
 downsel = 0;
+mix='';
 
 
-ngOnInit(): void {
-      const id = this.route.params.value.id
-       this.mix = this.mixesService.getMix(id)
+ngOnInit()  {
+      const id = this.route.params['value'].id
+       this['mix'] = this.mixesService.getMix(id)
     
   }
     
 
 
-goBack(): void {
+goBack() {
   this.location.back();
 }
 
-upVote(): void {
+upVote() {
         if (this.upsel == 1 && this.downsel == 0) {
-             this.mix.upvote --;
+             this['mix']['upvote'] --;
              this.upsel = 0;
              this.upObservableDown()
                 .subscribe(
-                    data => ,
+                    data => console.log(""),
                     error => console.error(error)
                 );
              return null
         }
         if (this.upsel == 0 || this.downsel == 1) {
             if (this.downsel == 1) {
-                this.mix.downvote --;
+                this['mix']['downvote'] --;
                 this.downObservableDown()
                 .subscribe(
-                    data => ,
+                    data => console.log(""),
                     error => console.error(error)
                 );
             }
              this.upsel = 1;
              this.downsel = 0;
-             this.mix.upvote ++;
+             this['mix']['upvote'] ++;
              this.upObservableUp()
                 .subscribe(
-                    data => ,
+                    data => console.log(""),
                     error => console.error(error)
                 );
         }
@@ -72,23 +73,23 @@ upVote(): void {
                 
 }
 
-downVote(): void {
+downVote() {
     if (this.downsel == 1 && this.upsel == 0) {
-             this.mix.downvote --;
+             this['mix']['downvote'] --;
              this.downsel = 0;
              this.downObservableDown()
                 .subscribe(
-                    data => ,
+                    data =>  console.log(""),
                     error => console.error(error)
                 );
              return null
         }
       if (this.downsel == 0 || this.upsel == 1) {
         if (this.upsel == 1) {
-            this.mix.upvote --;
+            this['mix']['upvote'] --;
             this.upObservableDown()
                 .subscribe(
-                    data => ,
+                    data => console.log(""),
                     error => console.error(error)
                 );
         }
@@ -96,18 +97,18 @@ downVote(): void {
 
         this.downsel = 1;
         this.upsel = 0;
-        this.mix.downvote ++;
+        this['mix']['downvote'] ++;
         this.downObservableUp()
                 .subscribe(
-                    data => ,
+                    data => console.log(""),
                     error => console.error(error)
                 );
       }     
 }
         
-upObservableUp(): void {
+upObservableUp() {
         const body="blank";
-        return this.http.post('/mixes/'+this.mix.id+'/like/1', body)
+        return this.http.post('/mixes/'+this['mix']['id']+'/like/1', body)
             .map((response: Response) => {
                 const result = response.json();
                 return result;
@@ -117,9 +118,9 @@ upObservableUp(): void {
 
 
         
-downObservableUp(): void {
+downObservableUp() {
         const body="blank";
-        return this.http.post('/mixes/'+this.mix.id+'/dislike/1', body)
+        return this.http.post('/mixes/'+this['mix']['id']+'/dislike/1', body)
             .map((response: Response) => {
                 const result = response.json();
                 return result;
@@ -127,9 +128,9 @@ downObservableUp(): void {
             .catch((error: Response) => Observable.throw(error.json()));
 }
 
-upObservableDown(): void {
+upObservableDown() {
         const body="blank";
-        return this.http.post('/mixes/'+this.mix.id+'/like/-1', body)
+        return this.http.post('/mixes/'+this['mix']['id']+'/like/-1', body)
             .map((response: Response) => {
                 const result = response.json();
                 return result;
@@ -139,9 +140,9 @@ upObservableDown(): void {
 
 
         
-downObservableDown(): void {
+downObservableDown() {
         const body="blank";
-        return this.http.post('/mixes/'+this.mix.id+'/dislike/-1', body)
+        return this.http.post('/mixes/'+this['mix']['id']+'/dislike/-1', body)
             .map((response: Response) => {
                 const result = response.json();
                 return result;

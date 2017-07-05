@@ -4,14 +4,14 @@ import { Mix} from '../mix';
 import {FilterPipe} from './pipes';
 
 
-    function importAll(r) {
+    function importAll(r: any) {
   let images = {};
   r.keys().map((item, index) => { images[item.replace('./', '').replace('.jpg','')] = r(item); });
   return images;
 }
  
  
-function shuffle(a) {
+function shuffle(a: any) {
     for (let i = a.length; i; i--) {
         let j = Math.floor(Math.random() * i);
         [a[i - 1], a[j]] = [a[j], a[i - 1]];
@@ -63,6 +63,7 @@ export class ShowMixesComponent implements OnInit {
 {"name":"English Bulldog","image":"englishbulldog"}]
 
 
+queryString = '';
 
      mixes: Mix[]
     activeBreed = "all";

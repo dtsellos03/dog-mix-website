@@ -5,43 +5,44 @@
         <div class="column">
 
 
-       <h1 class="ui center aligned icon header" style="font-size: 3em;">{{mix.Name}}</h1>
-<br><hr><br>
+            <h1 class="ui center aligned icon header" style="font-size: 3em;">{{mix.Name}}</h1>
+            <br>
+            <hr><br>
             <div class="ui two column centered grid stackable">
 
-       
-                    
-                    <div class="eight wide center aligned column">
-
-                        <a class="ui huge image label">
-                            <img src="{{mixesService.serviceBreeds[mix.breed1]}}"> {{mix.breed1}}
-                        </a>
 
 
+                <div class="eight wide center aligned column">
 
-                    </div>
-                    <div class="eight wide center aligned column">
-
-
-                        <a class="ui huge image label">
-                            <img src="{{mixesService.serviceBreeds[mix.breed2]}}"> {{mix.breed2}}
-                        </a>
-
-                    </div>
+                    <a class="ui huge image label">
+                        <img src="{{mixesService.serviceBreeds[mix.breed1]}}"> {{mix.breed1}}
+                    </a>
 
 
-                
+
+                </div>
+                <div class="eight wide center aligned column">
+
+
+                    <a class="ui huge image label">
+                        <img src="{{mixesService.serviceBreeds[mix.breed2]}}"> {{mix.breed2}}
+                    </a>
+
+                </div>
+
+
+
             </div>
 
-            
+
 
 
             <br><br>
             <div class="ui two column centered grid stackable">
                 <div class="ui horizontal divider">
-    <h2 class="header">Rate this mix!</h2>
-  </div>
-               <br>
+                    <h2 class="header">Rate this mix!</h2>
+                </div>
+                <br>
                 <div class=" centered row">
                     <div class="eight wide center aligned column">
 
@@ -77,14 +78,14 @@
 
                 </div>
             </div>
-             <div class="ui one column centered grid stackable">
-             <div class="eight wide center aligned column">
+            <div class="ui one column centered grid stackable">
+                <div class="eight wide center aligned column">
 
 
-                        <button class="ui huge basic button" (click)="goBack()">BACK</button>
-                     
-                    </div>
-        </div>
+                    <button class="ui huge basic button" (click)="goBack()">BACK</button>
+
+                </div>
+            </div>
         </div>
         <div class="column">
             <img class="ui  large image bordered rounded" src="{{mix.image}}">
