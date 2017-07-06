@@ -26,6 +26,7 @@ export class ShowMixDetailComponent implements OnInit {
 upsel = 0;
 downsel = 0;
 mix={};
+breedLink={};
 
 
 ngOnInit()  {
@@ -33,6 +34,8 @@ ngOnInit()  {
       if(this.mixesService.serviceMixes.length > 1) {
           
        this['mix'] = this.mixesService.getMix(id);
+       this['breedLink']['breed1'] = encodeURI(this['mix']['breed1']);
+       this['breedLink']['breed2'] = encodeURI(this['mix']['breed2']);
        
       }
       else {
@@ -40,7 +43,8 @@ ngOnInit()  {
               .subscribe(
                 (foundmix: Mix) => {
                 this['mix'] = foundmix;
-                
+                this['breedLink']['breed1'] = encodeURI(this['mix']['breed1']);
+                this['breedLink']['breed2'] = encodeURI(this['mix']['breed2']);
             }
             );
       }
@@ -121,7 +125,7 @@ downVote() {
         
 upObservableUp() {
         const body="blank";
-        return this.http.post('/mixes/'+this['mix']['id']+'/like/1', body)
+        return this.http.post('/getMixes/'+this['mix']['id']+'/like/1', body)
             .map((response: Response) => {
                 const result = response.json();
                 return result;
@@ -133,7 +137,7 @@ upObservableUp() {
         
 downObservableUp() {
         const body="blank";
-        return this.http.post('/mixes/'+this['mix']['id']+'/dislike/1', body)
+        return this.http.post('/getMixes/'+this['mix']['id']+'/dislike/1', body)
             .map((response: Response) => {
                 const result = response.json();
                 return result;
@@ -143,7 +147,7 @@ downObservableUp() {
 
 upObservableDown() {
         const body="blank";
-        return this.http.post('/mixes/'+this['mix']['id']+'/like/-1', body)
+        return this.http.post('/getMixes/'+this['mix']['id']+'/like/-1', body)
             .map((response: Response) => {
                 const result = response.json();
                 return result;
@@ -155,7 +159,7 @@ upObservableDown() {
         
 downObservableDown() {
         const body="blank";
-        return this.http.post('/mixes/'+this['mix']['id']+'/dislike/-1', body)
+        return this.http.post('/getMixes/'+this['mix']['id']+'/dislike/-1', body)
             .map((response: Response) => {
                 const result = response.json();
                 return result;
