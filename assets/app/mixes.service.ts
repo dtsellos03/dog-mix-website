@@ -114,7 +114,7 @@ export class MixesService {
              .map((response: Response) => {
              //    console.log(response)
                  const mix = response.json().obj;
-                 console.log(mix)
+
           
                  let foundmix = new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imagesource);
              
