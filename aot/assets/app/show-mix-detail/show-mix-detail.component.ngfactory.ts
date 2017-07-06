@@ -8,10 +8,10 @@
 
 import * as import0 from './show-mix-detail.component.css.shim.ngstyle';
 import * as import1 from '@angular/core';
-import * as import2 from '@angular/common';
-import * as import3 from '../../../../assets/app/show-mix-detail/show-mix-detail.component';
-import * as import4 from '../../../../assets/app/mixes.service';
-import * as import5 from '@angular/router';
+import * as import2 from '@angular/router';
+import * as import3 from '@angular/common';
+import * as import4 from '../../../../assets/app/show-mix-detail/show-mix-detail.component';
+import * as import5 from '../../../../assets/app/mixes.service';
 import * as import6 from '@angular/http';
 const styles_ShowMixDetailComponent:any[] = [import0.styles];
 export const RenderType_ShowMixDetailComponent:import1.RendererType2 = import1.ɵcrt({
@@ -22,19 +22,19 @@ export const RenderType_ShowMixDetailComponent:import1.RendererType2 = import1.�
 );
 function View_ShowMixDetailComponent_1(l:any):import1.ɵViewDefinition {
   return import1.ɵvid(0,[
-      (l()(),import1.ɵeld(0,(null as any),(null as any),112,'div',[[
+      (l()(),import1.ɵeld(0,(null as any),(null as any),116,'div',[[
         'class',
         'ui container'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['\n\n\n    '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),109,'div',[[
+      (l()(),import1.ɵeld(0,(null as any),(null as any),113,'div',[[
         'class',
         'ui two column grid stackable'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['\n        '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),98,'div',[[
+      (l()(),import1.ɵeld(0,(null as any),(null as any),102,'div',[[
         'class',
         'column'
       ]
@@ -64,23 +64,59 @@ function View_ShowMixDetailComponent_1(l:any):import1.ɵViewDefinition {
     (l()(),import1.ɵeld(0,(null as any),(null as any),0,'hr',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵeld(0,(null as any),(null as any),0,'br',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['\n            '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),17,'div',[[
+      (l()(),import1.ɵeld(0,(null as any),(null as any),21,'div',[[
         'class',
         'ui two column centered grid stackable'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['\n\n\n\n                '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),6,'div',[[
+      (l()(),import1.ɵeld(0,(null as any),(null as any),8,'div',[[
         'class',
         'eight wide center aligned column'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['\n\n                    '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),3,'a',[[
+      (l()(),import1.ɵeld(0,(null as any),(null as any),5,'a',[[
         'class',
         'ui huge image label'
       ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
+    ],[
+      [
+        1,
+        'target',
+        0
+      ]
+      ,
+      [
+        8,
+        'href',
+        4
+      ]
+
+    ]
+      ,[[
+        (null as any),
+        'click'
+      ]
+    ],(v,en,$event) => {
+      var ad:boolean = true;
+      if (('click' === en)) {
+        const pd_0:any = ((<any>import1.ɵnov(v,19).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+        ad = (pd_0 && ad);
+      }
+      return ad;
+    },(null as any),(null as any))),
+    import1.ɵdid(671744,(null as any),0,import2.RouterLinkWithHref,[
+      import2.Router,
+      import2.ActivatedRoute,
+      import3.LocationStrategy
+    ]
+      ,{routerLink: [
+        0,
+        'routerLink'
+      ]
+    },(null as any)),
+    import1.ɵpad(2),
     (l()(),import1.ɵted((null as any),['\n                        '])),
       (l()(),import1.ɵeld(0,(null as any),(null as any),0,'img',([] as any[]),[[
         8,
@@ -95,17 +131,53 @@ function View_ShowMixDetailComponent_1(l:any):import1.ɵViewDefinition {
     )),
     (l()(),import1.ɵted((null as any),['\n\n\n\n                '])),
     (l()(),import1.ɵted((null as any),['\n                '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),6,'div',[[
+      (l()(),import1.ɵeld(0,(null as any),(null as any),8,'div',[[
         'class',
         'eight wide center aligned column'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['\n\n\n                    '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),3,'a',[[
+      (l()(),import1.ɵeld(0,(null as any),(null as any),5,'a',[[
         'class',
         'ui huge image label'
       ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
+    ],[
+      [
+        1,
+        'target',
+        0
+      ]
+      ,
+      [
+        8,
+        'href',
+        4
+      ]
+
+    ]
+      ,[[
+        (null as any),
+        'click'
+      ]
+    ],(v,en,$event) => {
+      var ad:boolean = true;
+      if (('click' === en)) {
+        const pd_0:any = ((<any>import1.ɵnov(v,29).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+        ad = (pd_0 && ad);
+      }
+      return ad;
+    },(null as any),(null as any))),
+    import1.ɵdid(671744,(null as any),0,import2.RouterLinkWithHref,[
+      import2.Router,
+      import2.ActivatedRoute,
+      import3.LocationStrategy
+    ]
+      ,{routerLink: [
+        0,
+        'routerLink'
+      ]
+    },(null as any)),
+    import1.ɵpad(2),
     (l()(),import1.ɵted((null as any),['\n                        '])),
       (l()(),import1.ɵeld(0,(null as any),(null as any),0,'img',([] as any[]),[[
         8,
@@ -189,7 +261,7 @@ function View_ShowMixDetailComponent_1(l:any):import1.ɵViewDefinition {
         'ui button'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    import1.ɵdid(278528,(null as any),0,import2.NgClass,[
+    import1.ɵdid(278528,(null as any),0,import3.NgClass,[
       import1.IterableDiffers,
       import1.KeyValueDiffers,
       import1.ElementRef,
@@ -222,7 +294,7 @@ function View_ShowMixDetailComponent_1(l:any):import1.ɵViewDefinition {
         'ui basic label'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    import1.ɵdid(278528,(null as any),0,import2.NgClass,[
+    import1.ɵdid(278528,(null as any),0,import3.NgClass,[
       import1.IterableDiffers,
       import1.KeyValueDiffers,
       import1.ElementRef,
@@ -291,7 +363,7 @@ function View_ShowMixDetailComponent_1(l:any):import1.ɵViewDefinition {
         'ui button'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    import1.ɵdid(278528,(null as any),0,import2.NgClass,[
+    import1.ɵdid(278528,(null as any),0,import3.NgClass,[
       import1.IterableDiffers,
       import1.KeyValueDiffers,
       import1.ElementRef,
@@ -324,7 +396,7 @@ function View_ShowMixDetailComponent_1(l:any):import1.ɵViewDefinition {
         'ui basic label'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    import1.ɵdid(278528,(null as any),0,import2.NgClass,[
+    import1.ɵdid(278528,(null as any),0,import3.NgClass,[
       import1.IterableDiffers,
       import1.KeyValueDiffers,
       import1.ElementRef,
@@ -426,44 +498,54 @@ function View_ShowMixDetailComponent_1(l:any):import1.ɵViewDefinition {
   ]
   ,(ck,v) => {
     var co:any = v.component;
-    const currVal_5:any = 'ui button';
-    const currVal_6:any = ck(v,54,0,(co.upsel == 1));
-    ck(v,53,0,currVal_5,currVal_6);
-    const currVal_7:any = 'ui basic label';
-    const currVal_8:any = ck(v,61,0,(co.downsel == 1));
-    ck(v,60,0,currVal_7,currVal_8);
-    const currVal_10:any = 'ui button';
-    const currVal_11:any = ck(v,76,0,(co.downsel == 1));
-    ck(v,75,0,currVal_10,currVal_11);
-    const currVal_12:any = 'ui basic label';
-    const currVal_13:any = ck(v,83,0,(co.downsel == 1));
-    ck(v,82,0,currVal_12,currVal_13);
+    const currVal_3:any = ck(v,20,0,'/mixesof',co.breedLink.breed1);
+    ck(v,19,0,currVal_3);
+    const currVal_8:any = ck(v,30,0,'/mixesof',co.breedLink.breed2);
+    ck(v,29,0,currVal_8);
+    const currVal_11:any = 'ui button';
+    const currVal_12:any = ck(v,58,0,(co.upsel == 1));
+    ck(v,57,0,currVal_11,currVal_12);
+    const currVal_13:any = 'ui basic label';
+    const currVal_14:any = ck(v,65,0,(co.downsel == 1));
+    ck(v,64,0,currVal_13,currVal_14);
+    const currVal_16:any = 'ui button';
+    const currVal_17:any = ck(v,80,0,(co.downsel == 1));
+    ck(v,79,0,currVal_16,currVal_17);
+    const currVal_18:any = 'ui basic label';
+    const currVal_19:any = ck(v,87,0,(co.downsel == 1));
+    ck(v,86,0,currVal_18,currVal_19);
   },(ck,v) => {
     var co:any = v.component;
     const currVal_0:any = co.mix.Name;
     ck(v,7,0,currVal_0);
-    const currVal_1:any = import1.ɵinlineInterpolate(1,'',co.mixesService.serviceBreeds[co.mix.breed1],'');
-    ck(v,20,0,currVal_1);
-    const currVal_2:any = co.mix.breed1;
-    ck(v,21,0,currVal_2);
-    const currVal_3:any = import1.ɵinlineInterpolate(1,'',co.mixesService.serviceBreeds[co.mix.breed2],'');
-    ck(v,28,0,currVal_3);
-    const currVal_4:any = co.mix.breed2;
-    ck(v,29,0,currVal_4);
-    const currVal_9:any = co.mix.upvote;
-    ck(v,62,0,currVal_9);
-    const currVal_14:any = co.mix.downvote;
-    ck(v,84,0,currVal_14);
-    const currVal_15:any = import1.ɵinlineInterpolate(1,'',co.mix.image,'');
-    ck(v,106,0,currVal_15);
-    const currVal_16:any = import1.ɵinlineInterpolate(1,'',co.mix.imagesource,'');
-    ck(v,108,0,currVal_16);
+    const currVal_1:any = import1.ɵnov(v,19).target;
+    const currVal_2:any = import1.ɵnov(v,19).href;
+    ck(v,18,0,currVal_1,currVal_2);
+    const currVal_4:any = import1.ɵinlineInterpolate(1,'',co.mixesService.serviceBreeds[co.mix.breed1],'');
+    ck(v,22,0,currVal_4);
+    const currVal_5:any = co.mix.breed1;
+    ck(v,23,0,currVal_5);
+    const currVal_6:any = import1.ɵnov(v,29).target;
+    const currVal_7:any = import1.ɵnov(v,29).href;
+    ck(v,28,0,currVal_6,currVal_7);
+    const currVal_9:any = import1.ɵinlineInterpolate(1,'',co.mixesService.serviceBreeds[co.mix.breed2],'');
+    ck(v,32,0,currVal_9);
+    const currVal_10:any = co.mix.breed2;
+    ck(v,33,0,currVal_10);
+    const currVal_15:any = co.mix.upvote;
+    ck(v,66,0,currVal_15);
+    const currVal_20:any = co.mix.downvote;
+    ck(v,88,0,currVal_20);
+    const currVal_21:any = import1.ɵinlineInterpolate(1,'',co.mix.image,'');
+    ck(v,110,0,currVal_21);
+    const currVal_22:any = import1.ɵinlineInterpolate(1,'',co.mix.imagesource,'');
+    ck(v,112,0,currVal_22);
   });
 }
 export function View_ShowMixDetailComponent_0(l:any):import1.ɵViewDefinition {
   return import1.ɵvid(0,[
     (l()(),import1.ɵand(16777216,(null as any),(null as any),1,(null as any),View_ShowMixDetailComponent_1)),
-    import1.ɵdid(16384,(null as any),0,import2.NgIf,[
+    import1.ɵdid(16384,(null as any),0,import3.NgIf,[
       import1.ViewContainerRef,
       import1.TemplateRef
     ]
@@ -475,7 +557,7 @@ export function View_ShowMixDetailComponent_0(l:any):import1.ɵViewDefinition {
     (l()(),import1.ɵted((null as any),['\n']))
   ]
   ,(ck,v) => {
-    var co:import3.ShowMixDetailComponent = v.component;
+    var co:import4.ShowMixDetailComponent = v.component;
     const currVal_0:any = co.mix;
     ck(v,1,0,currVal_0);
   },(null as any));
@@ -483,10 +565,10 @@ export function View_ShowMixDetailComponent_0(l:any):import1.ɵViewDefinition {
 function View_ShowMixDetailComponent_Host_0(l:any):import1.ɵViewDefinition {
   return import1.ɵvid(0,[
     (l()(),import1.ɵeld(0,(null as any),(null as any),1,'app-show-mix-detail',([] as any[]),(null as any),(null as any),(null as any),View_ShowMixDetailComponent_0,RenderType_ShowMixDetailComponent)),
-    import1.ɵdid(114688,(null as any),0,import3.ShowMixDetailComponent,[
-      import4.MixesService,
-      import5.ActivatedRoute,
-      import2.Location,
+    import1.ɵdid(114688,(null as any),0,import4.ShowMixDetailComponent,[
+      import5.MixesService,
+      import2.ActivatedRoute,
+      import3.Location,
       import6.Http
     ]
     ,(null as any),(null as any))
@@ -495,5 +577,5 @@ function View_ShowMixDetailComponent_Host_0(l:any):import1.ɵViewDefinition {
     ck(v,1,0);
   },(null as any));
 }
-export const ShowMixDetailComponentNgFactory:import1.ComponentFactory<import3.ShowMixDetailComponent> = import1.ɵccf('app-show-mix-detail',import3.ShowMixDetailComponent,View_ShowMixDetailComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvc2hvdy1taXgtZGV0YWlsL3Nob3ctbWl4LWRldGFpbC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vaG9tZS91YnVudHUvd29ya3NwYWNlL21haW4vYXNzZXRzL2FwcC9zaG93LW1peC1kZXRhaWwvc2hvdy1taXgtZGV0YWlsLmNvbXBvbmVudC50cyIsIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvc2hvdy1taXgtZGV0YWlsL3Nob3ctbWl4LWRldGFpbC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvc2hvdy1taXgtZGV0YWlsL3Nob3ctbWl4LWRldGFpbC5jb21wb25lbnQudHMuU2hvd01peERldGFpbENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxkaXYgKm5nSWY9XCJtaXhcIiBjbGFzcz1cInVpIGNvbnRhaW5lclwiPlxuXG5cbiAgICA8ZGl2IGNsYXNzPVwidWkgdHdvIGNvbHVtbiBncmlkIHN0YWNrYWJsZVwiPlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY29sdW1uXCI+XG5cblxuICAgICAgICAgICAgPGgxIGNsYXNzPVwidWkgY2VudGVyIGFsaWduZWQgaWNvbiBoZWFkZXJcIiBzdHlsZT1cImZvbnQtc2l6ZTogM2VtO1wiPnt7bWl4Lk5hbWV9fTwvaDE+XG4gICAgICAgICAgICA8YnI+XG4gICAgICAgICAgICA8aHI+PGJyPlxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cInVpIHR3byBjb2x1bW4gY2VudGVyZWQgZ3JpZCBzdGFja2FibGVcIj5cblxuXG5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZWlnaHQgd2lkZSBjZW50ZXIgYWxpZ25lZCBjb2x1bW5cIj5cblxuICAgICAgICAgICAgICAgICAgICA8YSBjbGFzcz1cInVpIGh1Z2UgaW1hZ2UgbGFiZWxcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPVwie3ttaXhlc1NlcnZpY2Uuc2VydmljZUJyZWVkc1ttaXguYnJlZWQxXX19XCI+IHt7bWl4LmJyZWVkMX19XG4gICAgICAgICAgICAgICAgICAgIDwvYT5cblxuXG5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZWlnaHQgd2lkZSBjZW50ZXIgYWxpZ25lZCBjb2x1bW5cIj5cblxuXG4gICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzPVwidWkgaHVnZSBpbWFnZSBsYWJlbFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9XCJ7e21peGVzU2VydmljZS5zZXJ2aWNlQnJlZWRzW21peC5icmVlZDJdfX1cIj4ge3ttaXguYnJlZWQyfX1cbiAgICAgICAgICAgICAgICAgICAgPC9hPlxuXG4gICAgICAgICAgICAgICAgPC9kaXY+XG5cblxuXG4gICAgICAgICAgICA8L2Rpdj5cblxuXG5cblxuICAgICAgICAgICAgPGJyPjxicj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJ1aSB0d28gY29sdW1uIGNlbnRlcmVkIGdyaWQgc3RhY2thYmxlXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInVpIGhvcml6b250YWwgZGl2aWRlclwiPlxuICAgICAgICAgICAgICAgICAgICA8aDIgY2xhc3M9XCJoZWFkZXJcIj5SYXRlIHRoaXMgbWl4ITwvaDI+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPGJyPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCIgY2VudGVyZWQgcm93XCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJlaWdodCB3aWRlIGNlbnRlciBhbGlnbmVkIGNvbHVtblwiPlxuXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwidWkgaHVnZSBsYWJlbGVkIGJ1dHRvblwiIChjbGljayk9XCJ1cFZvdGUoKVwiIHRhYmluZGV4PVwiMFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJ1aSBidXR0b25cIiBbbmdDbGFzc109XCJ7cG9zaXRpdmU6IHVwc2VsID09IDF9XCI+XG4gICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz1cImFycm93IHVwIGljb25cIj48L2k+IE1pcmFjbGVcbiAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzPVwidWkgYmFzaWMgbGFiZWxcIiBbbmdDbGFzc109XCJ7bGFyZ2VyOiBkb3duc2VsID09IDF9XCI+XG4gICAgICAgICAgICAgICAgICAgICB7e21peC51cHZvdGV9fVxuICAgICAgICAgICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8YnI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8YnI+XG5cblxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImVpZ2h0IHdpZGUgY2VudGVyIGFsaWduZWQgY29sdW1uXCI+XG5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJ1aSBodWdlIGxhYmVsZWQgYnV0dG9uXCIgKGNsaWNrKT1cImRvd25Wb3RlKClcIiB0YWJpbmRleD1cIjBcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPVwidWkgYnV0dG9uXCIgW25nQ2xhc3NdPVwie3Bvc2l0aXZlOiBkb3duc2VsID09IDF9XCI+XG4gICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz1cImFycm93IGRvd24gaWNvblwiPjwvaT4gQWJvbWluYXRpb25cbiAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzPVwidWkgYmFzaWMgbGFiZWxcIiBbbmdDbGFzc109XCJ7bGFyZ2VyOiBkb3duc2VsID09IDF9XCI+XG4gICAgICAgICAgICAgICAgICAgICB7e21peC5kb3dudm90ZX19XG4gICAgICAgICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxicj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxicj5cblxuXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cInVpIG9uZSBjb2x1bW4gY2VudGVyZWQgZ3JpZCBzdGFja2FibGVcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZWlnaHQgd2lkZSBjZW50ZXIgYWxpZ25lZCBjb2x1bW5cIj5cblxuXG4gICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJ1aSBodWdlIGJhc2ljIGJ1dHRvblwiIChjbGljayk9XCJnb0JhY2soKVwiPkJBQ0s8L2J1dHRvbj5cblxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY29sdW1uXCI+XG4gICAgICAgICAgICA8aW1nIGNsYXNzPVwidWkgIGxhcmdlIGltYWdlIGJvcmRlcmVkIHJvdW5kZWRcIiBzcmM9XCJ7e21peC5pbWFnZX19XCI+XG4gICAgICAgICAgICA8YSBocmVmPVwie3ttaXguaW1hZ2Vzb3VyY2V9fVwiIHRhcmdldD1cIl9ibGFua1wiPlNvdXJjZTwvYT5cbiAgICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG48L2Rpdj5cbiIsIjxhcHAtc2hvdy1taXgtZGV0YWlsPjwv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
+export const ShowMixDetailComponentNgFactory:import1.ComponentFactory<import4.ShowMixDetailComponent> = import1.ɵccf('app-show-mix-detail',import4.ShowMixDetailComponent,View_ShowMixDetailComponent_Host_0,{},{},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvc2hvdy1taXgtZGV0YWlsL3Nob3ctbWl4LWRldGFpbC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vaG9tZS91YnVudHUvd29ya3NwYWNlL21haW4vYXNzZXRzL2FwcC9zaG93LW1peC1kZXRhaWwvc2hvdy1taXgtZGV0YWlsLmNvbXBvbmVudC50cyIsIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvc2hvdy1taXgtZGV0YWlsL3Nob3ctbWl4LWRldGFpbC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvc2hvdy1taXgtZGV0YWlsL3Nob3ctbWl4LWRldGFpbC5jb21wb25lbnQudHMuU2hvd01peERldGFpbENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxkaXYgKm5nSWY9XCJtaXhcIiBjbGFzcz1cInVpIGNvbnRhaW5lclwiPlxuXG5cbiAgICA8ZGl2IGNsYXNzPVwidWkgdHdvIGNvbHVtbiBncmlkIHN0YWNrYWJsZVwiPlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY29sdW1uXCI+XG5cblxuICAgICAgICAgICAgPGgxIGNsYXNzPVwidWkgY2VudGVyIGFsaWduZWQgaWNvbiBoZWFkZXJcIiBzdHlsZT1cImZvbnQtc2l6ZTogM2VtO1wiPnt7bWl4Lk5hbWV9fTwvaDE+XG4gICAgICAgICAgICA8YnI+XG4gICAgICAgICAgICA8aHI+PGJyPlxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cInVpIHR3byBjb2x1bW4gY2VudGVyZWQgZ3JpZCBzdGFja2FibGVcIj5cblxuXG5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZWlnaHQgd2lkZSBjZW50ZXIgYWxpZ25lZCBjb2x1bW5cIj5cblxuICAgICAgICAgICAgICAgICAgICA8YSBjbGFzcz1cInVpIGh1Z2UgaW1hZ2UgbGFiZWxcIiBbcm91dGVyTGlua109XCJbJy9taXhlc29mJywgYnJlZWRMaW5rLmJyZWVkMV1cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPVwie3ttaXhlc1NlcnZpY2Uuc2VydmljZUJyZWVkc1ttaXguYnJlZWQxXX19XCI+IHt7bWl4LmJyZWVkMX19XG4gICAgICAgICAgICAgICAgICAgIDwvYT5cblxuXG5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZWlnaHQgd2lkZSBjZW50ZXIgYWxpZ25lZCBjb2x1bW5cIj5cblxuXG4gICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzPVwidWkgaHVnZSBpbWFnZSBsYWJlbFwiIFtyb3V0ZXJMaW5rXT1cIlsnL21peGVzb2YnLCBicmVlZExpbmsuYnJlZWQyXVwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9XCJ7e21peGVzU2VydmljZS5zZXJ2aWNlQnJlZWRzW21peC5icmVlZDJdfX1cIj4ge3ttaXguYnJlZWQyfX1cbiAgICAgICAgICAgICAgICAgICAgPC9hPlxuXG4gICAgICAgICAgICAgICAgPC9kaXY+XG5cblxuXG4gICAgICAgICAgICA8L2Rpdj5cblxuXG5cblxuICAgICAgICAgICAgPGJyPjxicj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJ1aSB0d28gY29sdW1uIGNlbnRlcmVkIGdyaWQgc3RhY2thYmxlXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInVpIGhvcml6b250YWwgZGl2aWRlclwiPlxuICAgICAgICAgICAgICAgICAgICA8aDIgY2xhc3M9XCJoZWFkZXJcIj5SYXRlIHRoaXMgbWl4ITwvaDI+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPGJyPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCIgY2VudGVyZWQgcm93XCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJlaWdodCB3aWRlIGNlbnRlciBhbGlnbmVkIGNvbHVtblwiPlxuXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwidWkgaHVnZSBsYWJlbGVkIGJ1dHRvblwiIChjbGljayk9XCJ1cFZvdGUoKVwiIHRhYmluZGV4PVwiMFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJ1aSBidXR0b25cIiBbbmdDbGFzc109XCJ7cG9zaXRpdmU6IHVwc2VsID09IDF9XCI+XG4gICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz1cImFycm93IHVwIGljb25cIj48L2k+IE1pcmFjbGVcbiAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzPVwidWkgYmFzaWMgbGFiZWxcIiBbbmdDbGFzc109XCJ7bGFyZ2VyOiBkb3duc2VsID09IDF9XCI+XG4gICAgICAgICAgICAgICAgICAgICB7e21peC51cHZvdGV9fVxuICAgICAgICAgICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8YnI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8YnI+XG5cblxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImVpZ2h0IHdpZGUgY2VudGVyIGFsaWduZWQgY29sdW1uXCI+XG5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJ1aSBodWdlIGxhYmVsZWQgYnV0dG9uXCIgKGNsaWNrKT1cImRvd25Wb3RlKClcIiB0YWJpbmRleD1cIjBcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPVwidWkgYnV0dG9uXCIgW25nQ2xhc3NdPVwie3Bvc2l0aXZlOiBkb3duc2VsID09IDF9XCI+XG4gICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz1cImFycm93IGRvd24gaWNvblwiPjwvaT4gQWJvbWluYXRpb25cbiAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGNsYXNzPVwidWkgYmFzaWMgbGFiZWxcIiBbbmdDbGFzc109XCJ7bGFyZ2VyOiBkb3duc2VsID09IDF9XCI+XG4gICAgICAgICAgICAgICAgICAgICB7e21peC5kb3dudm90ZX19XG4gICAgICAgICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxicj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxicj5cblxuXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cInVpIG9uZSBjb2x1bW4gY2VudGVyZWQgZ3JpZCBzdGFja2FibGVcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZWlnaHQgd2lkZSBjZW50ZXIgYWxpZ25lZCBjb2x1bW5cIj5cblxuXG4gICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJ1aSBodWdlIGJhc2ljIGJ1dHRvblwiIChjbGljayk9XCJnb0JhY2soKVwiPkJBQ0s8L2J1dHRvbj5cblxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY29sdW1uXCI+XG4gICAgICAgICAgICA8aW1nIGNsYXNzPVwidWkgIGxhcmdlIGltYWdlIGJvcmRlcmVkIHJvdW5kZWRcIiBzcmM9XCJ7e21peC5pbWFnZX19XCI+XG4gICAgICAgICAgICA8YSBocmVmPVwie3ttaXguaW1hZ2Vzb3VyY2V9fVwiIHRhcmdldD1cIl9ibGFua1wiPlNvdXJjZTwvYT5cbiAgICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG48L2Rpdj5cbiIsIjxhcHAtc2hvdy1taXgtZGV0YWlsPjwvYXBwLXNob3ctbWl4LWRldGFpbD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7TUNBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXNDO01BR2xDO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBMEM7TUFDdEM7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUFvQjtJQUdoQjtNQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO0tBQUE7SUFBa0U7TUFBQTtNQUFBO0lBQUE7SUFBQTtJQUFpQjtJQUNuRjtJQUFJO0lBQ0o7SUFBSTtJQUFJO01BQ1I7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUFtRDtNQUkvQztRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQThDO01BRTFDO1FBQUE7UUFBQTtNQUFBO0lBQUE7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO01BQUE7TUFBQTtRQUFBO1FBQUE7TUFBQTtNQUFBO0lBQUE7Z0JBQUE7Ozs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7Z0JBQStCO0lBQThDO01BQ3pFO1FBQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUFzRDtNQUFBO01BQUE7SUFBQTtJQUFBO0lBQ3REO0lBSUY7TUFDTjtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQThDO01BRzFDO1FBQUE7UUFBQTtNQUFBO0lBQUE7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO01BQUE7TUFBQTtRQUFBO1FBQUE7TUFBQTtNQUFBO0lBQUE7Z0JBQUE7Ozs7SUFBQTtPQUFBO1FBQUE7UUFBQTtN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

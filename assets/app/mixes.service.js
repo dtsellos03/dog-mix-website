@@ -98,7 +98,6 @@ var MixesService = (function () {
             .map(function (response) {
             //    console.log(response)
             var mix = response.json().obj;
-            console.log(mix);
             var foundmix = new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imagesource);
             //  this['mix'] = foundmix;
             return foundmix;

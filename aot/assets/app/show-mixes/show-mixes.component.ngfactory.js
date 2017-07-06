@@ -538,7 +538,10 @@ export function View_ShowMixesComponent_0(l) {
 function View_ShowMixesComponent_Host_0(l) {
     return import1.ɵvid(0, [
         (l()(), import1.ɵeld(0, null, null, 1, 'app-show-mixes', [], null, null, null, View_ShowMixesComponent_0, RenderType_ShowMixesComponent)),
-        import1.ɵdid(114688, null, 0, import5.ShowMixesComponent, [import7.MixesService], null, null)
+        import1.ɵdid(114688, null, 0, import5.ShowMixesComponent, [
+            import7.MixesService,
+            import2.ActivatedRoute
+        ], null, null)
     ], function (ck, v) {
         ck(v, 1, 0);
     }, null);

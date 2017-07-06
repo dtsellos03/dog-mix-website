@@ -15,29 +15,52 @@ export var RenderType_AboutComponent = import1.ɵcrt({
 });
 export function View_AboutComponent_0(l) {
     return import1.ɵvid(0, [
-        (l()(), import1.ɵeld(0, null, null, 12, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 23, 'div', [[
                 'class',
                 'container'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵeld(0, null, null, 9, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 20, 'div', [[
                 'class',
                 'container'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['My Dog\'s Mixtape catalogs dog mixes. '])),
+        (l()(), import1.ɵeld(0, null, null, 7, 'h5', [], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['A display of adorable mixes like the '])),
+        (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
+                'href',
+                'http://mydogmixtape.herokuapp.com/mixes/594dc9441b1f9f312862d936'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['Corgiever'])),
+        (l()(), import1.ɵted(null, [' and\n    questionable outcomes like the \n    '])),
+        (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
+                'href',
+                'http://mydogmixtape.herokuapp.com/mixes/594dc9441b1f9f312862d948'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['Australian Pug'])),
+        (l()(), import1.ɵted(null, ['.'])),
         (l()(), import1.ɵted(null, ['\n    '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['Please submit your findings!'])),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['Please help us chart these unknown territories and submit your findings!  '])),
+        (l()(), import1.ɵted(null, ['\n\n    '])),
         (l()(), import1.ɵeld(0, null, null, 0, 'img', [[
                 'src',
                 'http://i.imgur.com/RJHgnht.png'
             ]
         ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵeld(0, null, null, 3, 'h6', [], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['Icons courtesy of '])),
+        (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
+                'href',
+                'http://www.freepik.com/free-vector/cute-dog-breeds_803197.htm'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['Freepik'])),
         (l()(), import1.ɵted(null, ['\n    '])),
         (l()(), import1.ɵted(null, ['\n']))
     ], null, null);

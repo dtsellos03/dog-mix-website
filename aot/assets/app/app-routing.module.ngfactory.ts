@@ -128,6 +128,11 @@ class AppRoutingModuleInjector extends import0.ɵNgModuleInjector<import1.AppRou
         }
         ,
         {
+          path: 'mixesof/:breed',
+          component: import12.ShowMixesComponent
+        }
+        ,
+        {
           path: 'halloffame',
           component: import13.HallOfFameComponent
         }
@@ -168,4 +173,4 @@ class AppRoutingModuleInjector extends import0.ɵNgModuleInjector<import1.AppRou
   }
 }
 export const AppRoutingModuleNgFactory:import0.NgModuleFactory<import1.AppRoutingModule> = new import0.NgModuleFactory<any>(AppRoutingModuleInjector,import1.AppRoutingModule);
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYXBwLXJvdXRpbmcubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYXBwLXJvdXRpbmcubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYXBwLXJvdXRpbmcubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYXBwLXJvdXRpbmcubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=

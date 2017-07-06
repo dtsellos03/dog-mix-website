@@ -23,17 +23,22 @@ var ShowMixDetailComponent = (function () {
         this.upsel = 0;
         this.downsel = 0;
         this.mix = {};
+        this.breedLink = {};
     }
     ShowMixDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
         var id = this.route.params['value'].id;
         if (this.mixesService.serviceMixes.length > 1) {
             this['mix'] = this.mixesService.getMix(id);
+            this['breedLink']['breed1'] = encodeURI(this['mix']['breed1']);
+            this['breedLink']['breed2'] = encodeURI(this['mix']['breed2']);
         }
         else {
             this.mixesService.getMixAsync(id)
                 .subscribe(function (foundmix) {
                 _this['mix'] = foundmix;
+                _this['breedLink']['breed1'] = encodeURI(_this['mix']['breed1']);
+                _this['breedLink']['breed2'] = encodeURI(_this['mix']['breed2']);
             });
         }
     };
@@ -84,7 +89,7 @@ var ShowMixDetailComponent = (function () {
     };
     ShowMixDetailComponent.prototype.upObservableUp = function () {
         var body = "blank";
-        return this.http.post('/mixes/' + this['mix']['id'] + '/like/1', body)
+        return this.http.post('/getMixes/' + this['mix']['id'] + '/like/1', body)
             .map(function (response) {
             var result = response.json();
             return result;
@@ -93,7 +98,7 @@ var ShowMixDetailComponent = (function () {
     };
     ShowMixDetailComponent.prototype.downObservableUp = function () {
         var body = "blank";
-        return this.http.post('/mixes/' + this['mix']['id'] + '/dislike/1', body)
+        return this.http.post('/getMixes/' + this['mix']['id'] + '/dislike/1', body)
             .map(function (response) {
             var result = response.json();
             return result;
@@ -102,7 +107,7 @@ var ShowMixDetailComponent = (function () {
     };
     ShowMixDetailComponent.prototype.upObservableDown = function () {
         var body = "blank";
-        return this.http.post('/mixes/' + this['mix']['id'] + '/like/-1', body)
+        return this.http.post('/getMixes/' + this['mix']['id'] + '/like/-1', body)
             .map(function (response) {
             var result = response.json();
             return result;
@@ -111,7 +116,7 @@ var ShowMixDetailComponent = (function () {
     };
     ShowMixDetailComponent.prototype.downObservableDown = function () {
         var body = "blank";
-        return this.http.post('/mixes/' + this['mix']['id'] + '/dislike/-1', body)
+        return this.http.post('/getMixes/' + this['mix']['id'] + '/dislike/-1', body)
             .map(function (response) {
             var result = response.json();
             return result;

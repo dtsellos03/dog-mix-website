@@ -430,6 +430,10 @@ var AppModuleInjector = (function (_super) {
                     component: import18.ShowMixesComponent
                 },
                 {
+                    path: 'mixesof/:breed',
+                    component: import18.ShowMixesComponent
+                },
+                {
                     path: 'halloffame',
                     component: import19.HallOfFameComponent
                 }

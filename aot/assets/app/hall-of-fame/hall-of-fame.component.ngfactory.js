@@ -238,7 +238,7 @@ function View_HallOfFameComponent_2(l) {
                 'item'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n            '])),
+        (l()(), import1.ɵted(null, [' \n\n            '])),
         (l()(), import1.ɵeld(0, null, null, 5, 'a', [[
                 'class',
                 'ui small image'
@@ -284,7 +284,7 @@ function View_HallOfFameComponent_2(l) {
             ]
         ], null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n            '])),
-        (l()(), import1.ɵted(null, ['\n\n\n            '])),
+        (l()(), import1.ɵted(null, ['\n\n\n\n            '])),
         (l()(), import1.ɵeld(0, null, null, 33, 'div', [[
                 'class',
                 'content'

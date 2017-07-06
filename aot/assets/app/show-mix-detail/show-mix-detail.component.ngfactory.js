@@ -6,10 +6,10 @@
 /* tslint:disable */
 import * as import0 from './show-mix-detail.component.css.shim.ngstyle';
 import * as import1 from '@angular/core';
-import * as import2 from '@angular/common';
-import * as import3 from '../../../../assets/app/show-mix-detail/show-mix-detail.component';
-import * as import4 from '../../../../assets/app/mixes.service';
-import * as import5 from '@angular/router';
+import * as import2 from '@angular/router';
+import * as import3 from '@angular/common';
+import * as import4 from '../../../../assets/app/show-mix-detail/show-mix-detail.component';
+import * as import5 from '../../../../assets/app/mixes.service';
 import * as import6 from '@angular/http';
 var styles_ShowMixDetailComponent = [import0.styles];
 export var RenderType_ShowMixDetailComponent = import1.ɵcrt({
@@ -19,19 +19,19 @@ export var RenderType_ShowMixDetailComponent = import1.ɵcrt({
 });
 function View_ShowMixDetailComponent_1(l) {
     return import1.ɵvid(0, [
-        (l()(), import1.ɵeld(0, null, null, 112, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 116, 'div', [[
                 'class',
                 'ui container'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n\n\n    '])),
-        (l()(), import1.ɵeld(0, null, null, 109, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 113, 'div', [[
                 'class',
                 'ui two column grid stackable'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n        '])),
-        (l()(), import1.ɵeld(0, null, null, 98, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 102, 'div', [[
                 'class',
                 'column'
             ]
@@ -57,23 +57,55 @@ function View_ShowMixDetailComponent_1(l) {
         (l()(), import1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n            '])),
-        (l()(), import1.ɵeld(0, null, null, 17, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 21, 'div', [[
                 'class',
                 'ui two column centered grid stackable'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n\n\n\n                '])),
-        (l()(), import1.ɵeld(0, null, null, 6, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 8, 'div', [[
                 'class',
                 'eight wide center aligned column'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n\n                    '])),
-        (l()(), import1.ɵeld(0, null, null, 3, 'a', [[
+        (l()(), import1.ɵeld(0, null, null, 5, 'a', [[
                 'class',
                 'ui huge image label'
             ]
-        ], null, null, null, null, null)),
+        ], [
+            [
+                1,
+                'target',
+                0
+            ],
+            [
+                8,
+                'href',
+                4
+            ]
+        ], [[
+                null,
+                'click'
+            ]
+        ], function (v, en, $event) {
+            var ad = true;
+            if (('click' === en)) {
+                var pd_0 = (import1.ɵnov(v, 19).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)),
+        import1.ɵdid(671744, null, 0, import2.RouterLinkWithHref, [
+            import2.Router,
+            import2.ActivatedRoute,
+            import3.LocationStrategy
+        ], { routerLink: [
+                0,
+                'routerLink'
+            ]
+        }, null),
+        import1.ɵpad(2),
         (l()(), import1.ɵted(null, ['\n                        '])),
         (l()(), import1.ɵeld(0, null, null, 0, 'img', [], [[
                 8,
@@ -87,17 +119,49 @@ function View_ShowMixDetailComponent_1(l) {
         ])),
         (l()(), import1.ɵted(null, ['\n\n\n\n                '])),
         (l()(), import1.ɵted(null, ['\n                '])),
-        (l()(), import1.ɵeld(0, null, null, 6, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 8, 'div', [[
                 'class',
                 'eight wide center aligned column'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n\n\n                    '])),
-        (l()(), import1.ɵeld(0, null, null, 3, 'a', [[
+        (l()(), import1.ɵeld(0, null, null, 5, 'a', [[
                 'class',
                 'ui huge image label'
             ]
-        ], null, null, null, null, null)),
+        ], [
+            [
+                1,
+                'target',
+                0
+            ],
+            [
+                8,
+                'href',
+                4
+            ]
+        ], [[
+                null,
+                'click'
+            ]
+        ], function (v, en, $event) {
+            var ad = true;
+            if (('click' === en)) {
+                var pd_0 = (import1.ɵnov(v, 29).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)),
+        import1.ɵdid(671744, null, 0, import2.RouterLinkWithHref, [
+            import2.Router,
+            import2.ActivatedRoute,
+            import3.LocationStrategy
+        ], { routerLink: [
+                0,
+                'routerLink'
+            ]
+        }, null),
+        import1.ɵpad(2),
         (l()(), import1.ɵted(null, ['\n                        '])),
         (l()(), import1.ɵeld(0, null, null, 0, 'img', [], [[
                 8,
@@ -177,7 +241,7 @@ function View_ShowMixDetailComponent_1(l) {
                 'ui button'
             ]
         ], null, null, null, null, null)),
-        import1.ɵdid(278528, null, 0, import2.NgClass, [
+        import1.ɵdid(278528, null, 0, import3.NgClass, [
             import1.IterableDiffers,
             import1.KeyValueDiffers,
             import1.ElementRef,
@@ -206,7 +270,7 @@ function View_ShowMixDetailComponent_1(l) {
                 'ui basic label'
             ]
         ], null, null, null, null, null)),
-        import1.ɵdid(278528, null, 0, import2.NgClass, [
+        import1.ɵdid(278528, null, 0, import3.NgClass, [
             import1.IterableDiffers,
             import1.KeyValueDiffers,
             import1.ElementRef,
@@ -267,7 +331,7 @@ function View_ShowMixDetailComponent_1(l) {
                 'ui button'
             ]
         ], null, null, null, null, null)),
-        import1.ɵdid(278528, null, 0, import2.NgClass, [
+        import1.ɵdid(278528, null, 0, import3.NgClass, [
             import1.IterableDiffers,
             import1.KeyValueDiffers,
             import1.ElementRef,
@@ -296,7 +360,7 @@ function View_ShowMixDetailComponent_1(l) {
                 'ui basic label'
             ]
         ], null, null, null, null, null)),
-        import1.ɵdid(278528, null, 0, import2.NgClass, [
+        import1.ɵdid(278528, null, 0, import3.NgClass, [
             import1.IterableDiffers,
             import1.KeyValueDiffers,
             import1.ElementRef,
@@ -392,44 +456,54 @@ function View_ShowMixDetailComponent_1(l) {
         (l()(), import1.ɵted(null, ['\n']))
     ], function (ck, v) {
         var co = v.component;
-        var currVal_5 = 'ui button';
-        var currVal_6 = ck(v, 54, 0, (co.upsel == 1));
-        ck(v, 53, 0, currVal_5, currVal_6);
-        var currVal_7 = 'ui basic label';
-        var currVal_8 = ck(v, 61, 0, (co.downsel == 1));
-        ck(v, 60, 0, currVal_7, currVal_8);
-        var currVal_10 = 'ui button';
-        var currVal_11 = ck(v, 76, 0, (co.downsel == 1));
-        ck(v, 75, 0, currVal_10, currVal_11);
-        var currVal_12 = 'ui basic label';
-        var currVal_13 = ck(v, 83, 0, (co.downsel == 1));
-        ck(v, 82, 0, currVal_12, currVal_13);
+        var currVal_3 = ck(v, 20, 0, '/mixesof', co.breedLink.breed1);
+        ck(v, 19, 0, currVal_3);
+        var currVal_8 = ck(v, 30, 0, '/mixesof', co.breedLink.breed2);
+        ck(v, 29, 0, currVal_8);
+        var currVal_11 = 'ui button';
+        var currVal_12 = ck(v, 58, 0, (co.upsel == 1));
+        ck(v, 57, 0, currVal_11, currVal_12);
+        var currVal_13 = 'ui basic label';
+        var currVal_14 = ck(v, 65, 0, (co.downsel == 1));
+        ck(v, 64, 0, currVal_13, currVal_14);
+        var currVal_16 = 'ui button';
+        var currVal_17 = ck(v, 80, 0, (co.downsel == 1));
+        ck(v, 79, 0, currVal_16, currVal_17);
+        var currVal_18 = 'ui basic label';
+        var currVal_19 = ck(v, 87, 0, (co.downsel == 1));
+        ck(v, 86, 0, currVal_18, currVal_19);
     }, function (ck, v) {
         var co = v.component;
         var currVal_0 = co.mix.Name;
         ck(v, 7, 0, currVal_0);
-        var currVal_1 = import1.ɵinlineInterpolate(1, '', co.mixesService.serviceBreeds[co.mix.breed1], '');
-        ck(v, 20, 0, currVal_1);
-        var currVal_2 = co.mix.breed1;
-        ck(v, 21, 0, currVal_2);
-        var currVal_3 = import1.ɵinlineInterpolate(1, '', co.mixesService.serviceBreeds[co.mix.breed2], '');
-        ck(v, 28, 0, currVal_3);
-        var currVal_4 = co.mix.breed2;
-        ck(v, 29, 0, currVal_4);
-        var currVal_9 = co.mix.upvote;
-        ck(v, 62, 0, currVal_9);
-        var currVal_14 = co.mix.downvote;
-        ck(v, 84, 0, currVal_14);
-        var currVal_15 = import1.ɵinlineInterpolate(1, '', co.mix.image, '');
-        ck(v, 106, 0, currVal_15);
-        var currVal_16 = import1.ɵinlineInterpolate(1, '', co.mix.imagesource, '');
-        ck(v, 108, 0, currVal_16);
+        var currVal_1 = import1.ɵnov(v, 19).target;
+        var currVal_2 = import1.ɵnov(v, 19).href;
+        ck(v, 18, 0, currVal_1, currVal_2);
+        var currVal_4 = import1.ɵinlineInterpolate(1, '', co.mixesService.serviceBreeds[co.mix.breed1], '');
+        ck(v, 22, 0, currVal_4);
+        var currVal_5 = co.mix.breed1;
+        ck(v, 23, 0, currVal_5);
+        var currVal_6 = import1.ɵnov(v, 29).target;
+        var currVal_7 = import1.ɵnov(v, 29).href;
+        ck(v, 28, 0, currVal_6, currVal_7);
+        var currVal_9 = import1.ɵinlineInterpolate(1, '', co.mixesService.serviceBreeds[co.mix.breed2], '');
+        ck(v, 32, 0, currVal_9);
+        var currVal_10 = co.mix.breed2;
+        ck(v, 33, 0, currVal_10);
+        var currVal_15 = co.mix.upvote;
+        ck(v, 66, 0, currVal_15);
+        var currVal_20 = co.mix.downvote;
+        ck(v, 88, 0, currVal_20);
+        var currVal_21 = import1.ɵinlineInterpolate(1, '', co.mix.image, '');
+        ck(v, 110, 0, currVal_21);
+        var currVal_22 = import1.ɵinlineInterpolate(1, '', co.mix.imagesource, '');
+        ck(v, 112, 0, currVal_22);
     });
 }
 export function View_ShowMixDetailComponent_0(l) {
     return import1.ɵvid(0, [
         (l()(), import1.ɵand(16777216, null, null, 1, null, View_ShowMixDetailComponent_1)),
-        import1.ɵdid(16384, null, 0, import2.NgIf, [
+        import1.ɵdid(16384, null, 0, import3.NgIf, [
             import1.ViewContainerRef,
             import1.TemplateRef
         ], { ngIf: [
@@ -447,15 +521,15 @@ export function View_ShowMixDetailComponent_0(l) {
 function View_ShowMixDetailComponent_Host_0(l) {
     return import1.ɵvid(0, [
         (l()(), import1.ɵeld(0, null, null, 1, 'app-show-mix-detail', [], null, null, null, View_ShowMixDetailComponent_0, RenderType_ShowMixDetailComponent)),
-        import1.ɵdid(114688, null, 0, import3.ShowMixDetailComponent, [
-            import4.MixesService,
-            import5.ActivatedRoute,
-            import2.Location,
+        import1.ɵdid(114688, null, 0, import4.ShowMixDetailComponent, [
+            import5.MixesService,
+            import2.ActivatedRoute,
+            import3.Location,
             import6.Http
         ], null, null)
     ], function (ck, v) {
         ck(v, 1, 0);
     }, null);
 }
-export var ShowMixDetailComponentNgFactory = import1.ɵccf('app-show-mix-detail', import3.ShowMixDetailComponent, View_ShowMixDetailComponent_Host_0, {}, {}, []);
+export var ShowMixDetailComponentNgFactory = import1.ɵccf('app-show-mix-detail', import4.ShowMixDetailComponent, View_ShowMixDetailComponent_Host_0, {}, {}, []);
 //# sourceMappingURL=show-mix-detail.component.ngfactory.js.map

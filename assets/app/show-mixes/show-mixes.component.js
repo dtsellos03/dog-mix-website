@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component } from '@angular/core';
 import { MixesService } from '../mixes.service';
+import { ActivatedRoute } from '@angular/router';
 function importAll(r) {
     var images = {};
     r.keys().map(function (item, index) { images[item.replace('./', '').replace('.jpg', '')] = r(item); });
@@ -22,8 +23,9 @@ function shuffle(a) {
     var _a;
 }
 var ShowMixesComponent = (function () {
-    function ShowMixesComponent(mixesService) {
+    function ShowMixesComponent(mixesService, route) {
         this.mixesService = mixesService;
+        this.route = route;
         this.breeds = [{ "name": "Dachshund", "image": "dachshund" },
             { "name": "Corgi", "image": "corgi" },
             { "name": "Maltese", "image": "maltese" },
@@ -63,6 +65,9 @@ var ShowMixesComponent = (function () {
         var _this = this;
         var images = importAll(require['context']('../../../assets/images', false, /\.(png|jpe?g|svg)$/));
         var breedsToService = {};
+        if (this.route.params['value']['breed']) {
+            var filterBreed = decodeURI(this.route.params['value']['breed']);
+        }
         this.breeds.forEach(function (element) {
             element.image = images[element.image];
             breedsToService[element.name] = element.image;
@@ -70,11 +75,17 @@ var ShowMixesComponent = (function () {
         this.mixesService.serviceBreeds = breedsToService;
         if (this.mixesService.isLoaded == true) {
             this.mixes = this.mixesService.serviceMixes;
+            if (filterBreed) {
+                this['queryString'] = filterBreed;
+            }
         }
         else {
             this.mixesService.getMixes()
                 .subscribe(function (mixes) {
                 _this.mixes = mixes;
+                if (filterBreed) {
+                    _this['queryString'] = filterBreed;
+                }
             });
             this.mixesService.refreshMixes();
         }
@@ -89,7 +100,7 @@ ShowMixesComponent = __decorate([
         providers: []
         // make fade in animation available to this component
     }),
-    __metadata("design:paramtypes", [MixesService])
+    __metadata("design:paramtypes", [MixesService, ActivatedRoute])
 ], ShowMixesComponent);
 export { ShowMixesComponent };
 //# sourceMappingURL=show-mixes.component.js.map
