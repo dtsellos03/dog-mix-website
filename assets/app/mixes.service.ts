@@ -43,7 +43,7 @@ export class MixesService {
     addMix(mix: Mix) {
         const body = JSON.stringify(mix);
         const headers = new Headers({'Content-Type': 'application/json'});
-        return this.http.post('/mixes', body, {headers: headers})
+        return this.http.post('/getMixes', body, {headers: headers})
             .map((response: Response) => {
                 const result = response.json().obj;
                 return result
@@ -53,7 +53,7 @@ export class MixesService {
  
     
     getMixes() {
-        return this.http.get('/mixes')
+        return this.http.get('/getMixes')
             .map((response: Response) => {
            
                 const mixes = response.json().obj;
@@ -106,5 +106,23 @@ export class MixesService {
 
        
     }   
+    
+        
+       getMixAsync(id: string) {
+         //console.log(id)
+         return this.http.get('/getMixes/'+id)
+             .map((response: Response) => {
+             //    console.log(response)
+                 const mix = response.json().obj;
+                 console.log(mix)
+          
+                 let foundmix = new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imagesource);
+             
+               //  this['mix'] = foundmix;
+
+                 return foundmix;
+             })
  
+}
+
 }
