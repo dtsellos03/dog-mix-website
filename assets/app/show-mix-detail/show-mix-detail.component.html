@@ -14,7 +14,7 @@
 
                 <div class="eight wide center aligned column">
 
-                    <a class="ui huge image label">
+                    <a class="ui huge image label" [routerLink]="['/mixesof', breedLink.breed1]">
                         <img src="{{mixesService.serviceBreeds[mix.breed1]}}"> {{mix.breed1}}
                     </a>
 
@@ -24,7 +24,7 @@
                 <div class="eight wide center aligned column">
 
 
-                    <a class="ui huge image label">
+                    <a class="ui huge image label" [routerLink]="['/mixesof', breedLink.breed2]">
                         <img src="{{mixesService.serviceBreeds[mix.breed2]}}"> {{mix.breed2}}
                     </a>
 
