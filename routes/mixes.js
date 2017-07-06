@@ -5,8 +5,7 @@ var Mix = require("../models/mixes");
 
 
 router.post('/', function (req, res, next) {
-        console.log("IT WORKEDDDDDDDDDDDDDDDD")
-        console.log(req.body)
+
         var mix = new Mix ({
             Name: req.body.Name,
             image: req.body.image,
@@ -33,7 +32,6 @@ router.post('/', function (req, res, next) {
 
 
 router.get("/", function(req, res){
-    console.log("ROUTE REACHED")
     Mix.find()
         .exec(function(err, mixes){
             if (err) {
