@@ -3,3 +3,7 @@
     height: 900px;
     overflow: scroll;
 }
+
+.noCursor {
+    cursor: default !important;
+}
