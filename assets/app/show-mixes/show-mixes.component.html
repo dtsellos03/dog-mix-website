@@ -42,7 +42,9 @@ overflow: scroll;">
 
           <img src="{{mix.image}}">
         </a>
-        <div class="content"> <a class="ui circular label right floated">{{mix.downvote}}</a> <a class="ui circular label right floated">{{mix.upvote}}</a>
+        <div class="content"> 
+        <a class="right floated noCursor labelColor">{{mix.downvote}} <i class="arrow down icon"></i></a> 
+        <a class="right floated noCursor labelColor">{{mix.upvote}} <i class="arrow up icon"></i></a>
           <a class="header" [routerLink]="['/mixes', mix.id]"> {{mix.Name}}</a>
 
           <div class="meta">

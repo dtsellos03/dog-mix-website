@@ -31,3 +31,11 @@
     font-size:0.8em !important;
   }
 }
+
+.noCursor {
+    cursor: default !important;
+}
+
+.labelColor {
+  color: #a7adb7 !important;
+}
