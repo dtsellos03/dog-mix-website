@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MixesService } from '../mixes.service';
+import { ActivatedRoute, Params }   from '@angular/router';
 import { Mix} from '../mix';
 import {FilterPipe} from './pipes';
 
@@ -71,7 +72,7 @@ queryString = '';
   
 
     
-    constructor(private mixesService: MixesService) {}
+    constructor(private mixesService: MixesService,  private route: ActivatedRoute) {}
 
     onClickMe(breed: string) {
 
@@ -85,6 +86,11 @@ queryString = '';
   ngOnInit() {
         const images = importAll(require['context']('../../../assets/images', false, /\.(png|jpe?g|svg)$/));  
         let breedsToService = {}
+        
+        if (this.route.params['value']['breed']) {
+            var filterBreed = decodeURI(this.route.params['value']['breed']);
+        } 
+        
         this.breeds.forEach(function(element){
             
             element.image = images[element.image]
@@ -95,6 +101,9 @@ queryString = '';
         
         if (this.mixesService.isLoaded == true) {
             this.mixes = this.mixesService.serviceMixes;
+            if (filterBreed){
+                this['queryString'] = filterBreed;
+            }
             
         }
    
@@ -104,6 +113,9 @@ queryString = '';
             .subscribe(
                 (mixes: Mix[]) => {
                 this.mixes = mixes;
+                 if (filterBreed){
+                this['queryString'] = filterBreed;
+                 }
                 
             }
             );
