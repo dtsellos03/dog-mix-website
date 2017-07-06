@@ -169,7 +169,7 @@ function View_HallOfFameComponent_1(l) {
         (l()(), import1.ɵted(null, ['\n                '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
                 'class',
-                'ui green label'
+                'ui green label noCursor'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, [
@@ -179,7 +179,7 @@ function View_HallOfFameComponent_1(l) {
         (l()(), import1.ɵted(null, ['\n                '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
                 'class',
-                'ui yellow label'
+                'ui yellow label noCursor'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, [

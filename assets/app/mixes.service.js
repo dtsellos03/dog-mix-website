@@ -38,7 +38,7 @@ var MixesService = (function () {
     MixesService.prototype.addMix = function (mix) {
         var body = JSON.stringify(mix);
         var headers = new Headers({ 'Content-Type': 'application/json' });
-        return this.http.post('/mixes', body, { headers: headers })
+        return this.http.post('/getMixes', body, { headers: headers })
             .map(function (response) {
             var result = response.json().obj;
             return result;
@@ -47,7 +47,7 @@ var MixesService = (function () {
     };
     MixesService.prototype.getMixes = function () {
         var _this = this;
-        return this.http.get('/mixes')
+        return this.http.get('/getMixes')
             .map(function (response) {
             var mixes = response.json().obj;
             var transformedMixes = [];
@@ -90,6 +90,18 @@ var MixesService = (function () {
     MixesService.prototype.getMix = function (desiredID) {
         return this.serviceMixes.find(function (mix) {
             return mix.id == desiredID;
+        });
+    };
+    MixesService.prototype.getMixAsync = function (id) {
+        //console.log(id)
+        return this.http.get('/getMixes/' + id)
+            .map(function (response) {
+            //    console.log(response)
+            var mix = response.json().obj;
+            console.log(mix);
+            var foundmix = new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imagesource);
+            //  this['mix'] = foundmix;
+            return foundmix;
         });
     };
     return MixesService;

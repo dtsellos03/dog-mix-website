@@ -25,12 +25,25 @@ export class ShowMixDetailComponent implements OnInit {
 
 upsel = 0;
 downsel = 0;
-mix='';
+mix={};
 
 
 ngOnInit()  {
       const id = this.route.params['value'].id
-       this['mix'] = this.mixesService.getMix(id)
+      if(this.mixesService.serviceMixes.length > 1) {
+          
+       this['mix'] = this.mixesService.getMix(id);
+       
+      }
+      else {
+          this.mixesService.getMixAsync(id)
+              .subscribe(
+                (foundmix: Mix) => {
+                this['mix'] = foundmix;
+                
+            }
+            );
+      }
     
   }
     

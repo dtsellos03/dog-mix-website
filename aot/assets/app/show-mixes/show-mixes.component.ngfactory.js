@@ -67,7 +67,7 @@ function View_ShowMixesComponent_1(l) {
 }
 function View_ShowMixesComponent_2(l) {
     return import1.ɵvid(0, [
-        (l()(), import1.ɵeld(0, null, null, 25, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 27, 'div', [[
                 'class',
                 'card'
             ]
@@ -119,31 +119,41 @@ function View_ShowMixesComponent_2(l) {
         ], null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵted(null, ['\n        '])),
-        (l()(), import1.ɵeld(0, null, null, 15, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 17, 'div', [[
                 'class',
                 'content'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, [' '])),
-        (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
+        (l()(), import1.ɵted(null, [' \n        '])),
+        (l()(), import1.ɵeld(0, null, null, 2, 'a', [[
                 'class',
-                'ui circular label right floated'
+                'right floated noCursor labelColor'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, [
             '',
-            ''
+            ' '
         ])),
-        (l()(), import1.ɵted(null, [' '])),
-        (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
+        (l()(), import1.ɵeld(0, null, null, 0, 'i', [[
                 'class',
-                'ui circular label right floated'
+                'arrow down icon'
+            ]
+        ], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, [' \n        '])),
+        (l()(), import1.ɵeld(0, null, null, 2, 'a', [[
+                'class',
+                'right floated noCursor labelColor'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, [
             '',
-            ''
+            ' '
         ])),
+        (l()(), import1.ɵeld(0, null, null, 0, 'i', [[
+                'class',
+                'arrow up icon'
+            ]
+        ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n          '])),
         (l()(), import1.ɵeld(0, null, null, 3, 'a', [[
                 'class',
@@ -167,7 +177,7 @@ function View_ShowMixesComponent_2(l) {
         ], function (v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (import1.ɵnov(v, 18).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+                var pd_0 = (import1.ɵnov(v, 20).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
@@ -202,8 +212,8 @@ function View_ShowMixesComponent_2(l) {
     ], function (ck, v) {
         var currVal_2 = ck(v, 4, 0, '/mixes', v.context.$implicit.id);
         ck(v, 3, 0, currVal_2);
-        var currVal_8 = ck(v, 19, 0, '/mixes', v.context.$implicit.id);
-        ck(v, 18, 0, currVal_8);
+        var currVal_8 = ck(v, 21, 0, '/mixes', v.context.$implicit.id);
+        ck(v, 20, 0, currVal_8);
     }, function (ck, v) {
         var currVal_0 = import1.ɵnov(v, 3).target;
         var currVal_1 = import1.ɵnov(v, 3).href;
@@ -213,15 +223,15 @@ function View_ShowMixesComponent_2(l) {
         var currVal_4 = v.context.$implicit.downvote;
         ck(v, 12, 0, currVal_4);
         var currVal_5 = v.context.$implicit.upvote;
-        ck(v, 15, 0, currVal_5);
-        var currVal_6 = import1.ɵnov(v, 18).target;
-        var currVal_7 = import1.ɵnov(v, 18).href;
-        ck(v, 17, 0, currVal_6, currVal_7);
+        ck(v, 16, 0, currVal_5);
+        var currVal_6 = import1.ɵnov(v, 20).target;
+        var currVal_7 = import1.ɵnov(v, 20).href;
+        ck(v, 19, 0, currVal_6, currVal_7);
         var currVal_9 = v.context.$implicit.Name;
-        ck(v, 20, 0, currVal_9);
+        ck(v, 22, 0, currVal_9);
         var currVal_10 = v.context.$implicit.breed1;
         var currVal_11 = v.context.$implicit.breed2;
-        ck(v, 23, 0, currVal_10, currVal_11);
+        ck(v, 25, 0, currVal_10, currVal_11);
     });
 }
 export function View_ShowMixesComponent_0(l) {

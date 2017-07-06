@@ -22,11 +22,20 @@ var ShowMixDetailComponent = (function () {
         this.http = http;
         this.upsel = 0;
         this.downsel = 0;
-        this.mix = '';
+        this.mix = {};
     }
     ShowMixDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
         var id = this.route.params['value'].id;
-        this['mix'] = this.mixesService.getMix(id);
+        if (this.mixesService.serviceMixes.length > 1) {
+            this['mix'] = this.mixesService.getMix(id);
+        }
+        else {
+            this.mixesService.getMixAsync(id)
+                .subscribe(function (foundmix) {
+                _this['mix'] = foundmix;
+            });
+        }
     };
     ShowMixDetailComponent.prototype.goBack = function () {
         this.location.back();

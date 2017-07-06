@@ -6,5 +6,5 @@
  /* tslint:disable */
 
 
-export const styles:any[] = ['#scroll[_ngcontent-%COMP%] {\n\n    height: 900px;\n    overflow: scroll;\n}'];
+export const styles:any[] = ['#scroll[_ngcontent-%COMP%] {\n\n    height: 900px;\n    overflow: scroll;\n}\n\n.noCursor[_ngcontent-%COMP%] {\n    cursor: default !important;\n}'];
 //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvaGFsbC1vZi1mYW1lL2hhbGwtb2YtZmFtZS5jb21wb25lbnQuY3NzLnNoaW0ubmdzdHlsZS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvaGFsbC1vZi1mYW1lL2hhbGwtb2YtZmFtZS5jb21wb25lbnQudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7OyJ9
