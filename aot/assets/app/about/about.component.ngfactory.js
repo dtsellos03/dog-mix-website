@@ -31,14 +31,14 @@ export function View_AboutComponent_0(l) {
         (l()(), import1.ɵted(null, ['A display of adorable mixes like the '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
                 'href',
-                'http://mydogmixtape.herokuapp.com/mixes/594dc9441b1f9f312862d936'
+                'http://mydogmixtape.herokuapp.com/mixes/594dcc486618ef32097d8a3f'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Corgiever'])),
         (l()(), import1.ɵted(null, [' and\n    questionable outcomes like the \n    '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
                 'href',
-                'http://mydogmixtape.herokuapp.com/mixes/594dc9441b1f9f312862d948'
+                'http://mydogmixtape.herokuapp.com/mixes/594dcc486618ef32097d8a51'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Australian Pug'])),
