@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'contribute', component: ContributeComponent },
   { path: 'mixes/:id', component: ShowMixDetailComponent },
   { path: 'mixes',     component: ShowMixesComponent },
+  { path: 'mixesof/:breed', component: ShowMixesComponent},
   { path: 'halloffame', component: HallOfFameComponent }
 ];
 
