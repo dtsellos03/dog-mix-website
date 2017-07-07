@@ -1,51 +1,53 @@
 <div class="contribute-form">
-    <form class="ui form" [formGroup]="submitMix" (ngSubmit)="onSubmit()" style="width: 100%;">
-  <div class="field">
-    <label>Mix name</label>
-    <input type="text" name="mixName" placeholder="e.g. Puguaua" formControlName="mixName">
-  </div>
-  
-   <div class="two fields">
-  
-  <div class="field">
-    <label>Image URL</label>
-    <input type="text" name="mixURL" placeholder="e.g. http://i.imgur.com/qtnuAiI.jpg" formControlName="mixURL">
-  </div>
-  
+  <form class="ui form" [formGroup]="submitMix" (ngSubmit)="onSubmit()" style="width: 100%;">
     <div class="field">
-    <label>Image Source</label>
-    <input type="text" name="imageURL" placeholder="e.g. http://life.barkpost.com/corgi-mixes/" formControlName="imageURL">
-  </div>
-  
-  </div>
+      <label>Mix name</label>
+      <input type="text" name="mixName" placeholder="e.g. Puguaua" formControlName="mixName">
+    </div>
 
- 
-  <div class="two fields">
-    <div class="field">
-      <label>Breed</label>
-      <select class="ui fluid dropdown" name="breed1" formControlName="breed1">
+    <div class="two fields">
+
+      <div class="field">
+        <label>Image URL</label>
+        <input type="text" name="mixURL" placeholder="e.g. http://i.imgur.com/qtnuAiI.jpg" formControlName="mixURL">
+      </div>
+
+      <div class="field">
+        <label>Image Source</label>
+        <input type="text" name="imageURL" placeholder="e.g. http://life.barkpost.com/corgi-mixes/" formControlName="imageURL">
+      </div>
+
+    </div>
+
+
+    <div class="two fields">
+      <div class="field">
+        <label>Breed</label>
+        <select class="ui fluid dropdown" name="breed1" formControlName="breed1">
   <option *ngFor="let breed of breedchoices" value="{{breed}}">
     
     {{breed}}
   </option>
       </select>
-    </div>
-    <div class="field">
-      <label>Breed</label>
+      </div>
+      <div class="field">
+        <label>Breed</label>
         <select class="ui fluid dropdown" name="breed2" formControlName="breed2">
   <option *ngFor="let breed of breedchoices" value="{{breed}}">
     
     {{breed}}
   </option>
       </select>
+      </div>
     </div>
-  </div>
-  
-  <div *ngIf="breederror == 1" class="ui container"><br><br><h4>Uh oh. It seems like this mix already exists. Please submit another one.</h4><br><br></div>
-  <div *ngIf="successmessage == 1" class="ui container"><br><br><h2>Success!</h2><br><br></div>
-  
-  
-  <button class="ui button" type="submit" [disabled]="!submitMix.valid">Submit</button>
- 
-</form>
+
+    <div *ngIf="breederror == 1" class="ui container"><br><br>
+      <h4>Uh oh. It seems like this mix already exists. Please submit another one.</h4><br><br></div>
+    <div *ngIf="successmessage == 1" class="ui container"><br><br>
+      <h2>Success!</h2><br><br></div>
+
+
+    <button class="ui button" type="submit" [disabled]="!submitMix.valid">Submit</button>
+
+  </form>
 </div>
