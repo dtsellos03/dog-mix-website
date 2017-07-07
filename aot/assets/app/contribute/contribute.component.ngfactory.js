@@ -101,13 +101,14 @@ function View_ContributeComponent_2(l) {
 }
 function View_ContributeComponent_3(l) {
     return import1.ɵvid(0, [
-        (l()(), import1.ɵeld(0, null, null, 6, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 7, 'div', [[
                 'class',
                 'ui container'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['\n      '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'h4', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Uh oh. It seems like this mix already exists. Please submit another one.'])),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
@@ -116,13 +117,14 @@ function View_ContributeComponent_3(l) {
 }
 function View_ContributeComponent_4(l) {
     return import1.ɵvid(0, [
-        (l()(), import1.ɵeld(0, null, null, 6, 'div', [[
+        (l()(), import1.ɵeld(0, null, null, 7, 'div', [[
                 'class',
                 'ui container'
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
+        (l()(), import1.ɵted(null, ['\n      '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Success!'])),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
@@ -136,7 +138,7 @@ export function View_ContributeComponent_0(l) {
                 'contribute-form'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n  '])),
         (l()(), import1.ɵeld(0, null, null, 93, 'form', [
             [
                 'class',
@@ -233,16 +235,16 @@ export function View_ContributeComponent_0(l) {
         }, { ngSubmit: 'ngSubmit' }),
         import1.ɵprd(2048, null, import2.ControlContainer, null, [import2.FormGroupDirective]),
         import1.ɵdid(16384, null, 0, import2.NgControlStatusGroup, [import2.ControlContainer], null, null),
-        (l()(), import1.ɵted(null, ['\n  '])),
+        (l()(), import1.ɵted(null, ['\n    '])),
         (l()(), import1.ɵeld(0, null, null, 11, 'div', [[
                 'class',
                 'field'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n      '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'label', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Mix name'])),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n      '])),
         (l()(), import1.ɵeld(0, null, null, 5, 'input', [
             [
                 'formControlName',
@@ -368,23 +370,23 @@ export function View_ContributeComponent_0(l) {
         }, null),
         import1.ɵprd(2048, null, import2.NgControl, null, [import2.FormControlName]),
         import1.ɵdid(16384, null, 0, import2.NgControlStatus, [import2.NgControl], null, null),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵted(null, ['\n  \n   '])),
+        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n\n    '])),
         (l()(), import1.ɵeld(0, null, null, 27, 'div', [[
                 'class',
                 'two fields'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n  \n  '])),
+        (l()(), import1.ɵted(null, ['\n\n      '])),
         (l()(), import1.ɵeld(0, null, null, 11, 'div', [[
                 'class',
                 'field'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'label', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Image URL'])),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 5, 'input', [
             [
                 'formControlName',
@@ -510,17 +512,17 @@ export function View_ContributeComponent_0(l) {
         }, null),
         import1.ɵprd(2048, null, import2.NgControl, null, [import2.FormControlName]),
         import1.ɵdid(16384, null, 0, import2.NgControlStatus, [import2.NgControl], null, null),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵted(null, ['\n  \n    '])),
+        (l()(), import1.ɵted(null, ['\n      '])),
+        (l()(), import1.ɵted(null, ['\n\n      '])),
         (l()(), import1.ɵeld(0, null, null, 11, 'div', [[
                 'class',
                 'field'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'label', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Image Source'])),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 5, 'input', [
             [
                 'formControlName',
@@ -646,24 +648,24 @@ export function View_ContributeComponent_0(l) {
         }, null),
         import1.ɵprd(2048, null, import2.NgControl, null, [import2.FormControlName]),
         import1.ɵdid(16384, null, 0, import2.NgControlStatus, [import2.NgControl], null, null),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵted(null, ['\n  \n  '])),
-        (l()(), import1.ɵted(null, ['\n\n \n  '])),
+        (l()(), import1.ɵted(null, ['\n      '])),
+        (l()(), import1.ɵted(null, ['\n\n    '])),
+        (l()(), import1.ɵted(null, ['\n\n\n    '])),
         (l()(), import1.ɵeld(0, null, null, 35, 'div', [[
                 'class',
                 'two fields'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n      '])),
         (l()(), import1.ɵeld(0, null, null, 15, 'div', [[
                 'class',
                 'field'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n      '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'label', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Breed'])),
-        (l()(), import1.ɵted(null, ['\n      '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 9, 'select', [
             [
                 'class',
@@ -777,14 +779,14 @@ export function View_ContributeComponent_0(l) {
             ]
         }, null),
         (l()(), import1.ɵted(null, ['\n      '])),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n      '])),
+        (l()(), import1.ɵted(null, ['\n      '])),
         (l()(), import1.ɵeld(0, null, null, 15, 'div', [[
                 'class',
                 'field'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n      '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'label', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Breed'])),
         (l()(), import1.ɵted(null, ['\n        '])),
@@ -901,9 +903,9 @@ export function View_ContributeComponent_0(l) {
             ]
         }, null),
         (l()(), import1.ɵted(null, ['\n      '])),
+        (l()(), import1.ɵted(null, ['\n      '])),
         (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵted(null, ['\n  \n  '])),
+        (l()(), import1.ɵted(null, ['\n\n    '])),
         (l()(), import1.ɵand(16777216, null, null, 1, null, View_ContributeComponent_3)),
         import1.ɵdid(16384, null, 0, import4.NgIf, [
             import1.ViewContainerRef,
@@ -913,7 +915,7 @@ export function View_ContributeComponent_0(l) {
                 'ngIf'
             ]
         }, null),
-        (l()(), import1.ɵted(null, ['\n  '])),
+        (l()(), import1.ɵted(null, ['\n    '])),
         (l()(), import1.ɵand(16777216, null, null, 1, null, View_ContributeComponent_4)),
         import1.ɵdid(16384, null, 0, import4.NgIf, [
             import1.ViewContainerRef,
@@ -923,7 +925,7 @@ export function View_ContributeComponent_0(l) {
                 'ngIf'
             ]
         }, null),
-        (l()(), import1.ɵted(null, ['\n  \n  \n  '])),
+        (l()(), import1.ɵted(null, ['\n\n\n    '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'button', [
             [
                 'class',
@@ -940,7 +942,7 @@ export function View_ContributeComponent_0(l) {
             ]
         ], null, null, null, null)),
         (l()(), import1.ɵted(null, ['Submit'])),
-        (l()(), import1.ɵted(null, ['\n \n'])),
+        (l()(), import1.ɵted(null, ['\n\n  '])),
         (l()(), import1.ɵted(null, ['\n']))
     ], function (ck, v) {
         var co = v.component;

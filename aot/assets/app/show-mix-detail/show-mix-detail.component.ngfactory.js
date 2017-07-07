@@ -24,19 +24,19 @@ function View_ShowMixDetailComponent_1(l) {
                 'ui container'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n\n    '])),
+        (l()(), import1.ɵted(null, ['\n    \n    '])),
         (l()(), import1.ɵeld(0, null, null, 113, 'div', [[
                 'class',
                 'ui two column grid stackable'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n        '])),
+        (l()(), import1.ɵted(null, ['\n        \n        '])),
         (l()(), import1.ɵeld(0, null, null, 102, 'div', [[
                 'class',
                 'column'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n\n            '])),
+        (l()(), import1.ɵted(null, ['\n            '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'h1', [
             [
                 'class',
@@ -62,13 +62,13 @@ function View_ShowMixDetailComponent_1(l) {
                 'ui two column centered grid stackable'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n\n\n                '])),
+        (l()(), import1.ɵted(null, ['\n                '])),
         (l()(), import1.ɵeld(0, null, null, 8, 'div', [[
                 'class',
                 'eight wide center aligned column'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n                    '])),
+        (l()(), import1.ɵted(null, ['\n                    '])),
         (l()(), import1.ɵeld(0, null, null, 5, 'a', [[
                 'class',
                 'ui huge image label'
@@ -117,14 +117,14 @@ function View_ShowMixDetailComponent_1(l) {
             ' ',
             '\n                    '
         ])),
-        (l()(), import1.ɵted(null, ['\n\n\n\n                '])),
+        (l()(), import1.ɵted(null, ['\n                '])),
         (l()(), import1.ɵted(null, ['\n                '])),
         (l()(), import1.ɵeld(0, null, null, 8, 'div', [[
                 'class',
                 'eight wide center aligned column'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n\n                    '])),
+        (l()(), import1.ɵted(null, ['\n                    '])),
         (l()(), import1.ɵeld(0, null, null, 5, 'a', [[
                 'class',
                 'ui huge image label'
@@ -173,9 +173,9 @@ function View_ShowMixDetailComponent_1(l) {
             ' ',
             '\n                    '
         ])),
-        (l()(), import1.ɵted(null, ['\n\n                '])),
-        (l()(), import1.ɵted(null, ['\n\n\n\n            '])),
-        (l()(), import1.ɵted(null, ['\n\n\n\n\n            '])),
+        (l()(), import1.ɵted(null, ['\n                '])),
+        (l()(), import1.ɵted(null, ['\n            '])),
+        (l()(), import1.ɵted(null, ['\n            '])),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n            '])),
@@ -212,7 +212,7 @@ function View_ShowMixDetailComponent_1(l) {
                 'eight wide center aligned column'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n                        '])),
+        (l()(), import1.ɵted(null, ['\n                        '])),
         (l()(), import1.ɵeld(0, null, null, 13, 'div', [
             [
                 'class',
@@ -295,14 +295,14 @@ function View_ShowMixDetailComponent_1(l) {
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n                        '])),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n\n                    '])),
+        (l()(), import1.ɵted(null, ['\n                    '])),
         (l()(), import1.ɵted(null, ['\n                    '])),
         (l()(), import1.ɵeld(0, null, null, 20, 'div', [[
                 'class',
                 'eight wide center aligned column'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n                        '])),
+        (l()(), import1.ɵted(null, ['\n                        '])),
         (l()(), import1.ɵeld(0, null, null, 13, 'div', [
             [
                 'class',
@@ -385,8 +385,8 @@ function View_ShowMixDetailComponent_1(l) {
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n                        '])),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n\n                    '])),
-        (l()(), import1.ɵted(null, ['\n\n\n                '])),
+        (l()(), import1.ɵted(null, ['\n                    '])),
+        (l()(), import1.ɵted(null, ['\n                '])),
         (l()(), import1.ɵted(null, ['\n            '])),
         (l()(), import1.ɵted(null, ['\n            '])),
         (l()(), import1.ɵeld(0, null, null, 7, 'div', [[
@@ -400,7 +400,7 @@ function View_ShowMixDetailComponent_1(l) {
                 'eight wide center aligned column'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n\n\n                    '])),
+        (l()(), import1.ɵted(null, ['\n                    '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'button', [[
                 'class',
                 'ui huge basic button'
@@ -419,10 +419,10 @@ function View_ShowMixDetailComponent_1(l) {
             return ad;
         }, null, null)),
         (l()(), import1.ɵted(null, ['BACK'])),
-        (l()(), import1.ɵted(null, ['\n\n                '])),
+        (l()(), import1.ɵted(null, ['\n                '])),
         (l()(), import1.ɵted(null, ['\n            '])),
         (l()(), import1.ɵted(null, ['\n        '])),
-        (l()(), import1.ɵted(null, ['\n        '])),
+        (l()(), import1.ɵted(null, ['\n        \n        '])),
         (l()(), import1.ɵeld(0, null, null, 6, 'div', [[
                 'class',
                 'column'
@@ -452,7 +452,7 @@ function View_ShowMixDetailComponent_1(l) {
         ], null, null, null, null)),
         (l()(), import1.ɵted(null, ['Source'])),
         (l()(), import1.ɵted(null, ['\n        '])),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n        \n    '])),
         (l()(), import1.ɵted(null, ['\n']))
     ], function (ck, v) {
         var co = v.component;
@@ -510,8 +510,7 @@ export function View_ShowMixDetailComponent_0(l) {
                 0,
                 'ngIf'
             ]
-        }, null),
-        (l()(), import1.ɵted(null, ['\n']))
+        }, null)
     ], function (ck, v) {
         var co = v.component;
         var currVal_0 = co.mix;

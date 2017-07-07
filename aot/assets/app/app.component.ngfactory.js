@@ -19,7 +19,6 @@ export var RenderType_AppComponent = import1.ɵcrt({
 });
 export function View_AppComponent_0(l) {
     return import1.ɵvid(0, [
-        (l()(), import1.ɵted(null, ['\n\n'])),
         (l()(), import1.ɵeld(0, null, null, 41, 'div', [[
                 'class',
                 'container'
@@ -32,13 +31,13 @@ export function View_AppComponent_0(l) {
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['My Dog\'s Mixtape'])),
-        (l()(), import1.ɵted(null, ['\n\n'])),
+        (l()(), import1.ɵted(null, ['\n\n  '])),
         (l()(), import1.ɵeld(0, null, null, 33, 'div', [[
                 'class',
                 'ui pointing stackable menu'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n  '])),
+        (l()(), import1.ɵted(null, ['\n    '])),
         (l()(), import1.ɵeld(0, null, null, 6, 'a', [
             [
                 'class',
@@ -66,7 +65,7 @@ export function View_AppComponent_0(l) {
         ], function (v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (import1.ɵnov(v, 9).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+                var pd_0 = (import1.ɵnov(v, 8).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
@@ -98,7 +97,7 @@ export function View_AppComponent_0(l) {
         import1.ɵqud(603979776, 2, { linksWithHrefs: 1 }),
         import1.ɵpad(1),
         (l()(), import1.ɵted(null, ['\n    About\n  '])),
-        (l()(), import1.ɵted(null, ['\n  '])),
+        (l()(), import1.ɵted(null, ['\n    '])),
         (l()(), import1.ɵeld(0, null, null, 6, 'a', [
             [
                 'class',
@@ -126,7 +125,7 @@ export function View_AppComponent_0(l) {
         ], function (v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (import1.ɵnov(v, 17).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+                var pd_0 = (import1.ɵnov(v, 16).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
@@ -158,7 +157,7 @@ export function View_AppComponent_0(l) {
         import1.ɵqud(603979776, 4, { linksWithHrefs: 1 }),
         import1.ɵpad(1),
         (l()(), import1.ɵted(null, ['\n    Mixes\n  '])),
-        (l()(), import1.ɵted(null, ['\n  '])),
+        (l()(), import1.ɵted(null, ['\n    '])),
         (l()(), import1.ɵeld(0, null, null, 6, 'a', [
             [
                 'class',
@@ -186,7 +185,7 @@ export function View_AppComponent_0(l) {
         ], function (v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (import1.ɵnov(v, 25).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+                var pd_0 = (import1.ɵnov(v, 24).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
@@ -246,7 +245,7 @@ export function View_AppComponent_0(l) {
         ], function (v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (import1.ɵnov(v, 33).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+                var pd_0 = (import1.ɵnov(v, 32).onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
@@ -278,8 +277,8 @@ export function View_AppComponent_0(l) {
         import1.ɵqud(603979776, 8, { linksWithHrefs: 1 }),
         import1.ɵpad(1),
         (l()(), import1.ɵted(null, ['\n    Contribute\n  '])),
-        (l()(), import1.ɵted(null, ['\n\n\n   \n'])),
-        (l()(), import1.ɵted(null, ['\n'])),
+        (l()(), import1.ɵted(null, ['\n\n  '])),
+        (l()(), import1.ɵted(null, ['\n  '])),
         (l()(), import1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['\n'])),
         (l()(), import1.ɵted(null, ['\n'])),
@@ -293,37 +292,37 @@ export function View_AppComponent_0(l) {
                 null
             ]
         ], null, null),
-        (l()(), import1.ɵted(null, ['\n\n']))
+        (l()(), import1.ɵted(null, ['\n']))
     ], function (ck, v) {
         var currVal_2 = '/about';
-        ck(v, 9, 0, currVal_2);
-        var currVal_3 = ck(v, 13, 0, 'active');
-        ck(v, 10, 0, currVal_3);
+        ck(v, 8, 0, currVal_2);
+        var currVal_3 = ck(v, 12, 0, 'active');
+        ck(v, 9, 0, currVal_3);
         var currVal_6 = '/mixes';
-        ck(v, 17, 0, currVal_6);
-        var currVal_7 = ck(v, 21, 0, 'active');
-        ck(v, 18, 0, currVal_7);
+        ck(v, 16, 0, currVal_6);
+        var currVal_7 = ck(v, 20, 0, 'active');
+        ck(v, 17, 0, currVal_7);
         var currVal_10 = '/halloffame';
-        ck(v, 25, 0, currVal_10);
-        var currVal_11 = ck(v, 29, 0, 'active');
-        ck(v, 26, 0, currVal_11);
+        ck(v, 24, 0, currVal_10);
+        var currVal_11 = ck(v, 28, 0, 'active');
+        ck(v, 25, 0, currVal_11);
         var currVal_14 = '/contribute';
-        ck(v, 33, 0, currVal_14);
-        var currVal_15 = ck(v, 37, 0, 'active');
-        ck(v, 34, 0, currVal_15);
+        ck(v, 32, 0, currVal_14);
+        var currVal_15 = ck(v, 36, 0, 'active');
+        ck(v, 33, 0, currVal_15);
     }, function (ck, v) {
-        var currVal_0 = import1.ɵnov(v, 9).target;
-        var currVal_1 = import1.ɵnov(v, 9).href;
-        ck(v, 8, 0, currVal_0, currVal_1);
-        var currVal_4 = import1.ɵnov(v, 17).target;
-        var currVal_5 = import1.ɵnov(v, 17).href;
-        ck(v, 16, 0, currVal_4, currVal_5);
-        var currVal_8 = import1.ɵnov(v, 25).target;
-        var currVal_9 = import1.ɵnov(v, 25).href;
-        ck(v, 24, 0, currVal_8, currVal_9);
-        var currVal_12 = import1.ɵnov(v, 33).target;
-        var currVal_13 = import1.ɵnov(v, 33).href;
-        ck(v, 32, 0, currVal_12, currVal_13);
+        var currVal_0 = import1.ɵnov(v, 8).target;
+        var currVal_1 = import1.ɵnov(v, 8).href;
+        ck(v, 7, 0, currVal_0, currVal_1);
+        var currVal_4 = import1.ɵnov(v, 16).target;
+        var currVal_5 = import1.ɵnov(v, 16).href;
+        ck(v, 15, 0, currVal_4, currVal_5);
+        var currVal_8 = import1.ɵnov(v, 24).target;
+        var currVal_9 = import1.ɵnov(v, 24).href;
+        ck(v, 23, 0, currVal_8, currVal_9);
+        var currVal_12 = import1.ɵnov(v, 32).target;
+        var currVal_13 = import1.ɵnov(v, 32).href;
+        ck(v, 31, 0, currVal_12, currVal_13);
     });
 }
 function View_AppComponent_Host_0(l) {

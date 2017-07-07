@@ -26,7 +26,7 @@ export function View_AboutComponent_0(l) {
                 'container'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 7, 'h5', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['A display of adorable mixes like the '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
@@ -35,7 +35,7 @@ export function View_AboutComponent_0(l) {
             ]
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Corgiever'])),
-        (l()(), import1.ɵted(null, [' and\n    questionable outcomes like the \n    '])),
+        (l()(), import1.ɵted(null, [' and questionable outcomes like the\n            '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
                 'href',
                 'http://mydogmixtape.herokuapp.com/mixes/594dcc486618ef32097d8a51'
@@ -43,16 +43,16 @@ export function View_AboutComponent_0(l) {
         ], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Australian Pug'])),
         (l()(), import1.ɵted(null, ['.'])),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['Please help us chart these unknown territories and submit your findings!  '])),
-        (l()(), import1.ɵted(null, ['\n\n    '])),
+        (l()(), import1.ɵted(null, ['Please help us chart these unknown territories and submit your findings! '])),
+        (l()(), import1.ɵted(null, ['\n\n        '])),
         (l()(), import1.ɵeld(0, null, null, 0, 'img', [[
                 'src',
                 'http://i.imgur.com/RJHgnht.png'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
+        (l()(), import1.ɵted(null, ['\n        '])),
         (l()(), import1.ɵeld(0, null, null, 3, 'h6', [], null, null, null, null, null)),
         (l()(), import1.ɵted(null, ['Icons courtesy of '])),
         (l()(), import1.ɵeld(0, null, null, 1, 'a', [[

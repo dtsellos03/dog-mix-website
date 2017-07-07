@@ -22,18 +22,21 @@ export class ContributeComponent implements OnInit {
   constructor(private mixesService: MixesService, private router : Router) {}
   
   onSubmit() {
-    this.breederror = 0;
+    
+// Variable to check if duplicate mix is submitted
+
+    this.breederror = 0;   
     var nullcheck = 0;
     var submittedMix = this.submitMix.value;
     
-        this.mixesService.serviceMixes.forEach(function(mix) {
-      var combo1 = mix.breed1.toString()+mix.breed2.toString()
-      var formcombo1 = submittedMix.breed1.toString() + submittedMix.breed2.toString()
-      var formcombo2 = submittedMix.breed2.toString() + submittedMix.breed1.toString()
+    this.mixesService.serviceMixes.forEach(function(mix) {
+      var combo1 = mix.breed1.toString()+mix.breed2.toString();
+      var formcombo1 = submittedMix.breed1.toString() + submittedMix.breed2.toString();
+      var formcombo2 = submittedMix.breed2.toString() + submittedMix.breed1.toString();
       if (formcombo1 == combo1 || formcombo2 == combo1) {
-        console.log("Duplicate mix!")
-        nullcheck = 1
-
+        
+// Set duplicate mix error
+        nullcheck = 1 ;
       }
     });
     
@@ -42,18 +45,20 @@ export class ContributeComponent implements OnInit {
       return null
     }
     
+//Otherwise, display success message
+
     this.successmessage = 1;
     
-   // console.log(submittedMix)
+
     var newMix = new Mix(" ", submittedMix.mixName, submittedMix.mixURL, submittedMix.breed1, submittedMix.breed2,"all", 0, 0, submittedMix.imageURL)
-   // console.log(newMix)
-    this.mixesService.isLoaded = false;
+
+ // Get mixes from server again
+    this.mixesService.isLoaded = false; 
     this.mixesService.addMix(newMix).subscribe(
                 (mix: Mix) => {
-              console.log("SUBSCRIBED!")
-            
-              console.log("ABout o navgiate!")
-
+                  
+ //Redirect to mixes page
+ 
               this.router.navigate(['/mixes'])
             }
             );
@@ -62,11 +67,12 @@ export class ContributeComponent implements OnInit {
 
   ngOnInit() {
 
-    for (var name in this.mixesService.serviceBreeds) {
+ // Initiialize array of breeds to choose from
+
+    for (var name in this.mixesService.serviceBreeds) { 
       this.breedchoices.push(name)
     }
     
-    console.log(this.breedchoices)
     
     this.submitMix = new FormGroup({
       'mixName' : new FormControl(null, Validators.required),

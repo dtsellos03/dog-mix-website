@@ -238,7 +238,7 @@ function View_HallOfFameComponent_2(l) {
                 'item'
             ]
         ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, [' \n\n            '])),
+        (l()(), import1.ɵted(null, ['\n\n            '])),
         (l()(), import1.ɵeld(0, null, null, 5, 'a', [[
                 'class',
                 'ui small image'
@@ -445,7 +445,6 @@ function View_HallOfFameComponent_2(l) {
 }
 export function View_HallOfFameComponent_0(l) {
     return import1.ɵvid(0, [
-        (l()(), import1.ɵted(null, ['\n'])),
         (l()(), import1.ɵeld(0, null, null, 28, 'div', [[
                 'class',
                 'ui stackable grid'
@@ -519,9 +518,9 @@ export function View_HallOfFameComponent_0(l) {
     ], function (ck, v) {
         var co = v.component;
         var currVal_0 = co.topMixes;
-        ck(v, 13, 0, currVal_0);
+        ck(v, 12, 0, currVal_0);
         var currVal_1 = co.botMixes;
-        ck(v, 25, 0, currVal_1);
+        ck(v, 24, 0, currVal_1);
     }, null);
 }
 function View_HallOfFameComponent_Host_0(l) {

@@ -22,7 +22,6 @@ export const RenderType_AppComponent:import1.RendererType2 = import1.ɵcrt({
 );
 export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
   return import1.ɵvid(0,[
-    (l()(),import1.ɵted((null as any),['\n\n'])),
       (l()(),import1.ɵeld(0,(null as any),(null as any),41,'div',[[
         'class',
         'container'
@@ -35,13 +34,13 @@ export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['My Dog\'s Mixtape'])),
-    (l()(),import1.ɵted((null as any),['\n\n'])),
+    (l()(),import1.ɵted((null as any),['\n\n  '])),
       (l()(),import1.ɵeld(0,(null as any),(null as any),33,'div',[[
         'class',
         'ui pointing stackable menu'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n  '])),
+    (l()(),import1.ɵted((null as any),['\n    '])),
     (l()(),import1.ɵeld(0,(null as any),(null as any),6,'a',[
       [
         'class',
@@ -75,7 +74,7 @@ export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
     ],(v,en,$event) => {
       var ad:boolean = true;
       if (('click' === en)) {
-        const pd_0:any = ((<any>import1.ɵnov(v,9).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+        const pd_0:any = ((<any>import1.ɵnov(v,8).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
         ad = (pd_0 && ad);
       }
       return ad;
@@ -109,7 +108,7 @@ export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
     import1.ɵqud(603979776,2,{linksWithHrefs: 1}),
     import1.ɵpad(1),
     (l()(),import1.ɵted((null as any),['\n    About\n  '])),
-    (l()(),import1.ɵted((null as any),['\n  '])),
+    (l()(),import1.ɵted((null as any),['\n    '])),
     (l()(),import1.ɵeld(0,(null as any),(null as any),6,'a',[
       [
         'class',
@@ -143,7 +142,7 @@ export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
     ],(v,en,$event) => {
       var ad:boolean = true;
       if (('click' === en)) {
-        const pd_0:any = ((<any>import1.ɵnov(v,17).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+        const pd_0:any = ((<any>import1.ɵnov(v,16).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
         ad = (pd_0 && ad);
       }
       return ad;
@@ -177,7 +176,7 @@ export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
     import1.ɵqud(603979776,4,{linksWithHrefs: 1}),
     import1.ɵpad(1),
     (l()(),import1.ɵted((null as any),['\n    Mixes\n  '])),
-    (l()(),import1.ɵted((null as any),['\n  '])),
+    (l()(),import1.ɵted((null as any),['\n    '])),
     (l()(),import1.ɵeld(0,(null as any),(null as any),6,'a',[
       [
         'class',
@@ -211,7 +210,7 @@ export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
     ],(v,en,$event) => {
       var ad:boolean = true;
       if (('click' === en)) {
-        const pd_0:any = ((<any>import1.ɵnov(v,25).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+        const pd_0:any = ((<any>import1.ɵnov(v,24).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
         ad = (pd_0 && ad);
       }
       return ad;
@@ -279,7 +278,7 @@ export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
     ],(v,en,$event) => {
       var ad:boolean = true;
       if (('click' === en)) {
-        const pd_0:any = ((<any>import1.ɵnov(v,33).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+        const pd_0:any = ((<any>import1.ɵnov(v,32).onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
         ad = (pd_0 && ad);
       }
       return ad;
@@ -313,8 +312,8 @@ export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
     import1.ɵqud(603979776,8,{linksWithHrefs: 1}),
     import1.ɵpad(1),
     (l()(),import1.ɵted((null as any),['\n    Contribute\n  '])),
-    (l()(),import1.ɵted((null as any),['\n\n\n   \n'])),
-    (l()(),import1.ɵted((null as any),['\n'])),
+    (l()(),import1.ɵted((null as any),['\n\n  '])),
+    (l()(),import1.ɵted((null as any),['\n  '])),
     (l()(),import1.ɵeld(0,(null as any),(null as any),0,'br',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['\n'])),
     (l()(),import1.ɵted((null as any),['\n'])),
@@ -330,38 +329,38 @@ export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
 
     ]
     ,(null as any),(null as any)),
-    (l()(),import1.ɵted((null as any),['\n\n']))
+    (l()(),import1.ɵted((null as any),['\n']))
   ]
   ,(ck,v) => {
     const currVal_2:any = '/about';
-    ck(v,9,0,currVal_2);
-    const currVal_3:any = ck(v,13,0,'active');
-    ck(v,10,0,currVal_3);
+    ck(v,8,0,currVal_2);
+    const currVal_3:any = ck(v,12,0,'active');
+    ck(v,9,0,currVal_3);
     const currVal_6:any = '/mixes';
-    ck(v,17,0,currVal_6);
-    const currVal_7:any = ck(v,21,0,'active');
-    ck(v,18,0,currVal_7);
+    ck(v,16,0,currVal_6);
+    const currVal_7:any = ck(v,20,0,'active');
+    ck(v,17,0,currVal_7);
     const currVal_10:any = '/halloffame';
-    ck(v,25,0,currVal_10);
-    const currVal_11:any = ck(v,29,0,'active');
-    ck(v,26,0,currVal_11);
+    ck(v,24,0,currVal_10);
+    const currVal_11:any = ck(v,28,0,'active');
+    ck(v,25,0,currVal_11);
     const currVal_14:any = '/contribute';
-    ck(v,33,0,currVal_14);
-    const currVal_15:any = ck(v,37,0,'active');
-    ck(v,34,0,currVal_15);
+    ck(v,32,0,currVal_14);
+    const currVal_15:any = ck(v,36,0,'active');
+    ck(v,33,0,currVal_15);
   },(ck,v) => {
-    const currVal_0:any = import1.ɵnov(v,9).target;
-    const currVal_1:any = import1.ɵnov(v,9).href;
-    ck(v,8,0,currVal_0,currVal_1);
-    const currVal_4:any = import1.ɵnov(v,17).target;
-    const currVal_5:any = import1.ɵnov(v,17).href;
-    ck(v,16,0,currVal_4,currVal_5);
-    const currVal_8:any = import1.ɵnov(v,25).target;
-    const currVal_9:any = import1.ɵnov(v,25).href;
-    ck(v,24,0,currVal_8,currVal_9);
-    const currVal_12:any = import1.ɵnov(v,33).target;
-    const currVal_13:any = import1.ɵnov(v,33).href;
-    ck(v,32,0,currVal_12,currVal_13);
+    const currVal_0:any = import1.ɵnov(v,8).target;
+    const currVal_1:any = import1.ɵnov(v,8).href;
+    ck(v,7,0,currVal_0,currVal_1);
+    const currVal_4:any = import1.ɵnov(v,16).target;
+    const currVal_5:any = import1.ɵnov(v,16).href;
+    ck(v,15,0,currVal_4,currVal_5);
+    const currVal_8:any = import1.ɵnov(v,24).target;
+    const currVal_9:any = import1.ɵnov(v,24).href;
+    ck(v,23,0,currVal_8,currVal_9);
+    const currVal_12:any = import1.ɵnov(v,32).target;
+    const currVal_13:any = import1.ɵnov(v,32).href;
+    ck(v,31,0,currVal_12,currVal_13);
   });
 }
 function View_AppComponent_Host_0(l:any):import1.ɵViewDefinition {
@@ -375,4 +374,4 @@ function View_AppComponent_Host_0(l:any):import1.ɵViewDefinition {
   },(null as any));
 }
 export const AppComponentNgFactory:import1.ComponentFactory<import4.AppComponent> = import1.ɵccf('my-app',import4.AppComponent,View_AppComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3VidW50dS93b3Jrc3BhY2UvbWFpbi9hc3NldHMvYXBwL2FwcC5jb21wb25lbnQudHMiLCJuZzovLy9ob21lL3VidW50dS93b3Jrc3BhY2UvbWFpbi9hc3NldHMvYXBwL2FwcC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC50cy5BcHBDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCJcblxuPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuICA8aDEgY2xhc3M9XCJ1aSBoZWFkZXJcIj5NeSBEb2cncyBNaXh0YXBlPC9oMT5cblxuPGRpdiBjbGFzcz1cInVpIHBvaW50aW5nIHN0YWNrYWJsZSBtZW51XCI+XG4gIDxhIGNsYXNzPVwiaXRlbVwiIHJvdXRlckxpbms9XCIvYWJvdXRcIiBbcm91dGVyTGlua0FjdGl2ZV09XCJbJ2FjdGl2ZSddXCI+XG4gICAgQWJvdXRcbiAgPC9hPlxuICA8YSBjbGFzcz1cIml0ZW1cIiByb3V0ZXJMaW5rPVwiL21peGVzXCIgW3JvdXRlckxpbmtBY3RpdmVdPVwiWydhY3RpdmUnXVwiPlxuICAgIE1peGVzXG4gIDwvYT5cbiAgPGEgY2xhc3M9XCJpdGVtXCIgcm91dGVyTGluaz1cIi9oYWxsb2ZmYW1lXCIgW3JvdXRlckxpbmtBY3RpdmVdPVwiWydhY3RpdmUnXVwiPlxuICAgIEhhbGwgb2YgRmFtZVxuICA8L2E+XG4gICAgPGEgY2xhc3M9XCJpdGVtXCIgcm91dGVyTGluaz1cIi9jb250cmlidXRlXCIgW3JvdXRlckxpbmtBY3RpdmVdPVwiWydhY3RpdmUnXVwiPlxuICAgIENvbnRyaWJ1dGVcbiAgPC9hPlxuXG5cbiAgIFxuPC9kaXY+XG48YnI+XG48L2Rpdj5cbjxyb3V0ZXItb3V0bGV0Pjwvcm91dGVyLW91dGxldD5cblxuIiwiPG15LWFwcD48L215LWFwcD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUNBQTtNQUVBO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBdUI7TUFDckI7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUFzQjtJQUFxQjtNQUU3QztRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXdDO0lBQ3RDO01BQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7TUFBQTtNQUFBO1FBQUE7UUFBQTtNQUFBO01BQUE7SUFBQTtrQkFBQTtRQUFBO1FBQUE7TUFBQTtJQUFBOzs7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO2dCQUFBOzs7OztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtnQkFBQTtnQkFBQTtnQkFBb0M7SUFBZ0M7SUFFaEU7SUFDSjtNQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO0tBQUE7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO01BQUE7TUFBQTtRQUFBO1FBQUE7TUFBQTtNQUFBO0lBQUE7a0JBQUE7UUFBQTtRQUFBO01BQUE7SUFBQTs7OztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtnQkFBQTs7Ozs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7Z0JBQUE7Z0JBQUE7Z0JBQW9DO0lBQWdDO0lBRWhFO0lBQ0o7TUFBQTtRQUFBO1FBQUE7TUFBQTs7TUFBQTtRQUFBO1FBQUE7TUFBQTs7SUFBQTtLQUFBO01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTs7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtNQUFBO01BQUE7UUFBQTtRQUFBO01BQUE7TUFBQTtJQUFBO2tCQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7Ozs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7Z0JBQUE7Ozs7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO2dCQUFBO2dCQUFBO2dCQUF5QztJQUFnQztJQUVyRTtJQUNGO01BQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7TUFBQTtNQUFBO1FBQUE7UUFBQTtNQUFBO01BQUE7SUFBQTtrQkFBQTtRQUFBO1FBQUE7TUFBQTtJQUFBOzs7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO2dCQUFBOzs7OztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtnQkFBQTtnQkFBQTtnQkFBeUM7SUFBZ0M7SUFFdkU7SUFJQTtJQUNOO0lBQUk7SUFDRTtJQUNOO2dCQUFBOzs7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtJQUErQjs7O0lBbEJiO0lBQWhCLFNBQWdCLFNBQWhCO0lBQW9DO0lBQXBDLFVBQW9DLFNBQXBDO0lBR2dCO0lBQWhCLFVBQWdCLFNBQWhCO0lBQW9DO0lBQXBDLFVBQW9DLFNBQXBDO0lBR2dCO0lBQWhCLFVBQWdCLFVBQWhCO0lBQXlDO0lBQXpDLFVBQXlDLFVBQXpDO0lBR2tCO0lBQWhCLFVBQWdCLFVBQWhCO0lBQXlDO0lBQXpDLFVBQXlDLFVBQXpDOztJQVRGO0lBQUE7SUFBQSxTQUFBLG1CQUFBO0lBR0E7SUFBQTtJQUFBLFVBQUEsbUJBQUE7SUFHQTtJQUFBO0lBQUEsVUFBQSxtQkFBQTtJQUdFO0lBQUE7SUFBQSxVQUFBLHFCQUFBOzs7OztJQ2ZKO2dCQUFBO2dCQUFBOzs7SUFBQTs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9ob21lL3VidW50dS93b3Jrc3BhY2UvbWFpbi9hc3NldHMvYXBwL2FwcC5jb21wb25lbnQudHMiLCJuZzovLy9ob21lL3VidW50dS93b3Jrc3BhY2UvbWFpbi9hc3NldHMvYXBwL2FwcC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC50cy5BcHBDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XG4gIDxoMSBjbGFzcz1cInVpIGhlYWRlclwiPk15IERvZydzIE1peHRhcGU8L2gxPlxuXG4gIDxkaXYgY2xhc3M9XCJ1aSBwb2ludGluZyBzdGFja2FibGUgbWVudVwiPlxuICAgIDxhIGNsYXNzPVwiaXRlbVwiIHJvdXRlckxpbms9XCIvYWJvdXRcIiBbcm91dGVyTGlua0FjdGl2ZV09XCJbJ2FjdGl2ZSddXCI+XG4gICAgQWJvdXRcbiAgPC9hPlxuICAgIDxhIGNsYXNzPVwiaXRlbVwiIHJvdXRlckxpbms9XCIvbWl4ZXNcIiBbcm91dGVyTGlua0FjdGl2ZV09XCJbJ2FjdGl2ZSddXCI+XG4gICAgTWl4ZXNcbiAgPC9hPlxuICAgIDxhIGNsYXNzPVwiaXRlbVwiIHJvdXRlckxpbms9XCIvaGFsbG9mZmFtZVwiIFtyb3V0ZXJMaW5rQWN0aXZlXT1cIlsnYWN0aXZlJ11cIj5cbiAgICBIYWxsIG9mIEZhbWVcbiAgPC9hPlxuICAgIDxhIGNsYXNzPVwiaXRlbVwiIHJvdXRlckxpbms9XCIvY29udHJpYnV0ZVwiIFtyb3V0ZXJMaW5rQWN0aXZlXT1cIlsnYWN0aXZlJ11cIj5cbiAgICBDb250cmlidXRlXG4gIDwvYT5cblxuICA8L2Rpdj5cbiAgPGJyPlxuPC9kaXY+XG48cm91dGVyLW91dGxldD48L3JvdXRlci1vdXRsZXQ+XG4iLCI8bXktYXBwPjwvbXktYXBwPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztNQ0FBO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBdUI7TUFDckI7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUFzQjtJQUFxQjtNQUUzQztRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXdDO0lBQ3RDO01BQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7TUFBQTtNQUFBO1FBQUE7UUFBQTtNQUFBO01BQUE7SUFBQTtrQkFBQTtRQUFBO1FBQUE7TUFBQTtJQUFBOzs7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO2dCQUFBOzs7OztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtnQkFBQTtnQkFBQTtnQkFBb0M7SUFBZ0M7SUFFbEU7SUFDRjtNQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO0tBQUE7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO01BQUE7TUFBQTtRQUFBO1FBQUE7TUFBQTtNQUFBO0lBQUE7a0JBQUE7UUFBQTtRQUFBO01BQUE7SUFBQTs7OztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtnQkFBQTs7Ozs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7Z0JBQUE7Z0JBQUE7Z0JBQW9DO0lBQWdDO0lBRWxFO0lBQ0Y7TUFBQTtRQUFBO1FBQUE7TUFBQTs7TUFBQTtRQUFBO1FBQUE7TUFBQTs7SUFBQTtLQUFBO01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTs7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtNQUFBO01BQUE7UUFBQTtRQUFBO01BQUE7TUFBQTtJQUFBO2tCQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7Ozs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7Z0JBQUE7Ozs7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO2dCQUFBO2dCQUFBO2dCQUF5QztJQUFnQztJQUV2RTtJQUNGO01BQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7TUFBQTtNQUFBO1FBQUE7UUFBQTtNQUFBO01BQUE7SUFBQTtrQkFBQTtRQUFBO1FBQUE7TUFBQTtJQUFBOzs7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO2dCQUFBOzs7OztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtnQkFBQTtnQkFBQTtnQkFBeUM7SUFBZ0M7SUFFdkU7SUFFRTtJQUNOO0lBQUk7SUFDQTtJQUNOO2dCQUFBOzs7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtJQUErQjs7O0lBaEJYO0lBQWhCLFNBQWdCLFNBQWhCO0lBQW9DO0lBQXBDLFNBQW9DLFNBQXBDO0lBR2dCO0lBQWhCLFVBQWdCLFNBQWhCO0lBQW9DO0lBQXBDLFVBQW9DLFNBQXBDO0lBR2dCO0lBQWhCLFVBQWdCLFVBQWhCO0lBQXlDO0lBQXpDLFVBQXlDLFVBQXpDO0lBR2dCO0lBQWhCLFVBQWdCLFVBQWhCO0lBQXlDO0lBQXpDLFVBQXlDLFVBQXpDOztJQVRBO0lBQUE7SUFBQSxTQUFBLG1CQUFBO0lBR0E7SUFBQTtJQUFBLFVBQUEsbUJBQUE7SUFHQTtJQUFBO0lBQUEsVUFBQSxtQkFBQTtJQUdBO0lBQUE7SUFBQSxVQUFBLHFCQUFBOzs7OztJQ2JKO2dCQUFBO2dCQUFBOzs7SUFBQTs7OyJ9

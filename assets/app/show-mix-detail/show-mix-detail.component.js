@@ -49,20 +49,20 @@ var ShowMixDetailComponent = (function () {
         if (this.upsel == 1 && this.downsel == 0) {
             this['mix']['upvote']--;
             this.upsel = 0;
-            this.upObservableDown()
+            this.voteObservable('/like/-1')
                 .subscribe(function (data) { return console.log(""); }, function (error) { return console.error(error); });
             return null;
         }
         if (this.upsel == 0 || this.downsel == 1) {
             if (this.downsel == 1) {
                 this['mix']['downvote']--;
-                this.downObservableDown()
+                this.voteObservable('/dislike/-1')
                     .subscribe(function (data) { return console.log(""); }, function (error) { return console.error(error); });
             }
             this.upsel = 1;
             this.downsel = 0;
             this['mix']['upvote']++;
-            this.upObservableUp()
+            this.voteObservable('/like/1')
                 .subscribe(function (data) { return console.log(""); }, function (error) { return console.error(error); });
         }
     };
@@ -70,26 +70,36 @@ var ShowMixDetailComponent = (function () {
         if (this.downsel == 1 && this.upsel == 0) {
             this['mix']['downvote']--;
             this.downsel = 0;
-            this.downObservableDown()
+            this.voteObservable('/dislike/-1')
                 .subscribe(function (data) { return console.log(""); }, function (error) { return console.error(error); });
             return null;
         }
         if (this.downsel == 0 || this.upsel == 1) {
             if (this.upsel == 1) {
                 this['mix']['upvote']--;
-                this.upObservableDown()
+                this.voteObservable('/like/-1')
                     .subscribe(function (data) { return console.log(""); }, function (error) { return console.error(error); });
             }
             this.downsel = 1;
             this.upsel = 0;
             this['mix']['downvote']++;
-            this.downObservableUp()
+            this.voteObservable('/dislike/1')
                 .subscribe(function (data) { return console.log(""); }, function (error) { return console.error(error); });
         }
     };
+    // Observables for upvote/downvote functionality
     ShowMixDetailComponent.prototype.upObservableUp = function () {
         var body = "blank";
         return this.http.post('/getMixes/' + this['mix']['id'] + '/like/1', body)
+            .map(function (response) {
+            var result = response.json();
+            return result;
+        })
+            .catch(function (error) { return Observable.throw(error.json()); });
+    };
+    ShowMixDetailComponent.prototype.voteObservable = function (action) {
+        var body = "blank";
+        return this.http.post('/getMixes/' + this['mix']['id'] + action, body)
             .map(function (response) {
             var result = response.json();
             return result;

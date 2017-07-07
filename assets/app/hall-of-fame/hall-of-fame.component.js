@@ -13,9 +13,6 @@ var HallOfFameComponent = (function () {
     function HallOfFameComponent(mixesService) {
         this.mixesService = mixesService;
     }
-    // getMixes(): void {
-    //     this.mixesService.getMixes().then(mixes => this.mixes = mixes);
-    //   }
     HallOfFameComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.mixesService.getTopMixes()

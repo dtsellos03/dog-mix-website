@@ -29,7 +29,7 @@ export function View_AboutComponent_0(l:any):import1.ɵViewDefinition {
         'container'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n    '])),
+    (l()(),import1.ɵted((null as any),['\n        '])),
     (l()(),import1.ɵeld(0,(null as any),(null as any),7,'h5',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['A display of adorable mixes like the '])),
       (l()(),import1.ɵeld(0,(null as any),(null as any),1,'a',[[
@@ -38,7 +38,7 @@ export function View_AboutComponent_0(l:any):import1.ɵViewDefinition {
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['Corgiever'])),
-    (l()(),import1.ɵted((null as any),[' and\n    questionable outcomes like the \n    '])),
+    (l()(),import1.ɵted((null as any),[' and questionable outcomes like the\n            '])),
       (l()(),import1.ɵeld(0,(null as any),(null as any),1,'a',[[
         'href',
         'http://mydogmixtape.herokuapp.com/mixes/594dcc486618ef32097d8a51'
@@ -46,16 +46,16 @@ export function View_AboutComponent_0(l:any):import1.ɵViewDefinition {
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['Australian Pug'])),
     (l()(),import1.ɵted((null as any),['.'])),
-    (l()(),import1.ɵted((null as any),['\n    '])),
+    (l()(),import1.ɵted((null as any),['\n        '])),
     (l()(),import1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['Please help us chart these unknown territories and submit your findings!  '])),
-    (l()(),import1.ɵted((null as any),['\n\n    '])),
+    (l()(),import1.ɵted((null as any),['Please help us chart these unknown territories and submit your findings! '])),
+    (l()(),import1.ɵted((null as any),['\n\n        '])),
       (l()(),import1.ɵeld(0,(null as any),(null as any),0,'img',[[
         'src',
         'http://i.imgur.com/RJHgnht.png'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n    '])),
+    (l()(),import1.ɵted((null as any),['\n        '])),
     (l()(),import1.ɵeld(0,(null as any),(null as any),3,'h6',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import1.ɵted((null as any),['Icons courtesy of '])),
       (l()(),import1.ɵeld(0,(null as any),(null as any),1,'a',[[
@@ -79,4 +79,4 @@ function View_AboutComponent_Host_0(l:any):import1.ɵViewDefinition {
   },(null as any));
 }
 export const AboutComponentNgFactory:import1.ComponentFactory<import2.AboutComponent> = import1.ɵccf('about',import2.AboutComponent,View_AboutComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYWJvdXQvYWJvdXQuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYWJvdXQvYWJvdXQuY29tcG9uZW50LnRzIiwibmc6Ly8vaG9tZS91YnVudHUvd29ya3NwYWNlL21haW4vYXNzZXRzL2FwcC9hYm91dC9hYm91dC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYWJvdXQvYWJvdXQuY29tcG9uZW50LnRzLkFib3V0Q29tcG9uZW50X0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuICAgIDxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cbiAgICA8aDU+QSBkaXNwbGF5IG9mIGFkb3JhYmxlIG1peGVzIGxpa2UgdGhlIDxhIGhyZWY9XCJodHRwOi8vbXlkb2dtaXh0YXBlLmhlcm9rdWFwcC5jb20vbWl4ZXMvNTk0ZGNjNDg2NjE4ZWYzMjA5N2Q4YTNmXCI+Q29yZ2lldmVyPC9hPiBhbmRcbiAgICBxdWVzdGlvbmFibGUgb3V0Y29tZXMgbGlrZSB0aGUgXG4gICAgPGEgaHJlZj1cImh0dHA6Ly9teWRvZ21peHRhcGUuaGVyb2t1YXBwLmNvbS9taXhlcy81OTRkY2M0ODY2MThlZjMyMDk3ZDhhNTFcIiA+QXVzdHJhbGlhbiBQdWc8L2E+LjwvaDU+XG4gICAgPGg1PlBsZWFzZSBoZWxwIHVzIGNoYXJ0IHRoZXNlIHVua25vd24gdGVycml0b3JpZXMgYW5kIHN1Ym1pdCB5b3VyIGZpbmRpbmdzISAgPC9oNT5cblxuICAgIDxpbWcgc3JjPVwiaHR0cDovL2kuaW1ndXIuY29tL1JKSGduaHQucG5nXCI+XG4gICAgPGg2Pkljb25zIGNvdXJ0ZXN5IG9mIDxhIGhyZWY9XCJodHRwOi8vd3d3LmZyZWVwaWsuY29tL2ZyZWUtdmVjdG9yL2N1dGUtZG9nLWJyZWVkc184MDMxOTcuaHRtXCI+RnJlZXBpazwvYT48L2g2PlxuICAgIDwvZGl2PlxuPC9kaXY+IiwiPGFib3V0PjwvYWJvdXQ+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7TUNBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXVCO01BQ25CO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBdUI7SUFDdkI7SUFBSTtNQUFxQztRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQTJFO0lBQWE7TUFFakk7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUE0RTtJQUFrQjtJQUFNO0lBQ3BHO0lBQUk7SUFBK0U7TUFFbkY7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUEwQztJQUMxQztJQUFJO01BQWtCO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBd0U7SUFBZ0I7SUFDeEc7Ozs7OztJQ1RWO2dCQUFBOzs7SUFBQTs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYWJvdXQvYWJvdXQuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYWJvdXQvYWJvdXQuY29tcG9uZW50LnRzIiwibmc6Ly8vaG9tZS91YnVudHUvd29ya3NwYWNlL21haW4vYXNzZXRzL2FwcC9hYm91dC9hYm91dC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL2hvbWUvdWJ1bnR1L3dvcmtzcGFjZS9tYWluL2Fzc2V0cy9hcHAvYWJvdXQvYWJvdXQuY29tcG9uZW50LnRzLkFib3V0Q29tcG9uZW50X0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuICAgIDxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cbiAgICAgICAgPGg1PkEgZGlzcGxheSBvZiBhZG9yYWJsZSBtaXhlcyBsaWtlIHRoZSA8YSBocmVmPVwiaHR0cDovL215ZG9nbWl4dGFwZS5oZXJva3VhcHAuY29tL21peGVzLzU5NGRjYzQ4NjYxOGVmMzIwOTdkOGEzZlwiPkNvcmdpZXZlcjwvYT4gYW5kIHF1ZXN0aW9uYWJsZSBvdXRjb21lcyBsaWtlIHRoZVxuICAgICAgICAgICAgPGEgaHJlZj1cImh0dHA6Ly9teWRvZ21peHRhcGUuaGVyb2t1YXBwLmNvbS9taXhlcy81OTRkY2M0ODY2MThlZjMyMDk3ZDhhNTFcIj5BdXN0cmFsaWFuIFB1ZzwvYT4uPC9oNT5cbiAgICAgICAgPGg1PlBsZWFzZSBoZWxwIHVzIGNoYXJ0IHRoZXNlIHVua25vd24gdGVycml0b3JpZXMgYW5kIHN1Ym1pdCB5b3VyIGZpbmRpbmdzISA8L2g1PlxuXG4gICAgICAgIDxpbWcgc3JjPVwiaHR0cDovL2kuaW1ndXIuY29tL1JKSGduaHQucG5nXCI+XG4gICAgICAgIDxoNj5JY29ucyBjb3VydGVzeSBvZiA8YSBocmVmPVwiaHR0cDovL3d3dy5mcmVlcGlrLmNvbS9mcmVlLXZlY3Rvci9jdXRlLWRvZy1icmVlZHNfODAzMTk3Lmh0bVwiPkZyZWVwaWs8L2E+PC9oNj5cbiAgICA8L2Rpdj5cbjwvZGl2PiIsIjxhYm91dD48L2Fib3V0PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O01DQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUF1QjtNQUNuQjtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXVCO0lBQ25CO0lBQUk7TUFBcUM7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUEyRTtJQUFhO01BQzdIO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBMkU7SUFBa0I7SUFBTTtJQUN2RztJQUFJO0lBQThFO01BRWxGO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBMEM7SUFDMUM7SUFBSTtNQUFrQjtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXdFO0lBQWdCO0lBQzVHOzs7Ozs7SUNSVjtnQkFBQTs7O0lBQUE7OzsifQ==
