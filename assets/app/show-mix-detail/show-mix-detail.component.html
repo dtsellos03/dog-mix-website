@@ -1,42 +1,23 @@
 <div *ngIf="mix" class="ui container">
-
-
+    
     <div class="ui two column grid stackable">
+        
         <div class="column">
-
-
             <h1 class="ui center aligned icon header" style="font-size: 3em;">{{mix.Name}}</h1>
             <br>
             <hr><br>
             <div class="ui two column centered grid stackable">
-
-
-
                 <div class="eight wide center aligned column">
-
                     <a class="ui huge image label" [routerLink]="['/mixesof', breedLink.breed1]">
                         <img src="{{mixesService.serviceBreeds[mix.breed1]}}"> {{mix.breed1}}
                     </a>
-
-
-
                 </div>
                 <div class="eight wide center aligned column">
-
-
                     <a class="ui huge image label" [routerLink]="['/mixesof', breedLink.breed2]">
                         <img src="{{mixesService.serviceBreeds[mix.breed2]}}"> {{mix.breed2}}
                     </a>
-
                 </div>
-
-
-
             </div>
-
-
-
-
             <br><br>
             <div class="ui two column centered grid stackable">
                 <div class="ui horizontal divider">
@@ -45,7 +26,6 @@
                 <br>
                 <div class=" centered row">
                     <div class="eight wide center aligned column">
-
                         <div class="ui huge labeled button" (click)="upVote()" tabindex="0">
                             <button class="ui button" [ngClass]="{positive: upsel == 1}">
                      <i class="arrow up icon"></i> Miracle
@@ -56,11 +36,8 @@
                         </div>
                         <br>
                         <br>
-
-
                     </div>
                     <div class="eight wide center aligned column">
-
                         <div class="ui huge labeled button" (click)="downVote()" tabindex="0">
                             <button class="ui button" [ngClass]="{positive: downsel == 1}">
                      <i class="arrow down icon"></i> Abomination
@@ -71,25 +48,20 @@
                         </div>
                         <br>
                         <br>
-
-
                     </div>
-
-
                 </div>
             </div>
             <div class="ui one column centered grid stackable">
                 <div class="eight wide center aligned column">
-
-
                     <button class="ui huge basic button" (click)="goBack()">BACK</button>
-
                 </div>
             </div>
         </div>
+        
         <div class="column">
             <img class="ui  large image bordered rounded" src="{{mix.image}}">
             <a href="{{mix.imagesource}}" target="_blank">Source</a>
         </div>
+        
     </div>
 </div>
