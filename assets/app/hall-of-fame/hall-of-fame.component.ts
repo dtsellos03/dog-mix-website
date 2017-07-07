@@ -18,9 +18,6 @@ export class HallOfFameComponent implements OnInit {
     
     constructor(private mixesService: MixesService) {}
 
-    // getMixes(): void {
-    //     this.mixesService.getMixes().then(mixes => this.mixes = mixes);
-    //   }
     
     ngOnInit() {
         this.mixesService.getTopMixes()
