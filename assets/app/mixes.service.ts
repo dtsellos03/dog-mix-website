@@ -15,16 +15,19 @@ function shuffle(a) {
 @Injectable()
 export class MixesService {
     
-      serviceMixes = [];
-      isLoaded = false;
+     serviceMixes = [];
+
+//Whether all the mixes have been loaded before     
+     isLoaded = false; 
       
      serviceBreeds = {}
     
 
 
     constructor(private http: Http) {}
-    
-    refreshMixes() {
+  
+//Get mixes form server again  
+    refreshMixes() { 
        
         this.isLoaded = true;
         this.getMixes()
@@ -40,7 +43,7 @@ export class MixesService {
     }
     
     
-    addMix(mix: Mix) {
+    addMix(mix: Mix) { 
         const body = JSON.stringify(mix);
         const headers = new Headers({'Content-Type': 'application/json'});
         return this.http.post('/getMixes', body, {headers: headers})
@@ -51,8 +54,8 @@ export class MixesService {
             .catch((error: Response) => Observable.throw(error.json()));
     }
  
-    
-    getMixes() {
+ //Retrieve mixes from server   
+    getMixes() { 
         return this.http.get('/getMixes')
             .map((response: Response) => {
            
@@ -101,24 +104,23 @@ export class MixesService {
     getMix(desiredID: string) {
      
       return this.serviceMixes.find(function(mix){ 
-    return mix.id == desiredID ;
+      return mix.id == desiredID ;
 }); 
 
        
     }   
     
-        
-       getMixAsync(id: string) {
-         //console.log(id)
+// If direct linking to a mix, this function is called
+       getMixAsync(id: string) { 
+      
          return this.http.get('/getMixes/'+id)
              .map((response: Response) => {
-             //    console.log(response)
+            
                  const mix = response.json().obj;
 
           
                  let foundmix = new Mix(mix._id, mix.Name, mix.image, mix.breed1, mix.breed2, mix.checkAll, mix.upvote, mix.downvote, mix.imagesource);
-             
-               //  this['mix'] = foundmix;
+
 
                  return foundmix;
              })
