@@ -34,8 +34,7 @@ server.on('listening', onListening);
  */
 
 function normalizePort(val) {
-  var port = val || 3001;
-
+  var port = 8080;
   if (isNaN(port)) {
     // named pipe
     return val;
