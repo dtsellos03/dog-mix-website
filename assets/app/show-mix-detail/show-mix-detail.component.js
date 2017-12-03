@@ -30,7 +30,7 @@ var ShowMixDetailComponent = (function () {
         var id = this.route.params['value'].id;
         if (this.mixesService.serviceMixes.length > 1) {
             this['mix'] = this.mixesService.getMix(id);
-            this['breedLink']['breed1'] = encodeURI(this['mix']['breed1']);
+            this['breedLink']['breed1'] = encodeURI(this['mix']['breed1']); //Encode breed names so they can be used as links
             this['breedLink']['breed2'] = encodeURI(this['mix']['breed2']);
         }
         else {
@@ -87,46 +87,10 @@ var ShowMixDetailComponent = (function () {
                 .subscribe(function (data) { return console.log(""); }, function (error) { return console.error(error); });
         }
     };
-    // Observables for upvote/downvote functionality
-    ShowMixDetailComponent.prototype.upObservableUp = function () {
-        var body = "blank";
-        return this.http.post('/getMixes/' + this['mix']['id'] + '/like/1', body)
-            .map(function (response) {
-            var result = response.json();
-            return result;
-        })
-            .catch(function (error) { return Observable.throw(error.json()); });
-    };
+    // Observable for upvote/downvote functionality
     ShowMixDetailComponent.prototype.voteObservable = function (action) {
         var body = "blank";
         return this.http.post('/getMixes/' + this['mix']['id'] + action, body)
-            .map(function (response) {
-            var result = response.json();
-            return result;
-        })
-            .catch(function (error) { return Observable.throw(error.json()); });
-    };
-    ShowMixDetailComponent.prototype.downObservableUp = function () {
-        var body = "blank";
-        return this.http.post('/getMixes/' + this['mix']['id'] + '/dislike/1', body)
-            .map(function (response) {
-            var result = response.json();
-            return result;
-        })
-            .catch(function (error) { return Observable.throw(error.json()); });
-    };
-    ShowMixDetailComponent.prototype.upObservableDown = function () {
-        var body = "blank";
-        return this.http.post('/getMixes/' + this['mix']['id'] + '/like/-1', body)
-            .map(function (response) {
-            var result = response.json();
-            return result;
-        })
-            .catch(function (error) { return Observable.throw(error.json()); });
-    };
-    ShowMixDetailComponent.prototype.downObservableDown = function () {
-        var body = "blank";
-        return this.http.post('/getMixes/' + this['mix']['id'] + '/dislike/-1', body)
             .map(function (response) {
             var result = response.json();
             return result;

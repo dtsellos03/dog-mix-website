@@ -21,6 +21,7 @@ var ContributeComponent = (function () {
         this.successmessage = 0;
     }
     ContributeComponent.prototype.onSubmit = function () {
+        // Variable to check if duplicate mix is submitted
         var _this = this;
         this.breederror = 0;
         var nullcheck = 0;
@@ -30,7 +31,7 @@ var ContributeComponent = (function () {
             var formcombo1 = submittedMix.breed1.toString() + submittedMix.breed2.toString();
             var formcombo2 = submittedMix.breed2.toString() + submittedMix.breed1.toString();
             if (formcombo1 == combo1 || formcombo2 == combo1) {
-                console.log("Duplicate mix!");
+                // Set duplicate mix error
                 nullcheck = 1;
             }
         });
@@ -38,22 +39,21 @@ var ContributeComponent = (function () {
             this.breederror = 1;
             return null;
         }
+        //Otherwise, display success message
         this.successmessage = 1;
-        // console.log(submittedMix)
         var newMix = new Mix(" ", submittedMix.mixName, submittedMix.mixURL, submittedMix.breed1, submittedMix.breed2, "all", 0, 0, submittedMix.imageURL);
-        // console.log(newMix)
+        // Get mixes from server again
         this.mixesService.isLoaded = false;
         this.mixesService.addMix(newMix).subscribe(function (mix) {
-            console.log("SUBSCRIBED!");
-            console.log("ABout o navgiate!");
+            //Redirect to mixes page
             _this.router.navigate(['/mixes']);
         });
     };
     ContributeComponent.prototype.ngOnInit = function () {
+        // Initiialize array of breeds to choose from
         for (var name in this.mixesService.serviceBreeds) {
             this.breedchoices.push(name);
         }
-        console.log(this.breedchoices);
         this.submitMix = new FormGroup({
             'mixName': new FormControl(null, Validators.required),
             'mixURL': new FormControl(null, Validators.required),
