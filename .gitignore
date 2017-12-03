@@ -1,0 +1,8 @@
+node_modules/*
+aot/*
+db_key.js
+assets/app/*.js
+assets/app/*.map
+aot/assets/app/*
+.map
+public/js
